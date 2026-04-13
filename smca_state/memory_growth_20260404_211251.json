@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-04-04T21:12:47.105895",
+    "event": "initialization",
+    "total_markers": 0,
+    "entry_number": 0
+  },
+  {
+    "timestamp": "2026-04-04T21:12:50.508304",
+    "event": "ingestion:demo_doc",
+    "total_markers": 1,
+    "entry_number": 1
+  },
+  {
+    "timestamp": "2026-04-04T21:12:50.593394",
+    "event": "query:How does attention relate to m",
+    "total_markers": 1,
+    "entry_number": 2
+  }
+]

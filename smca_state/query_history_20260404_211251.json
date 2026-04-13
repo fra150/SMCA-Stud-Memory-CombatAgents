@@ -1,0 +1,454 @@
+[
+  {
+    "query": "How does attention relate to memory retrieval?",
+    "final_answer": "[Precision — PRECISION ANALYSIS]\nQuery: How does attention relate to memory retrieval?\nBased on 1 high-confidence source(s):\n\n  [1] (confidence: 0.298) Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention.\n\nConclusion: The most relevant finding (score: 0.298) directly addresses the query with verified information.",
+    "champion_name": "Precision",
+    "combat_result": {
+      "query": "How does attention relate to memory retrieval?",
+      "champion_name": "Precision",
+      "champion_response": {
+        "agent_name": "Precision",
+        "strategy": "precision",
+        "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does attention relate to memory retrieval?\nBased on 1 high-confidence source(s):\n\n  [1] (confidence: 0.298) Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention.\n\nConclusion: The most relevant finding (score: 0.298) directly addresses the query with verified information.",
+        "markers_used": [
+          0
+        ],
+        "marker_segments": [
+          "Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention."
+        ],
+        "similarities": [
+          0.29821598529815674
+        ],
+        "confidence": 0.30699532230695087,
+        "generation_time": 0.009365081787109375,
+        "metadata": {
+          "retrieval_k": 1,
+          "standards": [
+            "efficiency",
+            "creativity"
+          ],
+          "strategy_weights": {
+            "similarity": 0.4,
+            "coverage": 0.15,
+            "depth": 0.25,
+            "conciseness": 0.1,
+            "novelty": 0.05,
+            "speed": 0.05
+          }
+        },
+        "timestamp": "2026-04-04T21:12:50.564690"
+      },
+      "final_score": 0.42012793135828563,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "coherence",
+            "depth"
+          ],
+          "winner_name": "Precision",
+          "winner_score": 0.33407465931574504,
+          "loser_name": "Creative",
+          "loser_score": 0.308574659315745,
+          "all_scores": {
+            "Precision": 0.33407465931574504,
+            "Creative": 0.308574659315745
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does attention relate to memory retrieval?\nBased on 1 high-confidence source(s):\n\n  [1] (confidence: 0.298) Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention.\n\nConclusion: The most relevant finding (score: 0.298) directly addresses the query with verified information.",
+              "markers_used": [
+                0
+              ],
+              "marker_segments": [
+                "Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention."
+              ],
+              "similarities": [
+                0.29821598529815674
+              ],
+              "confidence": 0.30699532230695087,
+              "generation_time": 0.011565208435058594,
+              "metadata": {
+                "retrieval_k": 1,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:12:50.519981"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does attention relate to memory retrieval?\n\n  Primary insight: Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention.\n\nCreative reframing: Looking at this from an unconventional angle...",
+              "markers_used": [
+                0
+              ],
+              "marker_segments": [
+                "Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention."
+              ],
+              "similarities": [
+                0.29821598529815674
+              ],
+              "confidence": 0.30699532230695087,
+              "generation_time": 0.0078125,
+              "metadata": {
+                "retrieval_k": 1,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:12:50.527814"
+            }
+          ],
+          "pressure_level": 1.5378010176370083e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:12:50.536180"
+        },
+        {
+          "round_number": 2,
+          "standards_used": [
+            "efficiency",
+            "creativity"
+          ],
+          "winner_name": "Precision",
+          "winner_score": 0.42012793135828563,
+          "loser_name": "Creative",
+          "loser_score": 0.40795151926025264,
+          "all_scores": {
+            "Precision": 0.42012793135828563,
+            "Creative": 0.40795151926025264
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does attention relate to memory retrieval?\nBased on 1 high-confidence source(s):\n\n  [1] (confidence: 0.298) Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention.\n\nConclusion: The most relevant finding (score: 0.298) directly addresses the query with verified information.",
+              "markers_used": [
+                0
+              ],
+              "marker_segments": [
+                "Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention."
+              ],
+              "similarities": [
+                0.29821598529815674
+              ],
+              "confidence": 0.30699532230695087,
+              "generation_time": 0.009365081787109375,
+              "metadata": {
+                "retrieval_k": 1,
+                "standards": [
+                  "efficiency",
+                  "creativity"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:12:50.564690"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does attention relate to memory retrieval?\n\n  Primary insight: Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention.\n\nCreative reframing: Looking at this from an unconventional angle...",
+              "markers_used": [
+                0
+              ],
+              "marker_segments": [
+                "Machine learning is a subset of AI. Deep learning uses neural networks. Transformers use attention."
+              ],
+              "similarities": [
+                0.29821598529815674
+              ],
+              "confidence": 0.30699532230695087,
+              "generation_time": 0.007814645767211914,
+              "metadata": {
+                "retrieval_k": 1,
+                "standards": [
+                  "efficiency",
+                  "creativity"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:12:50.572521"
+            }
+          ],
+          "pressure_level": 0.0019607335210819477,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:12:50.582562"
+        }
+      ],
+      "total_rounds": 2,
+      "total_time": 0.08498692512512207,
+      "countdown_expired": true,
+      "god_interventions": 2,
+      "metadata": {
+        "agent_stats": {
+          "Precision": {
+            "name": "Precision",
+            "strategy": "precision",
+            "wins": 2,
+            "losses": 0,
+            "win_rate": 1.0,
+            "average_score": 0.3771012953370153,
+            "total_competitions": 2,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.33407465931574504,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.42012793135828563,
+                "standards": [
+                  "efficiency",
+                  "creativity"
+                ]
+              }
+            ]
+          },
+          "Creative": {
+            "name": "Creative",
+            "strategy": "creativity",
+            "wins": 0,
+            "losses": 2,
+            "win_rate": 0.0,
+            "average_score": 0.3582630892879988,
+            "total_competitions": 2,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.308574659315745,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.40795151926025264,
+                "standards": [
+                  "efficiency",
+                  "creativity"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 2,
+          "escalation_count": 2,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.048705648392131984,
+          "confidence_threshold": 0.7,
+          "god_decisions_count": 2,
+          "ambiguity_events": 2,
+          "competition_history_length": 2,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does attention relate to memory retrieval?",
+                  "pressure_level": 1.5378010176370083e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "efficiency",
+                  "creativity"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does attention relate to memory retrieval?",
+                  "pressure_level": 0.0019607335210819477,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [],
+              "speed": [],
+              "creativity": [
+                0.254512041234578
+              ],
+              "coherence": [
+                0.20554479558944702
+              ],
+              "efficiency": [
+                0.254512041234578
+              ],
+              "novelty": [],
+              "depth": [
+                0.20554479558944702
+              ],
+              "relevance": [],
+              "conciseness": [],
+              "completeness": []
+            },
+            "rankings": [
+              {
+                "standard": "creativity",
+                "average_score": 0.254512041234578,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.254512041234578
+                ]
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.254512041234578,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.254512041234578
+                ]
+              },
+              {
+                "standard": "coherence",
+                "average_score": 0.20554479558944702,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.20554479558944702
+                ]
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.20554479558944702,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.20554479558944702
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "speed",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              }
+            ],
+            "total_rounds": 2
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 10.0,
+          "remaining": 10.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-04T21:12:50.593355"
+    },
+    "memory_stats": {
+      "total_markers": 1,
+      "markers_accessed": 4
+    },
+    "judge_confidence": 0.048705648392131984,
+    "standards_evolution": [
+      [
+        "coherence",
+        "depth"
+      ],
+      [
+        "efficiency",
+        "creativity"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 0.08505606651306152,
+    "timestamp": "2026-04-04T21:12:50.593383"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "timestamp": "2026-04-08T17:29:20.156824",
+    "event": "initialization",
+    "total_markers": 0,
+    "active_markers": 0,
+    "entry_number": 0
+  },
+  {
+    "timestamp": "2026-04-08T17:29:23.522077",
+    "event": "ingestion:AI_Fundamentals",
+    "total_markers": 9,
+    "active_markers": 0,
+    "entry_number": 1
+  },
+  {
+    "timestamp": "2026-04-08T17:29:27.026692",
+    "event": "ingestion:Memory_Systems",
+    "total_markers": 19,
+    "active_markers": 0,
+    "entry_number": 2
+  },
+  {
+    "timestamp": "2026-04-08T17:29:30.440443",
+    "event": "ingestion:Evolutionary_Computing",
+    "total_markers": 29,
+    "active_markers": 0,
+    "entry_number": 3
+  },
+  {
+    "timestamp": "2026-04-08T17:29:30.456896",
+    "event": "text_addition",
+    "total_markers": 30,
+    "active_markers": 0,
+    "entry_number": 4
+  },
+  {
+    "timestamp": "2026-04-08T17:29:30.467096",
+    "event": "text_addition",
+    "total_markers": 31,
+    "active_markers": 0,
+    "entry_number": 5
+  },
+  {
+    "timestamp": "2026-04-08T17:29:30.775190",
+    "event": "query:How does memory consolidation ",
+    "total_markers": 31,
+    "active_markers": 8,
+    "entry_number": 6
+  },
+  {
+    "timestamp": "2026-04-08T17:29:31.085861",
+    "event": "query:What are the advantages of com",
+    "total_markers": 31,
+    "active_markers": 13,
+    "entry_number": 7
+  },
+  {
+    "timestamp": "2026-04-08T17:29:31.380069",
+    "event": "query:How can attention mechanisms i",
+    "total_markers": 31,
+    "active_markers": 15,
+    "entry_number": 8
+  },
+  {
+    "timestamp": "2026-04-08T17:29:31.649580",
+    "event": "query:What parallels exist between h",
+    "total_markers": 31,
+    "active_markers": 17,
+    "entry_number": 9
+  },
+  {
+    "timestamp": "2026-04-08T17:29:31.933107",
+    "event": "query:How does evolutionary pressure",
+    "total_markers": 31,
+    "active_markers": 22,
+    "entry_number": 10
+  }
+]

@@ -1,0 +1,3930 @@
+[
+  {
+    "query": "How does memory consolidation relate to machine learning?",
+    "final_answer": "[Creative — CREATIVE INSIGHT]\nExploring: How does memory consolidation relate to machine learning?\n\nConnecting disparate concepts:\n  Thread A: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  Thread B: Associative memory connects related concepts through neural pathways.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does memory consolidation relate to machine learning?'.",
+    "champion_name": "Creative",
+    "combat_result": {
+      "query": "How does memory consolidation relate to machine learning?",
+      "champion_name": "Creative",
+      "champion_response": {
+        "agent_name": "Creative",
+        "strategy": "creativity",
+        "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does memory consolidation relate to machine learning?\n\nConnecting disparate concepts:\n  Thread A: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  Thread B: Associative memory connects related concepts through neural pathways.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does memory consolidation relate to machine learning?'.",
+        "markers_used": [
+          14,
+          15,
+          10,
+          12,
+          11
+        ],
+        "marker_segments": [
+          "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+          "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+          "The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage.",
+          "When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.",
+          "Associative memory connects related concepts through neural pathways."
+        ],
+        "similarities": [
+          0.6609272360801697,
+          0.5881742835044861,
+          0.5354975461959839,
+          0.5192092061042786,
+          0.5063890218734741
+        ],
+        "confidence": 0.7110847175121308,
+        "generation_time": 0.011089563369750977,
+        "metadata": {
+          "retrieval_k": 5,
+          "standards": [
+            "novelty",
+            "precision"
+          ],
+          "strategy_weights": {
+            "similarity": 0.15,
+            "coverage": 0.15,
+            "depth": 0.15,
+            "conciseness": 0.05,
+            "novelty": 0.4,
+            "speed": 0.1
+          }
+        },
+        "timestamp": "2026-04-04T21:14:49.913752"
+      },
+      "final_score": 0.555422391544387,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "coherence",
+            "completeness"
+          ],
+          "winner_name": "Precision",
+          "winner_score": 0.7889307540655137,
+          "loser_name": "Creative",
+          "loser_score": 0.7776462405920029,
+          "all_scores": {
+            "Precision": 0.7889307540655137,
+            "Creative": 0.7776462405920029
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does memory consolidation relate to machine learning?\nBased on 5 high-confidence source(s):\n\n  [1] (confidence: 0.661) Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  [2] (confidence: 0.588) During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  [3] (confidence: 0.535) The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage.\n  [4] (confidence: 0.519) When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.\n  [5] (confidence: 0.506) Associative memory connects related concepts through neural pathways.\n\nConclusion: The most relevant finding (score: 0.661) directly addresses the query with verified information.",
+              "markers_used": [
+                14,
+                15,
+                10,
+                12,
+                11
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage.",
+                "When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.",
+                "Associative memory connects related concepts through neural pathways."
+              ],
+              "similarities": [
+                0.6609272360801697,
+                0.5881742835044861,
+                0.5354975461959839,
+                0.5192092061042786,
+                0.5063890218734741
+              ],
+              "confidence": 0.7110847175121308,
+              "generation_time": 0.009845972061157227,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:49.852419"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does memory consolidation relate to machine learning?\n\nConnecting disparate concepts:\n  Thread A: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  Thread B: The combination of associative memory and competitive selection creates a system that not only remembers but actively cu\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 7 knowledge streams suggests a novel perspective on 'How does memory consolidation relate to machine learning?'.",
+              "markers_used": [
+                14,
+                15,
+                10,
+                12,
+                11,
+                1,
+                29
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage.",
+                "When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.",
+                "Associative memory connects related concepts through neural pathways.",
+                "Machine Learning is a subset of AI that uses statistical techniques to give computer \n    systems the ability to learn from data without being explicitly programmed.",
+                "The combination of associative memory and competitive selection creates a system that not only remembers but actively curates its knowledge base, keeping only the most valuable information."
+              ],
+              "similarities": [
+                0.6609272360801697,
+                0.5881742835044861,
+                0.5354975461959839,
+                0.5192092061042786,
+                0.5063890218734741,
+                0.4900507628917694,
+                0.44595298171043396
+              ],
+              "confidence": 0.7016809433698654,
+              "generation_time": 0.0096435546875,
+              "metadata": {
+                "retrieval_k": 7,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:49.862121"
+            }
+          ],
+          "pressure_level": 5.575036648552967e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:49.871851"
+        },
+        {
+          "round_number": 2,
+          "standards_used": [
+            "novelty",
+            "precision"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.555422391544387,
+          "loser_name": "Precision",
+          "loser_score": 0.47644122863191524,
+          "all_scores": {
+            "Precision": 0.47644122863191524,
+            "Creative": 0.555422391544387
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does memory consolidation relate to machine learning?\nBased on 3 high-confidence source(s):\n\n  [1] (confidence: 0.661) Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  [2] (confidence: 0.588) During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  [3] (confidence: 0.535) The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage.\n\nConclusion: The most relevant finding (score: 0.661) directly addresses the query with verified information.",
+              "markers_used": [
+                14,
+                15,
+                10
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage."
+              ],
+              "similarities": [
+                0.6609272360801697,
+                0.5881742835044861,
+                0.5354975461959839
+              ],
+              "confidence": 0.7225741118192672,
+              "generation_time": 0.010751962661743164,
+              "metadata": {
+                "retrieval_k": 3,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:49.902602"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does memory consolidation relate to machine learning?\n\nConnecting disparate concepts:\n  Thread A: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  Thread B: Associative memory connects related concepts through neural pathways.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does memory consolidation relate to machine learning?'.",
+              "markers_used": [
+                14,
+                15,
+                10,
+                12,
+                11
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "The hippocampus plays a crucial \n    role in consolidating short-term memories into long-term storage.",
+                "When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.",
+                "Associative memory connects related concepts through neural pathways."
+              ],
+              "similarities": [
+                0.6609272360801697,
+                0.5881742835044861,
+                0.5354975461959839,
+                0.5192092061042786,
+                0.5063890218734741
+              ],
+              "confidence": 0.7110847175121308,
+              "generation_time": 0.011089563369750977,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:49.913752"
+            }
+          ],
+          "pressure_level": 0.0006863048367441449,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:49.923305"
+        }
+      ],
+      "total_rounds": 2,
+      "total_time": 0.09276676177978516,
+      "countdown_expired": true,
+      "god_interventions": 2,
+      "metadata": {
+        "agent_stats": {
+          "Precision": {
+            "name": "Precision",
+            "strategy": "precision",
+            "wins": 1,
+            "losses": 1,
+            "win_rate": 0.5,
+            "average_score": 0.6326859913487145,
+            "total_competitions": 2,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.7889307540655137,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.47644122863191524,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5653823970746874,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.2793896954097445,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.4469122973804576,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.8386535111914426,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.6870840995758772,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6951691776514054,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5484477337758042,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.5741871593729438,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          },
+          "Creative": {
+            "name": "Creative",
+            "strategy": "creativity",
+            "wins": 1,
+            "losses": 1,
+            "win_rate": 0.5,
+            "average_score": 0.6665343160681949,
+            "total_competitions": 2,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.7776462405920029,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.555422391544387,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.5853606147744339,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.3499340049485762,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.4824559473966975,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.8947195716916373,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.6797099700782981,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.6883246818184853,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.585167261417569,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6676451797677897,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 2,
+          "escalation_count": 2,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.31592465164988703,
+          "confidence_threshold": 0.7,
+          "god_decisions_count": 2,
+          "ambiguity_events": 2,
+          "competition_history_length": 2,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 5.575036648552967e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 0.0006863048367441449,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 4.267701672500124e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 0.0008841489277479075,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 6.353875318887425e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 0.0008125825077350823,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 3.7153630929598336e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 0.0008084584973646614,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 3.6954948043899094e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 0.0009395801357828804,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [
+                0.3490496675091265
+              ],
+              "speed": [],
+              "creativity": [],
+              "coherence": [
+                0.4756153551340103
+              ],
+              "efficiency": [],
+              "novelty": [
+                0.3490496675091265
+              ],
+              "depth": [],
+              "relevance": [],
+              "conciseness": [],
+              "completeness": [
+                0.4756153551340103
+              ]
+            },
+            "rankings": [
+              {
+                "standard": "coherence",
+                "average_score": 0.4756153551340103,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.4756153551340103
+                ]
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.4756153551340103,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.4756153551340103
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.3490496675091265,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.3490496675091265
+                ]
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.3490496675091265,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.3490496675091265
+                ]
+              },
+              {
+                "standard": "speed",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "creativity",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              }
+            ],
+            "total_rounds": 2
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 30.0,
+          "remaining": 30.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-04T21:14:49.934837"
+    },
+    "memory_stats": {
+      "total_markers": 31,
+      "markers_accessed": 20
+    },
+    "judge_confidence": 0.31592465164988703,
+    "standards_evolution": [
+      [
+        "coherence",
+        "completeness"
+      ],
+      [
+        "novelty",
+        "precision"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 0.09318757057189941,
+    "timestamp": "2026-04-04T21:14:49.935090"
+  },
+  {
+    "query": "What are the advantages of competitive evolution in AI?",
+    "final_answer": "[Creative — CREATIVE INSIGHT]\nExploring: What are the advantages of competitive evolution in AI?\n\nConnecting disparate concepts:\n  Thread A: Evolutionary computation is inspired by biological evolution.\n  Thread B: Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 4 knowledge streams suggests a novel perspective on 'What are the advantages of competitive evolution in AI?'.",
+    "champion_name": "Creative",
+    "combat_result": {
+      "query": "What are the advantages of competitive evolution in AI?",
+      "champion_name": "Creative",
+      "champion_response": {
+        "agent_name": "Creative",
+        "strategy": "creativity",
+        "text": "[Creative — CREATIVE INSIGHT]\nExploring: What are the advantages of competitive evolution in AI?\n\nConnecting disparate concepts:\n  Thread A: Evolutionary computation is inspired by biological evolution.\n  Thread B: Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 4 knowledge streams suggests a novel perspective on 'What are the advantages of competitive evolution in AI?'.",
+        "markers_used": [
+          19,
+          20,
+          24,
+          22
+        ],
+        "marker_segments": [
+          "Evolutionary computation is inspired by biological evolution.",
+          "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+          "Competitive coevolution involves multiple populations that evolve against each other, \n    creating an arms race dynamic.",
+          "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives."
+        ],
+        "similarities": [
+          0.5802808403968811,
+          0.5487674474716187,
+          0.5426320433616638,
+          0.4977312386035919
+        ],
+        "confidence": 0.6719358563423157,
+        "generation_time": 0.00941777229309082,
+        "metadata": {
+          "retrieval_k": 4,
+          "standards": [
+            "novelty",
+            "conciseness"
+          ],
+          "strategy_weights": {
+            "similarity": 0.15,
+            "coverage": 0.15,
+            "depth": 0.15,
+            "conciseness": 0.05,
+            "novelty": 0.4,
+            "speed": 0.1
+          }
+        },
+        "timestamp": "2026-04-04T21:14:50.017948"
+      },
+      "final_score": 0.3499340049485762,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "relevance",
+            "efficiency"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.5853606147744339,
+          "loser_name": "Precision",
+          "loser_score": 0.5653823970746874,
+          "all_scores": {
+            "Precision": 0.5653823970746874,
+            "Creative": 0.5853606147744339
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: What are the advantages of competitive evolution in AI?\nBased on 3 high-confidence source(s):\n\n  [1] (confidence: 0.580) Evolutionary computation is inspired by biological evolution.\n  [2] (confidence: 0.549) Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.\n  [3] (confidence: 0.543) Competitive coevolution involves multiple populations that evolve against each other, \n    creating an arms race dynamic.\n\nConclusion: The most relevant finding (score: 0.580) directly addresses the query with verified information.",
+              "markers_used": [
+                19,
+                20,
+                24
+              ],
+              "marker_segments": [
+                "Evolutionary computation is inspired by biological evolution.",
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Competitive coevolution involves multiple populations that evolve against each other, \n    creating an arms race dynamic."
+              ],
+              "similarities": [
+                0.5802808403968811,
+                0.5487674474716187,
+                0.5426320433616638
+              ],
+              "confidence": 0.6771417289972306,
+              "generation_time": 0.009277105331420898,
+              "metadata": {
+                "retrieval_k": 3,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:49.957603"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: What are the advantages of competitive evolution in AI?\n\nConnecting disparate concepts:\n  Thread A: Evolutionary computation is inspired by biological evolution.\n  Thread B: This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n  \n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'What are the advantages of competitive evolution in AI?'.",
+              "markers_used": [
+                19,
+                20,
+                24,
+                22,
+                8
+              ],
+              "marker_segments": [
+                "Evolutionary computation is inspired by biological evolution.",
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Competitive coevolution involves multiple populations that evolve against each other, \n    creating an arms race dynamic.",
+                "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.",
+                "This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization."
+              ],
+              "similarities": [
+                0.5802808403968811,
+                0.5487674474716187,
+                0.5426320433616638,
+                0.4977312386035919,
+                0.48478788137435913
+              ],
+              "confidence": 0.6679063081741333,
+              "generation_time": 0.00994110107421875,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:49.967592"
+            }
+          ],
+          "pressure_level": 4.267701672500124e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:49.977874"
+        },
+        {
+          "round_number": 2,
+          "standards_used": [
+            "novelty",
+            "conciseness"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.3499340049485762,
+          "loser_name": "Precision",
+          "loser_score": 0.2793896954097445,
+          "all_scores": {
+            "Precision": 0.2793896954097445,
+            "Creative": 0.3499340049485762
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: What are the advantages of competitive evolution in AI?\nBased on 2 high-confidence source(s):\n\n  [1] (confidence: 0.580) Evolutionary computation is inspired by biological evolution.\n  [2] (confidence: 0.549) Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.\n\nConclusion: The most relevant finding (score: 0.580) directly addresses the query with verified information.",
+              "markers_used": [
+                19,
+                20
+              ],
+              "marker_segments": [
+                "Evolutionary computation is inspired by biological evolution.",
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations."
+              ],
+              "similarities": [
+                0.5802808403968811,
+                0.5487674474716187
+              ],
+              "confidence": 0.5963624636332194,
+              "generation_time": 0.009297609329223633,
+              "metadata": {
+                "retrieval_k": 2,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.008425"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: What are the advantages of competitive evolution in AI?\n\nConnecting disparate concepts:\n  Thread A: Evolutionary computation is inspired by biological evolution.\n  Thread B: Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 4 knowledge streams suggests a novel perspective on 'What are the advantages of competitive evolution in AI?'.",
+              "markers_used": [
+                19,
+                20,
+                24,
+                22
+              ],
+              "marker_segments": [
+                "Evolutionary computation is inspired by biological evolution.",
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Competitive coevolution involves multiple populations that evolve against each other, \n    creating an arms race dynamic.",
+                "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives."
+              ],
+              "similarities": [
+                0.5802808403968811,
+                0.5487674474716187,
+                0.5426320433616638,
+                0.4977312386035919
+              ],
+              "confidence": 0.6719358563423157,
+              "generation_time": 0.00941777229309082,
+              "metadata": {
+                "retrieval_k": 4,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.017948"
+            }
+          ],
+          "pressure_level": 0.0008841489277479075,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.028853"
+        }
+      ],
+      "total_rounds": 2,
+      "total_time": 0.1040961742401123,
+      "countdown_expired": true,
+      "god_interventions": 2,
+      "metadata": {
+        "agent_stats": {
+          "Precision": {
+            "name": "Precision",
+            "strategy": "precision",
+            "wins": 1,
+            "losses": 3,
+            "win_rate": 0.25,
+            "average_score": 0.5275360187954652,
+            "total_competitions": 4,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.7889307540655137,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.47644122863191524,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5653823970746874,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.2793896954097445,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.4469122973804576,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.8386535111914426,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.6870840995758772,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6951691776514054,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5484477337758042,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.5741871593729438,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          },
+          "Creative": {
+            "name": "Creative",
+            "strategy": "creativity",
+            "wins": 3,
+            "losses": 1,
+            "win_rate": 0.75,
+            "average_score": 0.56709081296485,
+            "total_competitions": 4,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.7776462405920029,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.555422391544387,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.5853606147744339,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.3499340049485762,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.4824559473966975,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.8947195716916373,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.6797099700782981,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.6883246818184853,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.585167261417569,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6676451797677897,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 4,
+          "escalation_count": 4,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.2821772381553267,
+          "confidence_threshold": 0.7,
+          "god_decisions_count": 4,
+          "ambiguity_events": 4,
+          "competition_history_length": 4,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 5.575036648552967e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 0.0006863048367441449,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 4.267701672500124e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 0.0008841489277479075,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 6.353875318887425e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 0.0008125825077350823,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 3.7153630929598336e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 0.0008084584973646614,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 3.6954948043899094e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 0.0009395801357828804,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [
+                0.3490496675091265
+              ],
+              "speed": [],
+              "creativity": [],
+              "coherence": [
+                0.4756153551340103
+              ],
+              "efficiency": [
+                0.35521201240460964
+              ],
+              "novelty": [
+                0.3490496675091265,
+                0.22406926487691203
+              ],
+              "depth": [],
+              "relevance": [
+                0.35521201240460964
+              ],
+              "conciseness": [
+                0.22406926487691203
+              ],
+              "completeness": [
+                0.4756153551340103
+              ]
+            },
+            "rankings": [
+              {
+                "standard": "coherence",
+                "average_score": 0.4756153551340103,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.4756153551340103
+                ]
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.4756153551340103,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.4756153551340103
+                ]
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.35521201240460964,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.35521201240460964
+                ]
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.35521201240460964,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.35521201240460964
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.3490496675091265,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.3490496675091265
+                ]
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.2865594661930193,
+                "times_used": 2,
+                "trend": -0.1249804026322145,
+                "recent_scores": [
+                  0.3490496675091265,
+                  0.22406926487691203
+                ]
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.22406926487691203,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.22406926487691203
+                ]
+              },
+              {
+                "standard": "speed",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "creativity",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              }
+            ],
+            "total_rounds": 2
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 30.0,
+          "remaining": 30.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-04T21:14:50.039851"
+    },
+    "memory_stats": {
+      "total_markers": 31,
+      "markers_accessed": 14
+    },
+    "judge_confidence": 0.2821772381553267,
+    "standards_evolution": [
+      [
+        "relevance",
+        "efficiency"
+      ],
+      [
+        "novelty",
+        "conciseness"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 0.10450553894042969,
+    "timestamp": "2026-04-04T21:14:50.040123"
+  },
+  {
+    "query": "How can attention mechanisms improve memory retrieval?",
+    "final_answer": "[Creative — CREATIVE INSIGHT]\nExploring: How can attention mechanisms improve memory retrieval?\n\nConnecting disparate concepts:\n  Thread A: During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  Thread B: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 6 knowledge streams suggests a novel perspective on 'How can attention mechanisms improve memory retrieval?'.",
+    "champion_name": "Creative",
+    "combat_result": {
+      "query": "How can attention mechanisms improve memory retrieval?",
+      "champion_name": "Creative",
+      "champion_response": {
+        "agent_name": "Creative",
+        "strategy": "creativity",
+        "text": "[Creative — CREATIVE INSIGHT]\nExploring: How can attention mechanisms improve memory retrieval?\n\nConnecting disparate concepts:\n  Thread A: During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  Thread B: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 6 knowledge streams suggests a novel perspective on 'How can attention mechanisms improve memory retrieval?'.",
+        "markers_used": [
+          15,
+          6,
+          11,
+          29,
+          12,
+          14
+        ],
+        "marker_segments": [
+          "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+          "Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output.",
+          "Associative memory connects related concepts through neural pathways.",
+          "The combination of associative memory and competitive selection creates a system that not only remembers but actively curates its knowledge base, keeping only the most valuable information.",
+          "When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.",
+          "Memory consolidation occurs primarily during sleep, particularly during REM sleep."
+        ],
+        "similarities": [
+          0.6064445972442627,
+          0.5475621223449707,
+          0.5310004353523254,
+          0.5179882049560547,
+          0.4988163709640503,
+          0.48565199971199036
+        ],
+        "confidence": 0.6785132318735123,
+        "generation_time": 0.009483575820922852,
+        "metadata": {
+          "retrieval_k": 6,
+          "standards": [
+            "speed",
+            "depth"
+          ],
+          "strategy_weights": {
+            "similarity": 0.15,
+            "coverage": 0.15,
+            "depth": 0.15,
+            "conciseness": 0.05,
+            "novelty": 0.4,
+            "speed": 0.1
+          }
+        },
+        "timestamp": "2026-04-04T21:14:50.116566"
+      },
+      "final_score": 0.8947195716916373,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "conciseness",
+            "relevance"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.4824559473966975,
+          "loser_name": "Precision",
+          "loser_score": 0.4469122973804576,
+          "all_scores": {
+            "Precision": 0.4469122973804576,
+            "Creative": 0.4824559473966975
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How can attention mechanisms improve memory retrieval?\nBased on 2 high-confidence source(s):\n\n  [1] (confidence: 0.606) During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  [2] (confidence: 0.548) Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output.\n\nConclusion: The most relevant finding (score: 0.606) directly addresses the query with verified information.",
+              "markers_used": [
+                15,
+                6
+              ],
+              "marker_segments": [
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output."
+              ],
+              "similarities": [
+                0.6064445972442627,
+                0.5475621223449707
+              ],
+              "confidence": 0.6111956814924876,
+              "generation_time": 0.008800268173217773,
+              "metadata": {
+                "retrieval_k": 2,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.059639"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How can attention mechanisms improve memory retrieval?\n\nConnecting disparate concepts:\n  Thread A: During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  Thread B: The combination of associative memory and competitive selection creates a system that not only remembers but actively cu\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 4 knowledge streams suggests a novel perspective on 'How can attention mechanisms improve memory retrieval?'.",
+              "markers_used": [
+                15,
+                6,
+                11,
+                29
+              ],
+              "marker_segments": [
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output.",
+                "Associative memory connects related concepts through neural pathways.",
+                "The combination of associative memory and competitive selection creates a system that not only remembers but actively curates its knowledge base, keeping only the most valuable information."
+              ],
+              "similarities": [
+                0.6064445972442627,
+                0.5475621223449707,
+                0.5310004353523254,
+                0.5179882049560547
+              ],
+              "confidence": 0.6853399276733398,
+              "generation_time": 0.009760618209838867,
+              "metadata": {
+                "retrieval_k": 4,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.069463"
+            }
+          ],
+          "pressure_level": 6.353875318887425e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.078649"
+        },
+        {
+          "round_number": 2,
+          "standards_used": [
+            "speed",
+            "depth"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.8947195716916373,
+          "loser_name": "Precision",
+          "loser_score": 0.8386535111914426,
+          "all_scores": {
+            "Precision": 0.8386535111914426,
+            "Creative": 0.8947195716916373
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How can attention mechanisms improve memory retrieval?\nBased on 4 high-confidence source(s):\n\n  [1] (confidence: 0.606) During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  [2] (confidence: 0.548) Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output.\n  [3] (confidence: 0.531) Associative memory connects related concepts through neural pathways.\n  [4] (confidence: 0.518) The combination of associative memory and competitive selection creates a system that not only remembers but actively curates its knowledge base, keeping only the most valuable information.\n\nConclusion: The most relevant finding (score: 0.606) directly addresses the query with verified information.",
+              "markers_used": [
+                15,
+                6,
+                11,
+                29
+              ],
+              "marker_segments": [
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output.",
+                "Associative memory connects related concepts through neural pathways.",
+                "The combination of associative memory and competitive selection creates a system that not only remembers but actively curates its knowledge base, keeping only the most valuable information."
+              ],
+              "similarities": [
+                0.6064445972442627,
+                0.5475621223449707,
+                0.5310004353523254,
+                0.5179882049560547
+              ],
+              "confidence": 0.6853399276733398,
+              "generation_time": 0.008378982543945312,
+              "metadata": {
+                "retrieval_k": 4,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.107021"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How can attention mechanisms improve memory retrieval?\n\nConnecting disparate concepts:\n  Thread A: During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.\n  Thread B: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 6 knowledge streams suggests a novel perspective on 'How can attention mechanisms improve memory retrieval?'.",
+              "markers_used": [
+                15,
+                6,
+                11,
+                29,
+                12,
+                14
+              ],
+              "marker_segments": [
+                "During this process, the brain replays and strengthens important memories while \n    pruning less useful ones.",
+                "Attention mechanisms, introduced in the Transformer \n    architecture, allow models to focus on relevant parts of the input when generating output.",
+                "Associative memory connects related concepts through neural pathways.",
+                "The combination of associative memory and competitive selection creates a system that not only remembers but actively curates its knowledge base, keeping only the most valuable information.",
+                "When one \n    memory is activated, related memories become more accessible through a process \n    called spreading activation.",
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep."
+              ],
+              "similarities": [
+                0.6064445972442627,
+                0.5475621223449707,
+                0.5310004353523254,
+                0.5179882049560547,
+                0.4988163709640503,
+                0.48565199971199036
+              ],
+              "confidence": 0.6785132318735123,
+              "generation_time": 0.009483575820922852,
+              "metadata": {
+                "retrieval_k": 6,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.116566"
+            }
+          ],
+          "pressure_level": 0.0008125825077350823,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.125782"
+        }
+      ],
+      "total_rounds": 2,
+      "total_time": 0.09622621536254883,
+      "countdown_expired": true,
+      "god_interventions": 2,
+      "metadata": {
+        "agent_stats": {
+          "Precision": {
+            "name": "Precision",
+            "strategy": "precision",
+            "wins": 1,
+            "losses": 5,
+            "win_rate": 0.16666666666666666,
+            "average_score": 0.5659516472922935,
+            "total_competitions": 6,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.7889307540655137,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.47644122863191524,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5653823970746874,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.2793896954097445,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.4469122973804576,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.8386535111914426,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.6870840995758772,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6951691776514054,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5484477337758042,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.5741871593729438,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          },
+          "Creative": {
+            "name": "Creative",
+            "strategy": "creativity",
+            "wins": 5,
+            "losses": 1,
+            "win_rate": 0.8333333333333334,
+            "average_score": 0.6075897951579557,
+            "total_competitions": 6,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.7776462405920029,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.555422391544387,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.5853606147744339,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.3499340049485762,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.4824559473966975,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.8947195716916373,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.6797099700782981,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.6883246818184853,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.585167261417569,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6676451797677897,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 6,
+          "escalation_count": 6,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.22426424200077877,
+          "confidence_threshold": 0.6799999999999999,
+          "god_decisions_count": 6,
+          "ambiguity_events": 6,
+          "competition_history_length": 6,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 5.575036648552967e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 0.0006863048367441449,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 4.267701672500124e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 0.0008841489277479075,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 6.353875318887425e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 0.0008125825077350823,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 3.7153630929598336e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 0.0008084584973646614,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 3.6954948043899094e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 0.0009395801357828804,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [
+                0.3490496675091265
+              ],
+              "speed": [
+                0.5480449551150214
+              ],
+              "creativity": [],
+              "coherence": [
+                0.4756153551340103
+              ],
+              "efficiency": [
+                0.35521201240460964
+              ],
+              "novelty": [
+                0.3490496675091265,
+                0.22406926487691203
+              ],
+              "depth": [
+                0.5480449551150214
+              ],
+              "relevance": [
+                0.35521201240460964,
+                0.29658229844126643
+              ],
+              "conciseness": [
+                0.22406926487691203,
+                0.29658229844126643
+              ],
+              "completeness": [
+                0.4756153551340103
+              ]
+            },
+            "rankings": [
+              {
+                "standard": "speed",
+                "average_score": 0.5480449551150214,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.5480449551150214
+                ]
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.5480449551150214,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.5480449551150214
+                ]
+              },
+              {
+                "standard": "coherence",
+                "average_score": 0.4756153551340103,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.4756153551340103
+                ]
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.4756153551340103,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.4756153551340103
+                ]
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.35521201240460964,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.35521201240460964
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.3490496675091265,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.3490496675091265
+                ]
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.32589715542293807,
+                "times_used": 2,
+                "trend": -0.05862971396334321,
+                "recent_scores": [
+                  0.35521201240460964,
+                  0.29658229844126643
+                ]
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.2865594661930193,
+                "times_used": 2,
+                "trend": -0.1249804026322145,
+                "recent_scores": [
+                  0.3490496675091265,
+                  0.22406926487691203
+                ]
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.26032578165908926,
+                "times_used": 2,
+                "trend": 0.0725130335643544,
+                "recent_scores": [
+                  0.22406926487691203,
+                  0.29658229844126643
+                ]
+              },
+              {
+                "standard": "creativity",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              }
+            ],
+            "total_rounds": 2
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 30.0,
+          "remaining": 30.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-04T21:14:50.137049"
+    },
+    "memory_stats": {
+      "total_markers": 31,
+      "markers_accessed": 16
+    },
+    "judge_confidence": 0.22426424200077877,
+    "standards_evolution": [
+      [
+        "conciseness",
+        "relevance"
+      ],
+      [
+        "speed",
+        "depth"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 0.09673213958740234,
+    "timestamp": "2026-04-04T21:14:50.137368"
+  },
+  {
+    "query": "What parallels exist between human sleep and AI optimization?",
+    "final_answer": "[Precision — PRECISION ANALYSIS]\nQuery: What parallels exist between human sleep and AI optimization?\nBased on 5 high-confidence source(s):\n\n  [1] (confidence: 0.408) Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  [2] (confidence: 0.408) This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.\n  [3] (confidence: 0.396) Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.\n  [4] (confidence: 0.388) Evolutionary computation is inspired by biological evolution.\n  [5] (confidence: 0.335) This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization.\n\nConclusion: The most relevant finding (score: 0.408) directly addresses the query with verified information.",
+    "champion_name": "Precision",
+    "combat_result": {
+      "query": "What parallels exist between human sleep and AI optimization?",
+      "champion_name": "Precision",
+      "champion_response": {
+        "agent_name": "Precision",
+        "strategy": "precision",
+        "text": "[Precision — PRECISION ANALYSIS]\nQuery: What parallels exist between human sleep and AI optimization?\nBased on 5 high-confidence source(s):\n\n  [1] (confidence: 0.408) Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  [2] (confidence: 0.408) This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.\n  [3] (confidence: 0.396) Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.\n  [4] (confidence: 0.388) Evolutionary computation is inspired by biological evolution.\n  [5] (confidence: 0.335) This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization.\n\nConclusion: The most relevant finding (score: 0.408) directly addresses the query with verified information.",
+        "markers_used": [
+          14,
+          16,
+          0,
+          19,
+          8
+        ],
+        "marker_segments": [
+          "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+          "This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.",
+          "Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.",
+          "Evolutionary computation is inspired by biological evolution.",
+          "This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization."
+        ],
+        "similarities": [
+          0.4080664813518524,
+          0.4080398976802826,
+          0.39639583230018616,
+          0.3876557946205139,
+          0.33464986085891724
+        ],
+        "confidence": 0.5486631348729134,
+        "generation_time": 0.008576393127441406,
+        "metadata": {
+          "retrieval_k": 5,
+          "standards": [
+            "coherence",
+            "depth"
+          ],
+          "strategy_weights": {
+            "similarity": 0.4,
+            "coverage": 0.15,
+            "depth": 0.25,
+            "conciseness": 0.1,
+            "novelty": 0.05,
+            "speed": 0.05
+          }
+        },
+        "timestamp": "2026-04-04T21:14:50.204432"
+      },
+      "final_score": 0.6951691776514054,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "precision",
+            "completeness"
+          ],
+          "winner_name": "Precision",
+          "winner_score": 0.6870840995758772,
+          "loser_name": "Creative",
+          "loser_score": 0.6797099700782981,
+          "all_scores": {
+            "Precision": 0.6870840995758772,
+            "Creative": 0.6797099700782981
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: What parallels exist between human sleep and AI optimization?\nBased on 5 high-confidence source(s):\n\n  [1] (confidence: 0.408) Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  [2] (confidence: 0.408) This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.\n  [3] (confidence: 0.396) Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.\n  [4] (confidence: 0.388) Evolutionary computation is inspired by biological evolution.\n  [5] (confidence: 0.335) This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization.\n\nConclusion: The most relevant finding (score: 0.408) directly addresses the query with verified information.",
+              "markers_used": [
+                14,
+                16,
+                0,
+                19,
+                8
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.",
+                "Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization."
+              ],
+              "similarities": [
+                0.4080664813518524,
+                0.4080398976802826,
+                0.39639583230018616,
+                0.3876557946205139,
+                0.33464986085891724
+              ],
+              "confidence": 0.5486631348729134,
+              "generation_time": 0.008713483810424805,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.156692"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: What parallels exist between human sleep and AI optimization?\n\nConnecting disparate concepts:\n  Thread A: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  Thread B: Machine Learning is a subset of AI that uses statistical techniques to give computer \n    systems the ability to learn f\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 7 knowledge streams suggests a novel perspective on 'What parallels exist between human sleep and AI optimization?'.",
+              "markers_used": [
+                14,
+                16,
+                0,
+                19,
+                8,
+                22,
+                1
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.",
+                "Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization.",
+                "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.",
+                "Machine Learning is a subset of AI that uses statistical techniques to give computer \n    systems the ability to learn from data without being explicitly programmed."
+              ],
+              "similarities": [
+                0.4080664813518524,
+                0.4080398976802826,
+                0.39639583230018616,
+                0.3876557946205139,
+                0.33464986085891724,
+                0.3304585814476013,
+                0.32938963174819946
+              ],
+              "confidence": 0.542959389090538,
+              "generation_time": 0.009690284729003906,
+              "metadata": {
+                "retrieval_k": 7,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.166443"
+            }
+          ],
+          "pressure_level": 3.7153630929598336e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.175203"
+        },
+        {
+          "round_number": 2,
+          "standards_used": [
+            "coherence",
+            "depth"
+          ],
+          "winner_name": "Precision",
+          "winner_score": 0.6951691776514054,
+          "loser_name": "Creative",
+          "loser_score": 0.6883246818184853,
+          "all_scores": {
+            "Precision": 0.6951691776514054,
+            "Creative": 0.6883246818184853
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: What parallels exist between human sleep and AI optimization?\nBased on 5 high-confidence source(s):\n\n  [1] (confidence: 0.408) Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  [2] (confidence: 0.408) This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.\n  [3] (confidence: 0.396) Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.\n  [4] (confidence: 0.388) Evolutionary computation is inspired by biological evolution.\n  [5] (confidence: 0.335) This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization.\n\nConclusion: The most relevant finding (score: 0.408) directly addresses the query with verified information.",
+              "markers_used": [
+                14,
+                16,
+                0,
+                19,
+                8
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.",
+                "Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization."
+              ],
+              "similarities": [
+                0.4080664813518524,
+                0.4080398976802826,
+                0.39639583230018616,
+                0.3876557946205139,
+                0.33464986085891724
+              ],
+              "confidence": 0.5486631348729134,
+              "generation_time": 0.008576393127441406,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.204432"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: What parallels exist between human sleep and AI optimization?\n\nConnecting disparate concepts:\n  Thread A: Memory consolidation occurs primarily during sleep, particularly during REM sleep.\n  Thread B: Machine Learning is a subset of AI that uses statistical techniques to give computer \n    systems the ability to learn f\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 7 knowledge streams suggests a novel perspective on 'What parallels exist between human sleep and AI optimization?'.",
+              "markers_used": [
+                14,
+                16,
+                0,
+                19,
+                8,
+                22,
+                1
+              ],
+              "marker_segments": [
+                "Memory consolidation occurs primarily during sleep, particularly during REM sleep.",
+                "This biological mechanism inspired the Dream Mode \n    feature in artificial memory systems.",
+                "Artificial Intelligence is a broad field of computer science focused on creating \n    intelligent machines that can perform tasks that typically require human intelligence.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "This approach has achieved \n    superhuman performance in games like Go and Chess, and is being applied to robotics, \n    autonomous vehicles, and resource optimization.",
+                "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.",
+                "Machine Learning is a subset of AI that uses statistical techniques to give computer \n    systems the ability to learn from data without being explicitly programmed."
+              ],
+              "similarities": [
+                0.4080664813518524,
+                0.4080398976802826,
+                0.39639583230018616,
+                0.3876557946205139,
+                0.33464986085891724,
+                0.3304585814476013,
+                0.32938963174819946
+              ],
+              "confidence": 0.542959389090538,
+              "generation_time": 0.009986639022827148,
+              "metadata": {
+                "retrieval_k": 7,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.214487"
+            }
+          ],
+          "pressure_level": 0.0008084584973646614,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.224485"
+        }
+      ],
+      "total_rounds": 2,
+      "total_time": 0.09709548950195312,
+      "countdown_expired": true,
+      "god_interventions": 2,
+      "metadata": {
+        "agent_stats": {
+          "Precision": {
+            "name": "Precision",
+            "strategy": "precision",
+            "wins": 3,
+            "losses": 5,
+            "win_rate": 0.375,
+            "average_score": 0.5972453951226304,
+            "total_competitions": 8,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.7889307540655137,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.47644122863191524,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5653823970746874,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.2793896954097445,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.4469122973804576,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.8386535111914426,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.6870840995758772,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6951691776514054,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5484477337758042,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.5741871593729438,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          },
+          "Creative": {
+            "name": "Creative",
+            "strategy": "creativity",
+            "wins": 5,
+            "losses": 3,
+            "win_rate": 0.625,
+            "average_score": 0.6266966778555647,
+            "total_competitions": 8,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.7776462405920029,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.555422391544387,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.5853606147744339,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.3499340049485762,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.4824559473966975,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.8947195716916373,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.6797099700782981,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.6883246818184853,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.585167261417569,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6676451797677897,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 8,
+          "escalation_count": 8,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.02737798333168051,
+          "confidence_threshold": 0.6399999999999999,
+          "god_decisions_count": 8,
+          "ambiguity_events": 8,
+          "competition_history_length": 8,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 5.575036648552967e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 0.0006863048367441449,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 4.267701672500124e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 0.0008841489277479075,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 6.353875318887425e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 0.0008125825077350823,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 3.7153630929598336e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 0.0008084584973646614,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 3.6954948043899094e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 0.0009395801357828804,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [
+                0.3490496675091265,
+                0.41372528564504213
+              ],
+              "speed": [
+                0.5480449551150214
+              ],
+              "creativity": [],
+              "coherence": [
+                0.4756153551340103,
+                0.4184704057574272
+              ],
+              "efficiency": [
+                0.35521201240460964
+              ],
+              "novelty": [
+                0.3490496675091265,
+                0.22406926487691203
+              ],
+              "depth": [
+                0.5480449551150214,
+                0.4184704057574272
+              ],
+              "relevance": [
+                0.35521201240460964,
+                0.29658229844126643
+              ],
+              "conciseness": [
+                0.22406926487691203,
+                0.29658229844126643
+              ],
+              "completeness": [
+                0.4756153551340103,
+                0.41372528564504213
+              ]
+            },
+            "rankings": [
+              {
+                "standard": "speed",
+                "average_score": 0.5480449551150214,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.5480449551150214
+                ]
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.4832576804362243,
+                "times_used": 2,
+                "trend": -0.12957454935759416,
+                "recent_scores": [
+                  0.5480449551150214,
+                  0.4184704057574272
+                ]
+              },
+              {
+                "standard": "coherence",
+                "average_score": 0.44704288044571877,
+                "times_used": 2,
+                "trend": -0.0571449493765831,
+                "recent_scores": [
+                  0.4756153551340103,
+                  0.4184704057574272
+                ]
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.44467032038952625,
+                "times_used": 2,
+                "trend": -0.06189006948896819,
+                "recent_scores": [
+                  0.4756153551340103,
+                  0.41372528564504213
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.38138747657708433,
+                "times_used": 2,
+                "trend": 0.0646756181359156,
+                "recent_scores": [
+                  0.3490496675091265,
+                  0.41372528564504213
+                ]
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.35521201240460964,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.35521201240460964
+                ]
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.32589715542293807,
+                "times_used": 2,
+                "trend": -0.05862971396334321,
+                "recent_scores": [
+                  0.35521201240460964,
+                  0.29658229844126643
+                ]
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.2865594661930193,
+                "times_used": 2,
+                "trend": -0.1249804026322145,
+                "recent_scores": [
+                  0.3490496675091265,
+                  0.22406926487691203
+                ]
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.26032578165908926,
+                "times_used": 2,
+                "trend": 0.0725130335643544,
+                "recent_scores": [
+                  0.22406926487691203,
+                  0.29658229844126643
+                ]
+              },
+              {
+                "standard": "creativity",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              }
+            ],
+            "total_rounds": 2
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 30.0,
+          "remaining": 30.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-04T21:14:50.235053"
+    },
+    "memory_stats": {
+      "total_markers": 31,
+      "markers_accessed": 24
+    },
+    "judge_confidence": 0.02737798333168051,
+    "standards_evolution": [
+      [
+        "precision",
+        "completeness"
+      ],
+      [
+        "coherence",
+        "depth"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 0.09753727912902832,
+    "timestamp": "2026-04-04T21:14:50.235373"
+  },
+  {
+    "query": "How does evolutionary pressure create better solutions?",
+    "final_answer": "[Creative — CREATIVE INSIGHT]\nExploring: How does evolutionary pressure create better solutions?\n\nConnecting disparate concepts:\n  Thread A: Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutatio\n  Thread B: The fitness function \n    determines which individuals survive and reproduce.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does evolutionary pressure create better solutions?'.",
+    "champion_name": "Creative",
+    "combat_result": {
+      "query": "How does evolutionary pressure create better solutions?",
+      "champion_name": "Creative",
+      "champion_response": {
+        "agent_name": "Creative",
+        "strategy": "creativity",
+        "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does evolutionary pressure create better solutions?\n\nConnecting disparate concepts:\n  Thread A: Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutatio\n  Thread B: The fitness function \n    determines which individuals survive and reproduce.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does evolutionary pressure create better solutions?'.",
+        "markers_used": [
+          20,
+          19,
+          30,
+          22,
+          21
+        ],
+        "marker_segments": [
+          "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+          "Evolutionary computation is inspired by biological evolution.",
+          "Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly.",
+          "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.",
+          "The fitness function \n    determines which individuals survive and reproduce."
+        ],
+        "similarities": [
+          0.5932718515396118,
+          0.5027707815170288,
+          0.43478941917419434,
+          0.4140414595603943,
+          0.38981446623802185
+        ],
+        "confidence": 0.6507369011640549,
+        "generation_time": 0.01050567626953125,
+        "metadata": {
+          "retrieval_k": 5,
+          "standards": [
+            "creativity",
+            "coherence"
+          ],
+          "strategy_weights": {
+            "similarity": 0.15,
+            "coverage": 0.15,
+            "depth": 0.15,
+            "conciseness": 0.05,
+            "novelty": 0.4,
+            "speed": 0.1
+          }
+        },
+        "timestamp": "2026-04-04T21:14:50.320487"
+      },
+      "final_score": 0.6676451797677897,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "efficiency",
+            "precision"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.585167261417569,
+          "loser_name": "Precision",
+          "loser_score": 0.5484477337758042,
+          "all_scores": {
+            "Precision": 0.5484477337758042,
+            "Creative": 0.585167261417569
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does evolutionary pressure create better solutions?\nBased on 3 high-confidence source(s):\n\n  [1] (confidence: 0.593) Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.\n  [2] (confidence: 0.503) Evolutionary computation is inspired by biological evolution.\n  [3] (confidence: 0.435) Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly.\n\nConclusion: The most relevant finding (score: 0.593) directly addresses the query with verified information.",
+              "markers_used": [
+                20,
+                19,
+                30
+              ],
+              "marker_segments": [
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly."
+              ],
+              "similarities": [
+                0.5932718515396118,
+                0.5027707815170288,
+                0.43478941917419434
+              ],
+              "confidence": 0.6659058064222336,
+              "generation_time": 0.011119842529296875,
+              "metadata": {
+                "retrieval_k": 3,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.259376"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does evolutionary pressure create better solutions?\n\nConnecting disparate concepts:\n  Thread A: Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutatio\n  Thread B: The fitness function \n    determines which individuals survive and reproduce.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does evolutionary pressure create better solutions?'.",
+              "markers_used": [
+                20,
+                19,
+                30,
+                22,
+                21
+              ],
+              "marker_segments": [
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly.",
+                "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.",
+                "The fitness function \n    determines which individuals survive and reproduce."
+              ],
+              "similarities": [
+                0.5932718515396118,
+                0.5027707815170288,
+                0.43478941917419434,
+                0.4140414595603943,
+                0.38981446623802185
+              ],
+              "confidence": 0.6507369011640549,
+              "generation_time": 0.011023998260498047,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.270462"
+            }
+          ],
+          "pressure_level": 3.6954948043899094e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.280587"
+        },
+        {
+          "round_number": 2,
+          "standards_used": [
+            "creativity",
+            "coherence"
+          ],
+          "winner_name": "Creative",
+          "winner_score": 0.6676451797677897,
+          "loser_name": "Precision",
+          "loser_score": 0.5741871593729438,
+          "all_scores": {
+            "Precision": 0.5741871593729438,
+            "Creative": 0.6676451797677897
+          },
+          "all_responses": [
+            {
+              "agent_name": "Precision",
+              "strategy": "precision",
+              "text": "[Precision — PRECISION ANALYSIS]\nQuery: How does evolutionary pressure create better solutions?\nBased on 3 high-confidence source(s):\n\n  [1] (confidence: 0.593) Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.\n  [2] (confidence: 0.503) Evolutionary computation is inspired by biological evolution.\n  [3] (confidence: 0.435) Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly.\n\nConclusion: The most relevant finding (score: 0.593) directly addresses the query with verified information.",
+              "markers_used": [
+                20,
+                19,
+                30
+              ],
+              "marker_segments": [
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly."
+              ],
+              "similarities": [
+                0.5932718515396118,
+                0.5027707815170288,
+                0.43478941917419434
+              ],
+              "confidence": 0.6659058064222336,
+              "generation_time": 0.008706808090209961,
+              "metadata": {
+                "retrieval_k": 3,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.4,
+                  "coverage": 0.15,
+                  "depth": 0.25,
+                  "conciseness": 0.1,
+                  "novelty": 0.05,
+                  "speed": 0.05
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.309871"
+            },
+            {
+              "agent_name": "Creative",
+              "strategy": "creativity",
+              "text": "[Creative — CREATIVE INSIGHT]\nExploring: How does evolutionary pressure create better solutions?\n\nConnecting disparate concepts:\n  Thread A: Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutatio\n  Thread B: The fitness function \n    determines which individuals survive and reproduce.\n\nSynthesis: These seemingly unrelated memories reveal an underlying pattern — \nthe intersection of these 5 knowledge streams suggests a novel perspective on 'How does evolutionary pressure create better solutions?'.",
+              "markers_used": [
+                20,
+                19,
+                30,
+                22,
+                21
+              ],
+              "marker_segments": [
+                "Genetic algorithms \n    maintain a population of candidate solutions that undergo selection, crossover, \n    and mutation to evolve better solutions over generations.",
+                "Evolutionary computation is inspired by biological evolution.",
+                "Time pressure in decision-making forces convergence toward satisficing rather than optimizing — finding good-enough solutions quickly rather than perfect solutions slowly.",
+                "Multi-objective optimization extends evolutionary computation to problems with \n    competing objectives.",
+                "The fitness function \n    determines which individuals survive and reproduce."
+              ],
+              "similarities": [
+                0.5932718515396118,
+                0.5027707815170288,
+                0.43478941917419434,
+                0.4140414595603943,
+                0.38981446623802185
+              ],
+              "confidence": 0.6507369011640549,
+              "generation_time": 0.01050567626953125,
+              "metadata": {
+                "retrieval_k": 5,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.15,
+                  "coverage": 0.15,
+                  "depth": 0.15,
+                  "conciseness": 0.05,
+                  "novelty": 0.4,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-04T21:14:50.320487"
+            }
+          ],
+          "pressure_level": 0.0009395801357828804,
+          "god_intervention": true,
+          "timestamp": "2026-04-04T21:14:50.329926"
+        }
+      ],
+      "total_rounds": 2,
+      "total_time": 0.10503625869750977,
+      "countdown_expired": true,
+      "god_interventions": 2,
+      "metadata": {
+        "agent_stats": {
+          "Precision": {
+            "name": "Precision",
+            "strategy": "precision",
+            "wins": 3,
+            "losses": 7,
+            "win_rate": 0.3,
+            "average_score": 0.5900598054129791,
+            "total_competitions": 10,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.7889307540655137,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.47644122863191524,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5653823970746874,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.2793896954097445,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.4469122973804576,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.8386535111914426,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.6870840995758772,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6951691776514054,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.5484477337758042,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.5741871593729438,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          },
+          "Creative": {
+            "name": "Creative",
+            "strategy": "creativity",
+            "wins": 7,
+            "losses": 3,
+            "win_rate": 0.7,
+            "average_score": 0.6266385864029875,
+            "total_competitions": 10,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.7776462405920029,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.555422391544387,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.5853606147744339,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.3499340049485762,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.4824559473966975,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.8947195716916373,
+                "standards": [
+                  "speed",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.6797099700782981,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ]
+              },
+              {
+                "round": 2,
+                "won": false,
+                "score": 0.6883246818184853,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              },
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.585167261417569,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ]
+              },
+              {
+                "round": 2,
+                "won": true,
+                "score": 0.6676451797677897,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 10,
+          "escalation_count": 10,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.3738320815793834,
+          "confidence_threshold": 0.5999999999999999,
+          "god_decisions_count": 10,
+          "ambiguity_events": 10,
+          "competition_history_length": 10,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 5.575036648552967e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "precision"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does memory consolidation relate to machine learning?",
+                  "pressure_level": 0.0006863048367441449,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "relevance",
+                  "efficiency"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 4.267701672500124e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "novelty",
+                  "conciseness"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What are the advantages of competitive evolution in AI?",
+                  "pressure_level": 0.0008841489277479075,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "conciseness",
+                  "relevance"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 6.353875318887425e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "speed",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How can attention mechanisms improve memory retrieval?",
+                  "pressure_level": 0.0008125825077350823,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "precision",
+                  "completeness"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 3.7153630929598336e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "What parallels exist between human sleep and AI optimization?",
+                  "pressure_level": 0.0008084584973646614,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 1,
+                "standards": [
+                  "efficiency",
+                  "precision"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 3.6954948043899094e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              },
+              {
+                "round": 2,
+                "standards": [
+                  "creativity",
+                  "coherence"
+                ],
+                "method": "evolutionary",
+                "context": {
+                  "query": "How does evolutionary pressure create better solutions?",
+                  "pressure_level": 0.0009395801357828804,
+                  "round_number": 2,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [
+                0.3490496675091265,
+                0.41372528564504213,
+                0.3584442623788944
+              ],
+              "speed": [
+                0.5480449551150214
+              ],
+              "creativity": [
+                0.419278711939643
+              ],
+              "coherence": [
+                0.4756153551340103,
+                0.4184704057574272,
+                0.419278711939643
+              ],
+              "efficiency": [
+                0.35521201240460964,
+                0.3584442623788944
+              ],
+              "novelty": [
+                0.3490496675091265,
+                0.22406926487691203
+              ],
+              "depth": [
+                0.5480449551150214,
+                0.4184704057574272
+              ],
+              "relevance": [
+                0.35521201240460964,
+                0.29658229844126643
+              ],
+              "conciseness": [
+                0.22406926487691203,
+                0.29658229844126643
+              ],
+              "completeness": [
+                0.4756153551340103,
+                0.41372528564504213
+              ]
+            },
+            "rankings": [
+              {
+                "standard": "speed",
+                "average_score": 0.5480449551150214,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.5480449551150214
+                ]
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.4832576804362243,
+                "times_used": 2,
+                "trend": -0.12957454935759416,
+                "recent_scores": [
+                  0.5480449551150214,
+                  0.4184704057574272
+                ]
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.44467032038952625,
+                "times_used": 2,
+                "trend": -0.06189006948896819,
+                "recent_scores": [
+                  0.4756153551340103,
+                  0.41372528564504213
+                ]
+              },
+              {
+                "standard": "coherence",
+                "average_score": 0.43778815761036016,
+                "times_used": 3,
+                "trend": -0.05633664319436732,
+                "recent_scores": [
+                  0.4756153551340103,
+                  0.4184704057574272,
+                  0.419278711939643
+                ]
+              },
+              {
+                "standard": "creativity",
+                "average_score": 0.419278711939643,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.419278711939643
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.373739738511021,
+                "times_used": 3,
+                "trend": 0.009394594869767847,
+                "recent_scores": [
+                  0.3490496675091265,
+                  0.41372528564504213,
+                  0.3584442623788944
+                ]
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.356828137391752,
+                "times_used": 2,
+                "trend": 0.003232249974284729,
+                "recent_scores": [
+                  0.35521201240460964,
+                  0.3584442623788944
+                ]
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.32589715542293807,
+                "times_used": 2,
+                "trend": -0.05862971396334321,
+                "recent_scores": [
+                  0.35521201240460964,
+                  0.29658229844126643
+                ]
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.2865594661930193,
+                "times_used": 2,
+                "trend": -0.1249804026322145,
+                "recent_scores": [
+                  0.3490496675091265,
+                  0.22406926487691203
+                ]
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.26032578165908926,
+                "times_used": 2,
+                "trend": 0.0725130335643544,
+                "recent_scores": [
+                  0.22406926487691203,
+                  0.29658229844126643
+                ]
+              }
+            ],
+            "total_rounds": 2
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 30.0,
+          "remaining": 30.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-04T21:14:50.341050"
+    },
+    "memory_stats": {
+      "total_markers": 31,
+      "markers_accessed": 16
+    },
+    "judge_confidence": 0.3738320815793834,
+    "standards_evolution": [
+      [
+        "efficiency",
+        "precision"
+      ],
+      [
+        "creativity",
+        "coherence"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 0.1054534912109375,
+    "timestamp": "2026-04-04T21:14:50.341345"
+  }
+]
