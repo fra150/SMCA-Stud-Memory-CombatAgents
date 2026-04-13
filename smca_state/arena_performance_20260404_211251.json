@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-04-04T21:12:50.593387",
+    "query": "How does attention relate to memory retrieval?",
+    "champion": "Precision",
+    "champion_score": 0.42012793135828563,
+    "total_rounds": 2,
+    "total_time": 0.08505606651306152,
+    "judge_confidence": 0.048705648392131984,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "coherence",
+        "depth"
+      ],
+      [
+        "efficiency",
+        "creativity"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 1.0,
+        "avg_score": 0.3771012953370153
+      },
+      "Creative": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.3582630892879988
+      }
+    },
+    "query_number": 1
+  }
+]

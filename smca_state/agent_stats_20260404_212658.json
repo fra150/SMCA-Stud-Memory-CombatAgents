@@ -1,0 +1,1012 @@
+{
+  "Precision": {
+    "name": "Precision",
+    "strategy": "precision",
+    "wins": 4,
+    "losses": 6,
+    "win_rate": 0.4,
+    "average_score": 0.6918900925518012,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.7889307540655137,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.759580464065075,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6262432064131022,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7506205486667251,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.8621087038516998,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.8382467886780542,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.6564321782439947,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5974354886613094,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.4773831887463458,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5619196041261932,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Creative": {
+    "name": "Creative",
+    "strategy": "creativity",
+    "wins": 1,
+    "losses": 9,
+    "win_rate": 0.1,
+    "average_score": 0.7180978095073892,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7776462405920029,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7460793511143753,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6363006765512191,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7553604665151429,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8568754621914454,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.894787107887133,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6482432277926378,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6752513576293997,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5586321105303643,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.631802094270172,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Speed": {
+    "name": "Speed",
+    "strategy": "speed",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.5435911894426564,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6417740463912487,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.623571547538042,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.46219270631172116,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.47922709891814275,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6142246519923211,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6946588969657355,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5212038379877805,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5460394214478188,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.41049554069836935,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4425241461753845,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Depth": {
+    "name": "Depth",
+    "strategy": "depth",
+    "wins": 3,
+    "losses": 7,
+    "win_rate": 0.3,
+    "average_score": 0.7167758319899612,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7670901215076448,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7334497083723546,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.6458732485124332,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.7595156904537567,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8514251261949539,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.8918333719762552,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6398553965985776,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6948183386324585,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.559396348211883,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6245009694392941,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Synthesizer": {
+    "name": "Synthesizer",
+    "strategy": "synthesis",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.7188521597845059,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7720625888183713,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7393989102169871,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6417964273994473,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7579148331229135,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8544686518609523,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.8929823508078184,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6439751065149903,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7002967232055959,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5581372232873489,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6274887826106349,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Challenger": {
+    "name": "Challenger",
+    "strategy": "contrarian",
+    "wins": 1,
+    "losses": 9,
+    "win_rate": 0.1,
+    "average_score": 0.6976863915563565,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7748915452857812,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7445514107346534,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6114687246307486,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7185373230290217,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8335731865286827,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.8950607566685549,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6394000536620617,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6473114967326405,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5182930510033993,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5937763672880195,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Pragmatist": {
+    "name": "Pragmatist",
+    "strategy": "practical",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.6670301709719444,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7631307540655137,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7337804640650749,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6019432064131022,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7020205486667251,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8117087038516998,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.8131282547556836,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6318321782439946,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5977548067851112,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.4773831887463458,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5376196041261933,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Historian": {
+    "name": "Historian",
+    "strategy": "historical",
+    "wins": 1,
+    "losses": 9,
+    "win_rate": 0.1,
+    "average_score": 0.6936952046067238,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7459625888183713,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7132989102169871,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6171964273994472,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7087148331229136,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8034686518609524,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.8676070320246724,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6190751065149904,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.7006024902109209,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5581372232873489,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6028887826106349,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Minimalist": {
+    "name": "Minimalist",
+    "strategy": "concise",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.5324315199673393,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6333740463912487,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.615171547538042,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.4537927063117212,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4624270989181427,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.591424651992321,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6835377303337857,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5128038379877805,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5469638933265966,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.41049554069836935,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4143241461753845,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Explorer": {
+    "name": "Explorer",
+    "strategy": "novel",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.7179989055663574,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7776462405920029,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7460793511143753,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6363006765512191,
+        "standards": [
+          "completeness",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7553604665151429,
+        "standards": [
+          "depth",
+          "creativity"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8568754621914454,
+        "standards": [
+          "depth",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.8935853973130526,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6482432277926378,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6754640287931615,
+        "standards": [
+          "relevance",
+          "speed"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5586321105303643,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.631802094270172,
+        "standards": [
+          "relevance",
+          "creativity"
+        ]
+      }
+    ]
+  }
+}

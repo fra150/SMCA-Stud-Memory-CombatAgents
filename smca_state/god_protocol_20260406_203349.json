@@ -1,0 +1,9 @@
+{
+  "total_interventions": 8,
+  "auto_resolve_count": 8,
+  "human_interventions": 0,
+  "autonomy_level": 0.19999999999999996,
+  "judge_confidence_threshold": 0.6399999999999999,
+  "escalation_history_length": 8,
+  "auto_resolve_mode": true
+}

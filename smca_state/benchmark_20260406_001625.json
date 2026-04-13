@@ -1,0 +1,505 @@
+{
+  "timestamp": "20260406_001625",
+  "dataset_path": "Smca baseline eval.json",
+  "num_samples": 15,
+  "baselines": {
+    "full": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.1288331137992151,
+        "avg_time_s": 0.24476893742879233,
+        "avg_judge_confidence": 0.6075651047690331,
+        "escalation_rate": 0.9166666666666666,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": [
+        {
+          "id": "factoid_001",
+          "question": "What is the primary retrieval mechanism used in neural associative memory systems?",
+          "answer": "Cosine similarity",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.4774577927889085,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.2723886966705322,
+          "scored": true
+        },
+        {
+          "id": "factoid_002",
+          "question": "In the attention mechanism, what does the softmax function normalize?",
+          "answer": "The dot products of queries and keys (attention scores)",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Synthesizer",
+          "judge_confidence": 1.0,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.07766990291262137,
+          "time_s": 0.23190593719482422,
+          "scored": true
+        },
+        {
+          "id": "factoid_003",
+          "question": "What evolutionary operator introduces random changes in a chromosome?",
+          "answer": "Mutation",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.7415649172722905,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.21876239776611328,
+          "scored": true
+        },
+        {
+          "id": "factoid_004",
+          "question": "What does LSTM stand for in deep learning?",
+          "answer": "Long Short-Term Memory",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Depth",
+          "judge_confidence": 0.9592908372025208,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.038834951456310676,
+          "time_s": 0.21692728996276855,
+          "scored": true
+        },
+        {
+          "id": "factoid_005",
+          "question": "In transformer architectures, what is the role of positional encoding?",
+          "answer": "To inject information about the position of tokens in the sequence, since transformers have no inherent notion of order",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Historian",
+          "judge_confidence": 0.1516879493732109,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.11267605633802817,
+          "time_s": 0.21634268760681152,
+          "scored": true
+        }
+      ]
+    },
+    "single_agent": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.1595459260486651,
+        "avg_time_s": 0.041958630084991455,
+        "avg_judge_confidence": 0.5,
+        "escalation_rate": 1.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": [
+        {
+          "id": "factoid_001",
+          "question": "What is the primary retrieval mechanism used in neural associative memory systems?",
+          "answer": "Cosine similarity",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.5,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.025897979736328125,
+          "scored": true
+        },
+        {
+          "id": "factoid_002",
+          "question": "In the attention mechanism, what does the softmax function normalize?",
+          "answer": "The dot products of queries and keys (attention scores)",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.5,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.1875,
+          "time_s": 0.03397011756896973,
+          "scored": true
+        },
+        {
+          "id": "factoid_003",
+          "question": "What evolutionary operator introduces random changes in a chromosome?",
+          "answer": "Mutation",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.5,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.04166666666666667,
+          "time_s": 0.04857468605041504,
+          "scored": true
+        },
+        {
+          "id": "factoid_004",
+          "question": "What does LSTM stand for in deep learning?",
+          "answer": "Long Short-Term Memory",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.5,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.037306785583496094,
+          "scored": true
+        },
+        {
+          "id": "factoid_005",
+          "question": "In transformer architectures, what is the role of positional encoding?",
+          "answer": "To inject information about the position of tokens in the sequence, since transformers have no inherent notion of order",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.5,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.16216216216216217,
+          "time_s": 0.03783893585205078,
+          "scored": true
+        }
+      ]
+    },
+    "fixed_standards": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.1330571731534121,
+        "avg_time_s": 0.2554636796315511,
+        "avg_judge_confidence": 0.48424892178403106,
+        "escalation_rate": 1.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": [
+        {
+          "id": "factoid_001",
+          "question": "What is the primary retrieval mechanism used in neural associative memory systems?",
+          "answer": "Cosine similarity",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.5218314818811755,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.26428937911987305,
+          "scored": true
+        },
+        {
+          "id": "factoid_002",
+          "question": "In the attention mechanism, what does the softmax function normalize?",
+          "answer": "The dot products of queries and keys (attention scores)",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.5077234609532193,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.1095890410958904,
+          "time_s": 0.2743184566497803,
+          "scored": true
+        },
+        {
+          "id": "factoid_003",
+          "question": "What evolutionary operator introduces random changes in a chromosome?",
+          "answer": "Mutation",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.5085635471347757,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.262387752532959,
+          "scored": true
+        },
+        {
+          "id": "factoid_004",
+          "question": "What does LSTM stand for in deep learning?",
+          "answer": "Long Short-Term Memory",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 0.4796338456354079,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.28670382499694824,
+          "scored": true
+        },
+        {
+          "id": "factoid_005",
+          "question": "In transformer architectures, what is the role of positional encoding?",
+          "answer": "To inject information about the position of tokens in the sequence, since transformers have no inherent notion of order",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.5050812725055961,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.11235955056179775,
+          "time_s": 0.2687516212463379,
+          "scored": true
+        }
+      ]
+    },
+    "no_judge_memory": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.1255922023128654,
+        "avg_time_s": 0.1907535990079244,
+        "avg_judge_confidence": 0.5140058817081331,
+        "escalation_rate": 0.9166666666666666,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": [
+        {
+          "id": "factoid_001",
+          "question": "What is the primary retrieval mechanism used in neural associative memory systems?",
+          "answer": "Cosine similarity",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Depth",
+          "judge_confidence": 0.7037326912348455,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.18133139610290527,
+          "scored": true
+        },
+        {
+          "id": "factoid_002",
+          "question": "In the attention mechanism, what does the softmax function normalize?",
+          "answer": "The dot products of queries and keys (attention scores)",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.4110527681748516,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.1095890410958904,
+          "time_s": 0.16500401496887207,
+          "scored": true
+        },
+        {
+          "id": "factoid_003",
+          "question": "What evolutionary operator introduces random changes in a chromosome?",
+          "answer": "Mutation",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.45240268534912914,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.1704273223876953,
+          "scored": true
+        },
+        {
+          "id": "factoid_004",
+          "question": "What does LSTM stand for in deep learning?",
+          "answer": "Long Short-Term Memory",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Challenger",
+          "judge_confidence": 0.1490161462346624,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.1707620620727539,
+          "scored": true
+        },
+        {
+          "id": "factoid_005",
+          "question": "In transformer architectures, what is the role of positional encoding?",
+          "answer": "To inject information about the position of tokens in the sequence, since transformers have no inherent notion of order",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.4934205430752844,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.11235955056179775,
+          "time_s": 0.16981792449951172,
+          "scored": true
+        }
+      ]
+    },
+    "no_memory": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.18020599015164232,
+        "avg_time_s": 0.4151415228843689,
+        "avg_judge_confidence": 0.005072395579802203,
+        "escalation_rate": 1.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": [
+        {
+          "id": "factoid_001",
+          "question": "What is the primary retrieval mechanism used in neural associative memory systems?",
+          "answer": "Cosine similarity",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Synthesizer",
+          "judge_confidence": 0.013154570024441807,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.40776491165161133,
+          "scored": true
+        },
+        {
+          "id": "factoid_002",
+          "question": "In the attention mechanism, what does the softmax function normalize?",
+          "answer": "The dot products of queries and keys (attention scores)",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Synthesizer",
+          "judge_confidence": 0.006577285012220902,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.16,
+          "time_s": 0.3886253833770752,
+          "scored": true
+        },
+        {
+          "id": "factoid_003",
+          "question": "What evolutionary operator introduces random changes in a chromosome?",
+          "answer": "Mutation",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Precision",
+          "judge_confidence": 2.7755575615628914e-17,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.38254284858703613,
+          "scored": true
+        },
+        {
+          "id": "factoid_004",
+          "question": "What does LSTM stand for in deep learning?",
+          "answer": "Long Short-Term Memory",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Speed",
+          "judge_confidence": 0.0062079951326527395,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.38381028175354004,
+          "scored": true
+        },
+        {
+          "id": "factoid_005",
+          "question": "In transformer architectures, what is the role of positional encoding?",
+          "answer": "To inject information about the position of tokens in the sequence, since transformers have no inherent notion of order",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Historian",
+          "judge_confidence": 0.002479841609653483,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.2857142857142857,
+          "time_s": 0.4020228385925293,
+          "scored": true
+        }
+      ]
+    },
+    "cumulative": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.1330776825264065,
+        "avg_time_s": 0.2425911823908488,
+        "avg_judge_confidence": 0.5163334145022497,
+        "escalation_rate": 0.9166666666666666,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": [
+        {
+          "id": "factoid_001",
+          "question": "What is the primary retrieval mechanism used in neural associative memory systems?",
+          "answer": "Cosine similarity",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Synthesizer",
+          "judge_confidence": 0.4785311263531478,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.0,
+          "time_s": 0.22313547134399414,
+          "scored": true
+        },
+        {
+          "id": "factoid_002",
+          "question": "In the attention mechanism, what does the softmax function normalize?",
+          "answer": "The dot products of queries and keys (attention scores)",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Explorer",
+          "judge_confidence": 0.7571747880362067,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.1095890410958904,
+          "time_s": 0.22723674774169922,
+          "scored": true
+        },
+        {
+          "id": "factoid_003",
+          "question": "What evolutionary operator introduces random changes in a chromosome?",
+          "answer": "Mutation",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Historian",
+          "judge_confidence": 0.32014606915530214,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.04166666666666667,
+          "time_s": 0.23222565650939941,
+          "scored": true
+        },
+        {
+          "id": "factoid_004",
+          "question": "What does LSTM stand for in deep learning?",
+          "answer": "Long Short-Term Memory",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Synthesizer",
+          "judge_confidence": 0.6685927468939723,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.042105263157894736,
+          "time_s": 0.21663880348205566,
+          "scored": true
+        },
+        {
+          "id": "factoid_005",
+          "question": "In transformer architectures, what is the role of positional encoding?",
+          "answer": "To inject information about the position of tokens in the sequence, since transformers have no inherent notion of order",
+          "metric": "exact_match_f1",
+          "ground_truth_summary": "",
+          "champion": "Synthesizer",
+          "judge_confidence": 0.8142091595605743,
+          "god_consulted": true,
+          "em": 0.0,
+          "f1": 0.07874015748031496,
+          "time_s": 0.23176884651184082,
+          "scored": true
+        }
+      ]
+    }
+  }
+}

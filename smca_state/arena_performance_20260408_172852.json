@@ -1,0 +1,427 @@
+[
+  {
+    "timestamp": "2026-04-08T17:28:40.815432",
+    "query": "How does memory consolidation relate to machine le",
+    "champion": "Precision",
+    "champion_score": 0.777372546941042,
+    "total_rounds": 2,
+    "total_time": 1.3214993476867676,
+    "judge_confidence": 0.7206566620490361,
+    "base_judge_confidence": 0.5702410185369786,
+    "champion_resilience_score": 1.0,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "coherence",
+        "completeness"
+      ],
+      [
+        "precision",
+        "depth"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 1.0,
+        "avg_score": 0.7831516505032778
+      },
+      "Creative": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7724540240743332
+      },
+      "Speed": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.6367776090353727
+      },
+      "Depth": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7610274328705338
+      },
+      "Synthesizer": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7662263772077859
+      },
+      "Challenger": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7702694006363551
+      },
+      "Pragmatist": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7575206393569709
+      },
+      "Historian": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7399660133697092
+      },
+      "Minimalist": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.6283776090353728
+      },
+      "Explorer": {
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "avg_score": 0.7729680458882027
+      }
+    },
+    "query_number": 1
+  },
+  {
+    "timestamp": "2026-04-08T17:28:41.890928",
+    "query": "What are the advantages of competitive evolution i",
+    "champion": "Precision",
+    "champion_score": 0.8592519670724869,
+    "total_rounds": 2,
+    "total_time": 1.0752851963043213,
+    "judge_confidence": 0.95,
+    "base_judge_confidence": 1.0,
+    "champion_resilience_score": 0.8571428571428572,
+    "god_consulted": false,
+    "standards_used": [
+      [
+        "efficiency",
+        "conciseness"
+      ],
+      [
+        "depth",
+        "completeness"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 3,
+        "losses": 1,
+        "win_rate": 0.75,
+        "avg_score": 0.7120496887678567
+      },
+      "Creative": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.7124147259303351
+      },
+      "Speed": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.6194336060911414
+      },
+      "Depth": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.6915792372097007
+      },
+      "Synthesizer": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.6977548936350307
+      },
+      "Challenger": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.7120956106158809
+      },
+      "Pragmatist": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.7135061028077635
+      },
+      "Historian": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.6920945299826079
+      },
+      "Minimalist": {
+        "wins": 1,
+        "losses": 3,
+        "win_rate": 0.25,
+        "avg_score": 0.6277502467393969
+      },
+      "Explorer": {
+        "wins": 0,
+        "losses": 4,
+        "win_rate": 0.0,
+        "avg_score": 0.7083907354085186
+      }
+    },
+    "query_number": 2
+  },
+  {
+    "timestamp": "2026-04-08T17:28:43.351153",
+    "query": "How can attention mechanisms improve memory retrie",
+    "champion": "Depth",
+    "champion_score": 0.6350158147086038,
+    "total_rounds": 2,
+    "total_time": 1.4600749015808105,
+    "judge_confidence": 0.7547262374524158,
+    "base_judge_confidence": 0.6226557499267936,
+    "champion_resilience_score": 1.0,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "efficiency",
+        "coherence"
+      ],
+      [
+        "completeness",
+        "novelty"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 0.5,
+        "avg_score": 0.6742941948264428
+      },
+      "Creative": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.6816065026924042
+      },
+      "Speed": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.5932661076602513
+      },
+      "Depth": {
+        "wins": 1,
+        "losses": 5,
+        "win_rate": 0.16666666666666666,
+        "avg_score": 0.6625114424123022
+      },
+      "Synthesizer": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.6683056859878489
+      },
+      "Challenger": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.678571388792439
+      },
+      "Pragmatist": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.6760055454289539
+      },
+      "Historian": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.6672722040068796
+      },
+      "Minimalist": {
+        "wins": 2,
+        "losses": 4,
+        "win_rate": 0.3333333333333333,
+        "avg_score": 0.6049000194046136
+      },
+      "Explorer": {
+        "wins": 0,
+        "losses": 6,
+        "win_rate": 0.0,
+        "avg_score": 0.6797628004159116
+      }
+    },
+    "query_number": 3
+  },
+  {
+    "timestamp": "2026-04-08T17:28:44.615238",
+    "query": "What parallels exist between human sleep and AI op",
+    "champion": "Depth",
+    "champion_score": 0.4604637362943757,
+    "total_rounds": 2,
+    "total_time": 1.2639100551605225,
+    "judge_confidence": 0.5675642817052388,
+    "base_judge_confidence": 0.44240658723882886,
+    "champion_resilience_score": 0.8,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "conciseness",
+        "depth"
+      ],
+      [
+        "relevance",
+        "novelty"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 3,
+        "losses": 5,
+        "win_rate": 0.375,
+        "avg_score": 0.6164476972307404
+      },
+      "Creative": {
+        "wins": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "avg_score": 0.6372295426083627
+      },
+      "Speed": {
+        "wins": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "avg_score": 0.5495464071899331
+      },
+      "Depth": {
+        "wins": 2,
+        "losses": 6,
+        "win_rate": 0.25,
+        "avg_score": 0.6194651744030141
+      },
+      "Synthesizer": {
+        "wins": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "avg_score": 0.6240853550897933
+      },
+      "Challenger": {
+        "wins": 1,
+        "losses": 7,
+        "win_rate": 0.125,
+        "avg_score": 0.6310185616505689
+      },
+      "Pragmatist": {
+        "wins": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "avg_score": 0.6193727381971315
+      },
+      "Historian": {
+        "wins": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "avg_score": 0.6260953557143457
+      },
+      "Minimalist": {
+        "wins": 2,
+        "losses": 6,
+        "win_rate": 0.25,
+        "avg_score": 0.5603361957943126
+      },
+      "Explorer": {
+        "wins": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "avg_score": 0.6362704584708502
+      }
+    },
+    "query_number": 4
+  },
+  {
+    "timestamp": "2026-04-08T17:28:45.907651",
+    "query": "How does evolutionary pressure create better solut",
+    "champion": "Depth",
+    "champion_score": 0.671135697029553,
+    "total_rounds": 2,
+    "total_time": 1.2922568321228027,
+    "judge_confidence": 0.7675462891265992,
+    "base_judge_confidence": 0.642378906348614,
+    "champion_resilience_score": 1.0,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "coherence",
+        "creativity"
+      ],
+      [
+        "novelty",
+        "completeness"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 3,
+        "losses": 7,
+        "win_rate": 0.3,
+        "avg_score": 0.6160535025031584
+      },
+      "Creative": {
+        "wins": 0,
+        "losses": 10,
+        "win_rate": 0.0,
+        "avg_score": 0.6424603191043939
+      },
+      "Speed": {
+        "wins": 0,
+        "losses": 10,
+        "win_rate": 0.0,
+        "avg_score": 0.5358945953736358
+      },
+      "Depth": {
+        "wins": 3,
+        "losses": 7,
+        "win_rate": 0.3,
+        "avg_score": 0.6289159491133419
+      },
+      "Synthesizer": {
+        "wins": 0,
+        "losses": 10,
+        "win_rate": 0.0,
+        "avg_score": 0.6317764147719435
+      },
+      "Challenger": {
+        "wins": 1,
+        "losses": 9,
+        "win_rate": 0.1,
+        "avg_score": 0.6322467196247082
+      },
+      "Pragmatist": {
+        "wins": 0,
+        "losses": 10,
+        "win_rate": 0.0,
+        "avg_score": 0.613536076973145
+      },
+      "Historian": {
+        "wins": 0,
+        "losses": 10,
+        "win_rate": 0.0,
+        "avg_score": 0.6284552782098409
+      },
+      "Minimalist": {
+        "wins": 2,
+        "losses": 8,
+        "win_rate": 0.2,
+        "avg_score": 0.5388864262571393
+      },
+      "Explorer": {
+        "wins": 1,
+        "losses": 9,
+        "win_rate": 0.1,
+        "avg_score": 0.6417168326203025
+      }
+    },
+    "query_number": 5
+  }
+]

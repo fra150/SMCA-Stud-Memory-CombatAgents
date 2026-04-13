@@ -1,0 +1,249 @@
+{
+  "total_judgments": 10,
+  "escalation_count": 10,
+  "autonomy_level": 0.0,
+  "current_confidence": 0.2109008445017877,
+  "confidence_threshold": 0.5999999999999999,
+  "god_decisions_count": 10,
+  "ambiguity_events": 10,
+  "competition_history_length": 10,
+  "standards_evolution": {
+    "history": [
+      {
+        "round": 1,
+        "standards": [
+          "depth",
+          "relevance"
+        ],
+        "method": "initial",
+        "context": null
+      },
+      {
+        "round": 2,
+        "standards": [
+          "speed",
+          "efficiency"
+        ],
+        "method": "evolutionary",
+        "context": null
+      },
+      {
+        "round": 1,
+        "standards": [
+          "coherence",
+          "completeness"
+        ],
+        "method": "initial",
+        "context": null
+      },
+      {
+        "round": 2,
+        "standards": [
+          "completeness",
+          "creativity"
+        ],
+        "method": "evolutionary",
+        "context": null
+      },
+      {
+        "round": 1,
+        "standards": [
+          "conciseness",
+          "efficiency"
+        ],
+        "method": "initial",
+        "context": null
+      },
+      {
+        "round": 2,
+        "standards": [
+          "precision",
+          "novelty"
+        ],
+        "method": "evolutionary",
+        "context": null
+      },
+      {
+        "round": 1,
+        "standards": [
+          "precision",
+          "creativity"
+        ],
+        "method": "initial",
+        "context": null
+      },
+      {
+        "round": 2,
+        "standards": [
+          "conciseness",
+          "depth"
+        ],
+        "method": "evolutionary",
+        "context": null
+      },
+      {
+        "round": 1,
+        "standards": [
+          "relevance",
+          "novelty"
+        ],
+        "method": "initial",
+        "context": null
+      },
+      {
+        "round": 2,
+        "standards": [
+          "speed",
+          "conciseness"
+        ],
+        "method": "evolutionary",
+        "context": null
+      }
+    ],
+    "performance": {
+      "precision": [
+        0.3383253935303922,
+        0.38027245499276696
+      ],
+      "speed": [
+        0.4464644374580072,
+        0.37525756022079987
+      ],
+      "creativity": [
+        0.4527413011828254,
+        0.38027245499276696
+      ],
+      "coherence": [
+        0.4628302324414253
+      ],
+      "efficiency": [
+        0.4464644374580072,
+        0.28321170490149067
+      ],
+      "novelty": [
+        0.3383253935303922,
+        0.32336303461114313
+      ],
+      "depth": [
+        0.4565634491443635,
+        0.339135263983267
+      ],
+      "relevance": [
+        0.4565634491443635,
+        0.32336303461114313
+      ],
+      "conciseness": [
+        0.28321170490149067,
+        0.339135263983267,
+        0.37525756022079987
+      ],
+      "completeness": [
+        0.4628302324414253,
+        0.4527413011828254
+      ]
+    },
+    "rankings": [
+      {
+        "standard": "coherence",
+        "average_score": 0.4628302324414253,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.4628302324414253
+        ]
+      },
+      {
+        "standard": "completeness",
+        "average_score": 0.45778576681212535,
+        "times_used": 2,
+        "trend": -0.010088931258599887,
+        "recent_scores": [
+          0.4628302324414253,
+          0.4527413011828254
+        ]
+      },
+      {
+        "standard": "creativity",
+        "average_score": 0.4165068780877962,
+        "times_used": 2,
+        "trend": -0.07246884619005844,
+        "recent_scores": [
+          0.4527413011828254,
+          0.38027245499276696
+        ]
+      },
+      {
+        "standard": "speed",
+        "average_score": 0.4108609988394035,
+        "times_used": 2,
+        "trend": -0.07120687723720731,
+        "recent_scores": [
+          0.4464644374580072,
+          0.37525756022079987
+        ]
+      },
+      {
+        "standard": "depth",
+        "average_score": 0.39784935656381526,
+        "times_used": 2,
+        "trend": -0.11742818516109649,
+        "recent_scores": [
+          0.4565634491443635,
+          0.339135263983267
+        ]
+      },
+      {
+        "standard": "relevance",
+        "average_score": 0.38996324187775333,
+        "times_used": 2,
+        "trend": -0.13320041453322035,
+        "recent_scores": [
+          0.4565634491443635,
+          0.32336303461114313
+        ]
+      },
+      {
+        "standard": "efficiency",
+        "average_score": 0.3648380711797489,
+        "times_used": 2,
+        "trend": -0.1632527325565165,
+        "recent_scores": [
+          0.4464644374580072,
+          0.28321170490149067
+        ]
+      },
+      {
+        "standard": "precision",
+        "average_score": 0.3592989242615796,
+        "times_used": 2,
+        "trend": 0.04194706146237476,
+        "recent_scores": [
+          0.3383253935303922,
+          0.38027245499276696
+        ]
+      },
+      {
+        "standard": "conciseness",
+        "average_score": 0.3325348430351858,
+        "times_used": 3,
+        "trend": 0.0920458553193092,
+        "recent_scores": [
+          0.28321170490149067,
+          0.339135263983267,
+          0.37525756022079987
+        ]
+      },
+      {
+        "standard": "novelty",
+        "average_score": 0.3308442140707677,
+        "times_used": 2,
+        "trend": -0.014962358919249075,
+        "recent_scores": [
+          0.3383253935303922,
+          0.32336303461114313
+        ]
+      }
+    ],
+    "total_rounds": 2
+  }
+}

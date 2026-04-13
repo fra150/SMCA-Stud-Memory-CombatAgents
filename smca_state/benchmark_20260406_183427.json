@@ -1,0 +1,119 @@
+{
+  "timestamp": "20260406_183427",
+  "dataset_path": "Smca baseline eval.json",
+  "num_samples": 15,
+  "baselines": {
+    "full": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.15493857060587898,
+        "avg_time_s": 0.2669999996821086,
+        "avg_judge_confidence": 0.4712449516116802,
+        "avg_champion_resilience_score": 0.0,
+        "escalation_rate": 0.9166666666666666,
+        "avg_answer_words": 87.16666666666667,
+        "avg_markers_accessed": 98.5,
+        "avg_rounds": 2.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    },
+    "full_ziora": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.1523070275895488,
+        "avg_time_s": 0.2549541195233663,
+        "avg_judge_confidence": 0.7320112726559902,
+        "avg_champion_resilience_score": 0.8194444444444445,
+        "escalation_rate": 1.0,
+        "avg_answer_words": 83.66666666666667,
+        "avg_markers_accessed": 88.91666666666667,
+        "avg_rounds": 2.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    },
+    "single_agent": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.19154492533802914,
+        "avg_time_s": 0.03678272167841593,
+        "avg_judge_confidence": 0.5,
+        "avg_champion_resilience_score": 0.0,
+        "escalation_rate": 1.0,
+        "avg_answer_words": 79.16666666666667,
+        "avg_markers_accessed": 3.25,
+        "avg_rounds": 1.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    },
+    "fixed_standards": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.18291963000730602,
+        "avg_time_s": 0.23591633637746176,
+        "avg_judge_confidence": 0.4659174368478403,
+        "avg_champion_resilience_score": 0.0,
+        "escalation_rate": 1.0,
+        "avg_answer_words": 80.25,
+        "avg_markers_accessed": 105.0,
+        "avg_rounds": 2.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    },
+    "no_judge_memory": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.2110125149514467,
+        "avg_time_s": 0.21228893597920737,
+        "avg_judge_confidence": 0.5659010997950655,
+        "avg_champion_resilience_score": 0.0,
+        "escalation_rate": 0.75,
+        "avg_answer_words": 75.0,
+        "avg_markers_accessed": 98.5,
+        "avg_rounds": 2.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    },
+    "no_memory": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.18228932348497565,
+        "avg_time_s": 0.06633985042572021,
+        "avg_judge_confidence": 0.003095004000575578,
+        "avg_champion_resilience_score": 0.0,
+        "escalation_rate": 1.0,
+        "avg_answer_words": 19.75,
+        "avg_markers_accessed": 0.0,
+        "avg_rounds": 2.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    },
+    "cumulative": {
+      "aggregate": {
+        "avg_em": 0.0,
+        "avg_f1": 0.15996363409123707,
+        "avg_time_s": 0.25772273540496826,
+        "avg_judge_confidence": 0.5002872588136754,
+        "avg_champion_resilience_score": 0.0,
+        "escalation_rate": 0.9166666666666666,
+        "avg_answer_words": 80.41666666666667,
+        "avg_markers_accessed": 103.33333333333333,
+        "avg_rounds": 2.0,
+        "num_evaluated": 12,
+        "num_total": 15
+      },
+      "samples": []
+    }
+  }
+}

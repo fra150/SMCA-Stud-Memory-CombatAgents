@@ -1,0 +1,299 @@
+{
+  "total_judgments": 10,
+  "escalation_count": 10,
+  "autonomy_level": 0.0,
+  "current_confidence": 0.3249956871360742,
+  "confidence_threshold": 0.5999999999999999,
+  "god_decisions_count": 10,
+  "ambiguity_events": 10,
+  "competition_history_length": 10,
+  "standards_evolution": {
+    "history": [
+      {
+        "round": 1,
+        "standards": [
+          "coherence",
+          "completeness"
+        ],
+        "method": "initial",
+        "context": {
+          "query": "How does memory consolidation relate to machine learning?",
+          "pressure_level": 5.364419468634196e-07,
+          "round_number": 1,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 2,
+        "standards": [
+          "coherence",
+          "relevance"
+        ],
+        "method": "evolutionary",
+        "context": {
+          "query": "How does memory consolidation relate to machine learning?",
+          "pressure_level": 0.00067380320141186,
+          "round_number": 2,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 1,
+        "standards": [
+          "precision",
+          "relevance"
+        ],
+        "method": "initial",
+        "context": {
+          "query": "What are the advantages of competitive evolution in AI?",
+          "pressure_level": 2.8610233582249123e-07,
+          "round_number": 1,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 2,
+        "standards": [
+          "speed",
+          "conciseness"
+        ],
+        "method": "evolutionary",
+        "context": {
+          "query": "What are the advantages of competitive evolution in AI?",
+          "pressure_level": 0.0008652377138416156,
+          "round_number": 2,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 1,
+        "standards": [
+          "depth",
+          "novelty"
+        ],
+        "method": "initial",
+        "context": {
+          "query": "How can attention mechanisms improve memory retrieval?",
+          "pressure_level": 2.503395394315433e-07,
+          "round_number": 1,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 2,
+        "standards": [
+          "depth",
+          "precision"
+        ],
+        "method": "evolutionary",
+        "context": {
+          "query": "How can attention mechanisms improve memory retrieval?",
+          "pressure_level": 0.0009257508810549542,
+          "round_number": 2,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 1,
+        "standards": [
+          "conciseness",
+          "creativity"
+        ],
+        "method": "initial",
+        "context": {
+          "query": "What parallels exist between human sleep and AI optimization?",
+          "pressure_level": 6.969794084765724e-06,
+          "round_number": 1,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 2,
+        "standards": [
+          "coherence",
+          "depth"
+        ],
+        "method": "evolutionary",
+        "context": {
+          "query": "What parallels exist between human sleep and AI optimization?",
+          "pressure_level": 0.0009294577548291105,
+          "round_number": 2,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 1,
+        "standards": [
+          "relevance",
+          "efficiency"
+        ],
+        "method": "initial",
+        "context": {
+          "query": "How does evolutionary pressure create better solutions?",
+          "pressure_level": 3.8146979930431257e-07,
+          "round_number": 1,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 2,
+        "standards": [
+          "coherence",
+          "novelty"
+        ],
+        "method": "evolutionary",
+        "context": {
+          "query": "How does evolutionary pressure create better solutions?",
+          "pressure_level": 0.0008884959724138053,
+          "round_number": 2,
+          "agents_count": 2
+        }
+      }
+    ],
+    "performance": {
+      "precision": [
+        0.3939436164498329,
+        0.4626190773759569
+      ],
+      "speed": [
+        0.38678466079253837
+      ],
+      "creativity": [
+        0.27325060512590743
+      ],
+      "coherence": [
+        0.4756153551340103,
+        0.415852681050698,
+        0.4184704057574272,
+        0.35142905067502234
+      ],
+      "efficiency": [
+        0.33815718739207823
+      ],
+      "novelty": [
+        0.37948112979303467,
+        0.35142905067502234
+      ],
+      "depth": [
+        0.37948112979303467,
+        0.4626190773759569,
+        0.4184704057574272
+      ],
+      "relevance": [
+        0.415852681050698,
+        0.3939436164498329,
+        0.33815718739207823
+      ],
+      "conciseness": [
+        0.38678466079253837,
+        0.27325060512590743
+      ],
+      "completeness": [
+        0.4756153551340103
+      ]
+    },
+    "rankings": [
+      {
+        "standard": "completeness",
+        "average_score": 0.4756153551340103,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.4756153551340103
+        ]
+      },
+      {
+        "standard": "precision",
+        "average_score": 0.4282813469128949,
+        "times_used": 2,
+        "trend": 0.06867546092612403,
+        "recent_scores": [
+          0.3939436164498329,
+          0.4626190773759569
+        ]
+      },
+      {
+        "standard": "depth",
+        "average_score": 0.4201902043088063,
+        "times_used": 3,
+        "trend": 0.038989275964392556,
+        "recent_scores": [
+          0.37948112979303467,
+          0.4626190773759569,
+          0.4184704057574272
+        ]
+      },
+      {
+        "standard": "coherence",
+        "average_score": 0.4153418731542895,
+        "times_used": 4,
+        "trend": -0.12418630445898798,
+        "recent_scores": [
+          0.4756153551340103,
+          0.415852681050698,
+          0.4184704057574272,
+          0.35142905067502234
+        ]
+      },
+      {
+        "standard": "speed",
+        "average_score": 0.38678466079253837,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.38678466079253837
+        ]
+      },
+      {
+        "standard": "relevance",
+        "average_score": 0.3826511616308697,
+        "times_used": 3,
+        "trend": -0.07769549365861977,
+        "recent_scores": [
+          0.415852681050698,
+          0.3939436164498329,
+          0.33815718739207823
+        ]
+      },
+      {
+        "standard": "novelty",
+        "average_score": 0.3654550902340285,
+        "times_used": 2,
+        "trend": -0.02805207911801233,
+        "recent_scores": [
+          0.37948112979303467,
+          0.35142905067502234
+        ]
+      },
+      {
+        "standard": "efficiency",
+        "average_score": 0.33815718739207823,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.33815718739207823
+        ]
+      },
+      {
+        "standard": "conciseness",
+        "average_score": 0.33001763295922293,
+        "times_used": 2,
+        "trend": -0.11353405566663094,
+        "recent_scores": [
+          0.38678466079253837,
+          0.27325060512590743
+        ]
+      },
+      {
+        "standard": "creativity",
+        "average_score": 0.27325060512590743,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.27325060512590743
+        ]
+      }
+    ],
+    "total_rounds": 2
+  }
+}

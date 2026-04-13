@@ -1,0 +1,1012 @@
+{
+  "Precision": {
+    "name": "Precision",
+    "strategy": "precision",
+    "wins": 3,
+    "losses": 7,
+    "win_rate": 0.3,
+    "average_score": 0.5633527263097639,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.7889307540655137,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.43797667737228574,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.3817048125304873,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.7608915248513223,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.4485739351238802,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4292929049515115,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8011241833411132,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.3473966293272386,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.538620062039046,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.6990157794952393,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Creative": {
+    "name": "Creative",
+    "strategy": "creativity",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.6013429868542919,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7776462405920029,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4952220563918306,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.4668683975549978,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7515620530503138,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5324800300113187,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4960735948563719,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8575138571135107,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.3915520656723369,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5562048930849792,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6883066802152565,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Speed": {
+    "name": "Speed",
+    "strategy": "speed",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.524540737804225,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6417740463912487,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5070757048962983,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.41058746178710287,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6063354721128941,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.3953410825133324,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4752962556170577,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6537679852947677,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.3775478538579657,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5853923270316019,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5922891885399818,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Depth": {
+    "name": "Depth",
+    "strategy": "depth",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.5886551838974523,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7670901215076448,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.47435530065152687,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.47193955903601487,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7406118940396442,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5330887842914209,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4857625879273876,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8547287888342908,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.36933117419956496,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5191266949862623,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6705169335007668,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Synthesizer": {
+    "name": "Synthesizer",
+    "strategy": "synthesis",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.5934915554245628,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7720625888183713,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.47053808203992553,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.47646573125359026,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7456513425707818,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5324159449072207,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4944857179277077,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8560986989601541,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.37715748601146615,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5294971276160494,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6805428341403603,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Challenger": {
+    "name": "Challenger",
+    "strategy": "contrarian",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.5933166962479312,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7748915452857812,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.48133671763472785,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.4295915128434506,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7423119214038055,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.49212088125484904,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.505739336591283,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8550619714324895,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.39095110206206957,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5639833858338243,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6971785881370307,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Pragmatist": {
+    "name": "Pragmatist",
+    "strategy": "practical",
+    "wins": 0,
+    "losses": 10,
+    "win_rate": 0.0,
+    "average_score": 0.5678481343279738,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7631307540655137,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.46687851750900666,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.3750074070164507,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7367258451104164,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.44894486928895977,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4736010492471794,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7767130868102234,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.3899955883216411,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5720983349377327,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6753858909726143,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Historian": {
+    "name": "Historian",
+    "strategy": "historical",
+    "wins": 3,
+    "losses": 7,
+    "win_rate": 0.3,
+    "average_score": 0.6017591187239396,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7459625888183713,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5154204322442429,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.4957786297255126,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7209042587965726,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5322360740212675,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.5387624138024051,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.8313793274168195,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.4132210611896745,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5685306122181774,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6553957890063524,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Minimalist": {
+    "name": "Minimalist",
+    "strategy": "concise",
+    "wins": 2,
+    "losses": 8,
+    "win_rate": 0.2,
+    "average_score": 0.5354713398938872,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6333740463912487,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.536088255145949,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.43784920435140934,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5979354721128941,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.3953410825133324,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5058592190116687,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6452890661830537,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.39606739187237655,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.6428204728169574,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5640891885399818,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  },
+  "Explorer": {
+    "name": "Explorer",
+    "strategy": "novel",
+    "wins": 2,
+    "losses": 8,
+    "win_rate": 0.2,
+    "average_score": 0.6010162086471674,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7776462405920029,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4904568144147208,
+        "standards": [
+          "novelty",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.45729695503895634,
+        "standards": [
+          "creativity",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7520544794414725,
+        "standards": [
+          "completeness",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.5331132215618603,
+        "standards": [
+          "precision",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5014718386071522,
+        "standards": [
+          "coherence",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.8582421227585401,
+        "standards": [
+          "speed",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.3922435004293014,
+        "standards": [
+          "relevance",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5573838756364005,
+        "standards": [
+          "efficiency",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6902530379912684,
+        "standards": [
+          "depth",
+          "relevance"
+        ]
+      }
+    ]
+  }
+}

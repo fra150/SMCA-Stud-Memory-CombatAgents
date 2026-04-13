@@ -1,0 +1,60 @@
+{
+  "Precision": {
+    "name": "Precision",
+    "strategy": "precision",
+    "wins": 2,
+    "losses": 0,
+    "win_rate": 1.0,
+    "average_score": 0.3771012953370153,
+    "total_competitions": 2,
+    "history": [
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.33407465931574504,
+        "standards": [
+          "coherence",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.42012793135828563,
+        "standards": [
+          "efficiency",
+          "creativity"
+        ]
+      }
+    ]
+  },
+  "Creative": {
+    "name": "Creative",
+    "strategy": "creativity",
+    "wins": 0,
+    "losses": 2,
+    "win_rate": 0.0,
+    "average_score": 0.3582630892879988,
+    "total_competitions": 2,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.308574659315745,
+        "standards": [
+          "coherence",
+          "depth"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.40795151926025264,
+        "standards": [
+          "efficiency",
+          "creativity"
+        ]
+      }
+    ]
+  }
+}

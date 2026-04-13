@@ -1,0 +1,204 @@
+{
+  "Precision": {
+    "name": "Precision",
+    "strategy": "precision",
+    "wins": 3,
+    "losses": 7,
+    "win_rate": 0.3,
+    "average_score": 0.6041124721942651,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.7889307540655137,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.64033411676685,
+        "standards": [
+          "coherence",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5996172460913658,
+        "standards": [
+          "precision",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.5587074571574485,
+        "standards": [
+          "speed",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.6275220699578996,
+        "standards": [
+          "depth",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.7684006381034851,
+        "standards": [
+          "depth",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.34106264340011117,
+        "standards": [
+          "conciseness",
+          "creativity"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.6951691776514054,
+        "standards": [
+          "coherence",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.5439974300022268,
+        "standards": [
+          "relevance",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.4773831887463458,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      }
+    ]
+  },
+  "Creative": {
+    "name": "Creative",
+    "strategy": "creativity",
+    "wins": 7,
+    "losses": 3,
+    "win_rate": 0.7,
+    "average_score": 0.6347257790074096,
+    "total_competitions": 10,
+    "history": [
+      {
+        "round": 1,
+        "won": false,
+        "score": 0.7776462405920029,
+        "standards": [
+          "coherence",
+          "completeness"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.679899380505085,
+        "standards": [
+          "coherence",
+          "relevance"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.6423338320851326,
+        "standards": [
+          "precision",
+          "relevance"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.6231576902800351,
+        "standards": [
+          "speed",
+          "conciseness"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.6312319297307682,
+        "standards": [
+          "depth",
+          "novelty"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.7605071655341558,
+        "standards": [
+          "depth",
+          "precision"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.4268289172574121,
+        "standards": [
+          "conciseness",
+          "creativity"
+        ]
+      },
+      {
+        "round": 2,
+        "won": false,
+        "score": 0.6883246818184853,
+        "standards": [
+          "coherence",
+          "depth"
+        ]
+      },
+      {
+        "round": 1,
+        "won": true,
+        "score": 0.5586958417406545,
+        "standards": [
+          "relevance",
+          "efficiency"
+        ]
+      },
+      {
+        "round": 2,
+        "won": true,
+        "score": 0.5586321105303643,
+        "standards": [
+          "coherence",
+          "novelty"
+        ]
+      }
+    ]
+  }
+}

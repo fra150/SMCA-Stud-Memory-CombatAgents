@@ -1,0 +1,177 @@
+[
+  {
+    "timestamp": "2026-04-04T21:15:33.324699",
+    "query": "How does memory consolidation relate to machine le",
+    "champion": "Creative",
+    "champion_score": 0.731626152377125,
+    "total_rounds": 2,
+    "total_time": 0.07936620712280273,
+    "judge_confidence": 0.19773384551531414,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "coherence",
+        "completeness"
+      ],
+      [
+        "speed",
+        "efficiency"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 0.5,
+        "avg_score": 0.7355617225319051
+      },
+      "Creative": {
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 0.5,
+        "avg_score": 0.754636196484564
+      }
+    },
+    "query_number": 1
+  },
+  {
+    "timestamp": "2026-04-04T21:15:33.414981",
+    "query": "What are the advantages of competitive evolution i",
+    "champion": "Precision",
+    "champion_score": 0.8592519670724869,
+    "total_rounds": 2,
+    "total_time": 0.09023880958557129,
+    "judge_confidence": 0.02644846609660556,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "depth",
+        "coherence"
+      ],
+      [
+        "depth",
+        "completeness"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 3,
+        "losses": 1,
+        "win_rate": 0.75,
+        "avg_score": 0.774937658838923
+      },
+      "Creative": {
+        "wins": 1,
+        "losses": 3,
+        "win_rate": 0.25,
+        "avg_score": 0.7805076252302094
+      }
+    },
+    "query_number": 2
+  },
+  {
+    "timestamp": "2026-04-04T21:15:33.499416",
+    "query": "How can attention mechanisms improve memory retrie",
+    "champion": "Precision",
+    "champion_score": 0.7454187554121018,
+    "total_rounds": 2,
+    "total_time": 0.08439445495605469,
+    "judge_confidence": 0.03506271805082051,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "precision",
+        "conciseness"
+      ],
+      [
+        "relevance",
+        "depth"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 4,
+        "losses": 2,
+        "win_rate": 0.6666666666666666,
+        "avg_score": 0.7138719200264201
+      },
+      "Creative": {
+        "wins": 2,
+        "losses": 4,
+        "win_rate": 0.3333333333333333,
+        "avg_score": 0.7256003470363687
+      }
+    },
+    "query_number": 3
+  },
+  {
+    "timestamp": "2026-04-04T21:15:33.589796",
+    "query": "What parallels exist between human sleep and AI op",
+    "champion": "Creative",
+    "champion_score": 0.40837378319621526,
+    "total_rounds": 2,
+    "total_time": 0.09005045890808105,
+    "judge_confidence": 0.10127425540396318,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "creativity",
+        "coherence"
+      ],
+      [
+        "conciseness",
+        "efficiency"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 4,
+        "losses": 4,
+        "win_rate": 0.5,
+        "avg_score": 0.645169307836542
+      },
+      "Creative": {
+        "wins": 4,
+        "losses": 4,
+        "win_rate": 0.5,
+        "avg_score": 0.6706821496753531
+      }
+    },
+    "query_number": 4
+  },
+  {
+    "timestamp": "2026-04-04T21:15:33.671367",
+    "query": "How does evolutionary pressure create better solut",
+    "champion": "Creative",
+    "champion_score": 0.5815439395115375,
+    "total_rounds": 2,
+    "total_time": 0.08153367042541504,
+    "judge_confidence": 0.20427110517317892,
+    "god_consulted": true,
+    "standards_used": [
+      [
+        "completeness",
+        "coherence"
+      ],
+      [
+        "conciseness",
+        "depth"
+      ]
+    ],
+    "agent_scores": {
+      "Precision": {
+        "wins": 5,
+        "losses": 5,
+        "win_rate": 0.5,
+        "avg_score": 0.6435406164605437
+      },
+      "Creative": {
+        "wins": 5,
+        "losses": 5,
+        "win_rate": 0.5,
+        "avg_score": 0.667762050963985
+      }
+    },
+    "query_number": 5
+  }
+]

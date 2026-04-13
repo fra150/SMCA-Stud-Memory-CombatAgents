@@ -1,0 +1,143 @@
+{
+  "total_judgments": 2,
+  "escalation_count": 2,
+  "autonomy_level": 0.0,
+  "current_confidence": 0.0719949503547972,
+  "confidence_threshold": 0.7,
+  "god_decisions_count": 2,
+  "ambiguity_events": 2,
+  "competition_history_length": 2,
+  "standards_evolution": {
+    "history": [
+      {
+        "round": 1,
+        "standards": [
+          "coherence",
+          "depth"
+        ],
+        "method": "initial",
+        "context": {
+          "query": "How does attention relate to memory retrieval?",
+          "pressure_level": 1.257665913378947e-05,
+          "round_number": 1,
+          "agents_count": 2
+        }
+      },
+      {
+        "round": 2,
+        "standards": [
+          "conciseness",
+          "precision"
+        ],
+        "method": "evolutionary",
+        "context": {
+          "query": "How does attention relate to memory retrieval?",
+          "pressure_level": 0.0021606063763446315,
+          "round_number": 2,
+          "agents_count": 2
+        }
+      }
+    ],
+    "performance": {
+      "precision": [
+        0.16491780690871982
+      ],
+      "speed": [],
+      "creativity": [],
+      "coherence": [
+        0.20554479558944702
+      ],
+      "efficiency": [],
+      "novelty": [],
+      "depth": [
+        0.20554479558944702
+      ],
+      "relevance": [],
+      "conciseness": [
+        0.16491780690871982
+      ],
+      "completeness": []
+    },
+    "rankings": [
+      {
+        "standard": "coherence",
+        "average_score": 0.20554479558944702,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.20554479558944702
+        ]
+      },
+      {
+        "standard": "depth",
+        "average_score": 0.20554479558944702,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.20554479558944702
+        ]
+      },
+      {
+        "standard": "precision",
+        "average_score": 0.16491780690871982,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.16491780690871982
+        ]
+      },
+      {
+        "standard": "conciseness",
+        "average_score": 0.16491780690871982,
+        "times_used": 1,
+        "trend": 0.0,
+        "recent_scores": [
+          0.16491780690871982
+        ]
+      },
+      {
+        "standard": "speed",
+        "average_score": 0.0,
+        "times_used": 0,
+        "trend": 0.0,
+        "recent_scores": []
+      },
+      {
+        "standard": "creativity",
+        "average_score": 0.0,
+        "times_used": 0,
+        "trend": 0.0,
+        "recent_scores": []
+      },
+      {
+        "standard": "efficiency",
+        "average_score": 0.0,
+        "times_used": 0,
+        "trend": 0.0,
+        "recent_scores": []
+      },
+      {
+        "standard": "novelty",
+        "average_score": 0.0,
+        "times_used": 0,
+        "trend": 0.0,
+        "recent_scores": []
+      },
+      {
+        "standard": "relevance",
+        "average_score": 0.0,
+        "times_used": 0,
+        "trend": 0.0,
+        "recent_scores": []
+      },
+      {
+        "standard": "completeness",
+        "average_score": 0.0,
+        "times_used": 0,
+        "trend": 0.0,
+        "recent_scores": []
+      }
+    ],
+    "total_rounds": 2
+  }
+}
