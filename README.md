@@ -16,9 +16,9 @@
 
 <br/>
 <div align="center">
-[![GitHub Repo](https://img.shields.io/badge/GitHub-BAS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fra150/BAS-Brain-Agent-Supreme.git)
-[![Phase](https://img.shields.io/badge/Phase-v1.0.0%20Complete-success?style=for-the-badge)](https://github.com/fra150/BAS-Brain-Agent-Supreme.git)
-[![LOCOMO](https://img.shields.io/badge/LOCOMO-66.7%25%20Accuracy-blue?style=for-the-badge)](locomo_benchmark.py)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-BAS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
+[![Phase](https://img.shields.io/badge/Phase-v1.0.0%20Complete-success?style=for-the-badge)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
+[![LOCOMO](https://img.shields.io/badge/LOCOMO-73.3%25%20Accuracy-blue?style=for-the-badge)](locomo_benchmark.py)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Needle](https://img.shields.io/badge/Needle-100%25-success?style=for-the-badge)](locomo_benchmark.py)
@@ -46,6 +46,7 @@ Instead of asking one model to read 500 pages (and inevitably forget), BAS creat
 - **Post-retrieval reasoning** — dedicated executor for numerical aggregation
 - **Context-aware filtering** — pre-calculation filtering by transaction type
 - **Perfect needle retrieval** — 100% accuracy on facts hidden in 50-segment documents
+- **Flawless Multi-Hop Reasoning** — 100% accuracy on correlating independent segments
 
 At its core lives **StudSar Centrale** — the central memory system that transforms static document segments into living associative knowledge, enriched with emotional tags and temporal metadata.
 
@@ -82,34 +83,35 @@ Emergent standards evaluation with confidence scoring. The Judge determines when
 | **BAS Engine** — Dynamic agent scaling (N segments = N agents) | ✅ Complete | 50 segments tested |
 | **Semantic Selection** — Cosine similarity agent ranking | ✅ Complete | 100% Needle accuracy |
 | **Post-Retrieval Executor** — Context filtering & net balance | ✅ Complete | 66.7% Aggregation |
-| **LOCOMO Benchmark** — Meta AI long-context validation | ✅ Complete | 66.7% overall |
-| **TMDR Integration** — Memory coherence monitoring | ✅ Complete | 0.359 coherence score |
+| **LOCOMO Benchmark** — Meta AI long-context validation | ✅ Complete | 73.3% overall |
+| **TMDR Integration** — Memory coherence monitoring | ✅ Complete | 0.675 coherence score |
 | **Multi-language Support** — Italian/English keyword mapping | ✅ Complete | Revenue/Expense detection |
-| **Ziora Protocol** — Inter-agent chaining for multi-hop | ⏳ Planned | 33.3% → 70% target |
+| **Ziora Protocol** — Inter-agent chaining for multi-hop | ✅ Complete | Multi-hop at 100% |
 
 ---
 
 ## 📊 LOCOMO Benchmark Results
 
-**Final Performance Metrics:**
+**Final Performance Metrics (Latest Execution):**
 ```
 Total Tests:        30
-Correct:            20
-Accuracy:           66.7%
+Correct:            22
+Accuracy:           73.3%
+
 Needle (50 seg):    100.0% ✅
-Aggregation:        66.7% ✅
-Entity Tracking:    66.7% ✅
+Multi-hop:          100.0% ✅
 Temporal:           66.7% ✅
-Multi-hop:          33.3% ⚠️
+Aggregation:        66.7% ✅
+Entity Tracking:    33.3% ⚠️
 ```
 
 | Category | Accuracy | Status | Notes |
 |----------|----------|--------|-------|
 | **Needle** | 100.0% | ✅ Perfect | Semantic selection eliminates position bias |
+| **Multi-hop** | 100.0% | ✅ Perfect | Semantic agent selection enables flawlessly correlating segments |
 | **Aggregation** | 66.7% | ✅ Strong | Income/expense filtering + net balance calc |
-| **Entity** | 66.7% | ✅ Pass | Single-segment lookup working |
 | **Temporal** | 66.7% | ✅ Pass | Timeline reasoning functional |
-| **Multi-hop** | 33.3% | ⚠️ TODO | Needs Ziora adversarial chaining |
+| **Entity** | 33.3% | ⚠️ Partial | Tracking entities over changing contexts remains challenging |
 
 ---
 
@@ -136,84 +138,24 @@ End-to-end orchestration: loads financial documents, creates dynamic agents per 
 python bas_demo.py
 ```
 
-> Benchmark results are saved to `/locomo_benchmark_results.json` — visualizations and state land in `--output-dir` (default: `bas_output/`)
+> Benchmark results are saved to `locomo_benchmark_results.json`
 
 ---
 
 ## 🔧 Usage Examples
 
 ```bash
-# Single document demo with dynamic agent scaling
-python bas_demo.py \
-  --document "financial_report_50seg.txt" \
-  --query "What is the total revenue?" \
-  --output-dir bas_results
-```
-
-```bash
 # Run full LOCOMO benchmark suite (30 tests)
-python bas_demo.py \
-  --run-benchmark \
-  --benchmark-tests 30 \
-  --segment-sizes 20,50 \
-  --output-dir locomo_results
-```
-
-```bash
-# Compare BAS vs SMCA on same document
-python bas_demo.py \
-  --compare-smcas \
-  --document "test_doc.txt" \
-  --query "Calculate net budget balance" \
-  --agents-bas dynamic \
-  --agents-smca 10
-```
-
-```bash
-# Post-retrieval executor with strict context filtering
-python bas_demo.py \
-  --document "mixed_transactions.txt" \
-  --query "Entrate totali" \
-  --filter-type income \
-  --calculate-net \
-  --language it
+python locomo_benchmark.py
 ```
 
 ---
 
-## 🧪 Run LOCOMO Benchmark
+## 🔬 Validation & Analysis
 
-Full benchmark coverage across 5 categories with controlled fact distribution:
-
-```bash
-python locomo_benchmark.py --run-all
-```
-
-Category-specific testing:
-```bash
-# Test only needle retrieval (6 tests)
-python locomo_benchmark.py --category needle --segments 50
-
-# Test aggregation with numerical reasoning (6 tests)
-python locomo_benchmark.py --category aggregation --segments 20,50
-```
-
----
-
-## 🛠️ Validation Tools
-
-Diagnostic scripts for performance analysis:
-
-```bash
-# Validate semantic selection accuracy
-python tools/validate_selection.py --document-size 50 --trials 100
-
-# Calibrate post-retrieval executor thresholds
-python tools/calibrate_executor.py --benchmark-file locomo_benchmark_results.json
-
-# Memory coherence analysis
-python tools/analyze_coherence.py --state-dir studsar_centrale/
-```
+Diagnostic metrics from the latest benchmark:
+- **Average latency:** 0.35s
+- **Average memory coherence:** 0.675
 
 ---
 
@@ -221,7 +163,7 @@ python tools/analyze_coherence.py --state-dir studsar_centrale/
 
 | Target | Description |
 |---|---|
-| **Ziora Integration** | Adversarial Red Agent for multi-hop reasoning chains (33% → 70% accuracy) |
+| **Entity Evolution Tracking** | Improve entity resolving across long timelines/multiple state changes (33% → 70% accuracy) |
 | **Scale Testing** | Validate performance at 100+, 500+ segments with coherence monitoring |
 | **Cross-Document Reasoning** | Agents that can chain facts across multiple documents |
 | **Uncertainty Modeling** | Explicit "unknown" detection when information is unavailable |
@@ -239,8 +181,6 @@ BAS/
 │   │   └── post_retrieval_executor.py # Numerical reasoning & context filtering
 │   └── managers/                      # StudSar Centrale integration
 ├── tools/                             # Validation & calibration scripts
-├── tests/
-│   └── test_bas.py                    # Integration test suite
 ├── locomo_benchmark.py                # LOCOMO benchmark implementation
 ├── bas_demo.py                        # Main orchestration script
 ├── locomo_benchmark_results.json      # Latest benchmark results
@@ -256,11 +196,11 @@ BAS/
 **Clone it. Scale it. Benchmark it. Improve it.**
 
 ```bash
-git clone https://github.com/fra150/BAS-Brain-Agent-Supreme.git
-cd BAS-Brain-Agent-Supreme
+git clone -b BAS https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git
+cd SMCA-Stud-Memory-CombatAgents
 ```
 
-[![View on GitHub](https://img.shields.io/badge/⭐%20Star%20on%20GitHub-BAS--Brain--Agent--Supreme-181717?style=for-the-badge&logo=github)](https://github.com/fra150/BAS-Brain-Agent-Supreme.git)
+[![View on GitHub](https://img.shields.io/badge/⭐%20Star%20on%20GitHub-BAS--Brain--Agent--Supreme-181717?style=for-the-badge&logo=github)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
 
 </div>
 
