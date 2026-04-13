@@ -1,7 +1,7 @@
 <div align="center">
 
 <br/>
-
+ 
 ```
 ██████╗  █████╗ ███████╗
 ██╔══██╗██╔══██╗██╔════╝
@@ -10,12 +10,11 @@
 ██████╔╝██║  ██║███████║
 ╚═════╝ ╚═╝  ╚═╝╚══════╝
 ```
-
 # **Brain Agent Supreme**
 ### *Dynamic Cognitive Architecture for Long-Context Multi-Agent Systems*
 
 <br/>
-<div align="center">
+
 [![GitHub Repo](https://img.shields.io/badge/GitHub-BAS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
 [![Phase](https://img.shields.io/badge/Phase-v1.0.0%20Complete-success?style=for-the-badge)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
 [![LOCOMO](https://img.shields.io/badge/LOCOMO-73.3%25%20Accuracy-blue?style=for-the-badge)](locomo_benchmark.py)
@@ -25,8 +24,8 @@
 
 <br/>
 
-> *"BAS is the brain to SMCA's organ — where dynamic agent scaling meets post-retrieval numerical reasoning,*  
-> *transforming long documents into N specialized agents, each expert on one page,*  
+> *"BAS is the brain to SMCA's organ — where dynamic agent scaling meets post-retrieval numerical reasoning,*
+> *transforming long documents into N specialized agents, each expert on one page,*
 > *connected by StudSar as a central nervous system."*
 
 <br/>
