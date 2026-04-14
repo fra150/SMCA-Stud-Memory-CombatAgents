@@ -43,9 +43,13 @@ class PostRetrievalExecutor:
         """
         facts = []
         
-        # Pattern for currency amounts with type marker
+        # Pattern 1: currency amounts with type marker
         # Matches: €15000.00 (income), €8500.00 (expense), etc.
-        pattern = r'[\$€£]\s*([\d,.]+)\s*(million|billion|thousand|M|B|K)?\s*\((income|expense|entrata|uscita)\)?'
+        pattern_currency = r'[\$€£]\s*([\d,.]+)\s*(million|billion|thousand|M|B|K)?\s*\((income|expense|entrata|uscita)\)?'
+        
+        # Pattern 2: general numbers with unit
+        # Matches: Durata=24 mesi, 1396000 abitanti, ecc.
+        pattern_general = r'(?:=|:\s*|^|\s)([\d,.]+)\s+(mesi|anni|giorni|ore|abitanti|utenti|percent|%)'
         
         for seg in segments:
             text = seg.get('text', '')
@@ -55,8 +59,9 @@ class PostRetrievalExecutor:
             entity_matches = re.findall(r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b', text)
             primary_entity = entity_matches[0] if entity_matches else "unknown"
             
-            matches = re.finditer(pattern, text, re.IGNORECASE)
-            for match in matches:
+            # 1. Match currencies
+            matches_curr = re.finditer(pattern_currency, text, re.IGNORECASE)
+            for match in matches_curr:
                 try:
                     # Check if this fact matches the filter keywords
                     fact_type = match.group(3).lower() if match.lastindex >= 3 else None
@@ -93,6 +98,34 @@ class PostRetrievalExecutor:
                         context=context,
                         segment_index=seg_index,
                         fact_type=fact_type
+                    )
+                    facts.append(fact)
+                except (ValueError, IndexError):
+                    continue
+
+            # 2. Match general numbers and units
+            matches_gen = re.finditer(pattern_general, text, re.IGNORECASE)
+            for match in matches_gen:
+                try:
+                    unit = match.group(2).lower()
+                    # Apply specific filter exceptions where currency-specific terms are requested
+                    if filter_keywords and any(k in filter_keywords for k in ['income', 'expense', 'entrata', 'uscita', 'salary']):
+                        continue # General numbers do not match specific financial queries
+                        
+                    num_str = match.group(1).replace(',', '')
+                    value = float(num_str)
+                    
+                    start = max(0, match.start() - 30)
+                    end = min(len(text), match.end() + 30)
+                    context = text[start:end].strip()
+                    
+                    fact = NumericalFact(
+                        value=value,
+                        unit=unit,
+                        entity=primary_entity,
+                        context=context,
+                        segment_index=seg_index,
+                        fact_type=None
                     )
                     facts.append(fact)
                 except (ValueError, IndexError):
@@ -229,8 +262,23 @@ class PostRetrievalExecutor:
         """
         query_lower = query.lower()
         
+        # Superlative Patterns for direct intent mapping
+        SUPERLATIVE_PATTERNS = {
+            r"più (lungo|grande|alto|costoso|recente|vecchio|duraturo)": "max",
+            r"più (corto|piccolo|basso|economico|veloce|breve)":      "min",
+            r"men[oi] (lungo|grande|alto|costoso|recente|vecchio)":    "min",
+            r"(massimo|maggiore|peggiore|migliore)":            "max",
+            r"(minimo|minore)":                                 "min",
+            r"quant[oi] .+ in totale":                         "sum",
+            r"media":                                         "average"
+        }
+        
+        for pattern, agg_type in SUPERLATIVE_PATTERNS.items():
+            if re.search(pattern, query_lower):
+                return True, agg_type
+                
         # Sum indicators
-        if any(word in query_lower for word in ['total', 'sum', 'all', 'combined', 'altogether']):
+        if any(word in query_lower for word in ['total', 'sum', 'all', 'combined', 'altogether', 'totale']):
             return True, 'sum'
         
         # Count indicators

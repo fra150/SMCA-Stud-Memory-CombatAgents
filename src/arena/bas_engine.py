@@ -316,7 +316,26 @@ class BASEngine:
 
         # Log crescita memoria
         markers_after = self.studsar.studsar_network.get_total_markers()
-        self._log_memory_state(f"ingestion:{source_name}")
+        self.active_agents_pool = list(self.segment_agents.values())
+
+        print(f"  ✓ Processed '{source_name}': {len(segments)} segments → {len(created_agents)} active agents")
+        
+        # Inizializza/Aggiorna BM25 corpus
+        if not hasattr(self, 'bm25_agents_map'):
+            self.bm25_agents_map = []
+            
+        try:
+            from rank_bm25 import BM25Okapi
+            self.bm25_agents_map = list(self.segment_agents.values())
+            corpus_tokens = [agent.segment_text.lower().split() for agent in self.bm25_agents_map]
+            if corpus_tokens:
+                self.bm25 = BM25Okapi(corpus_tokens)
+            else:
+                self.bm25 = None
+            print(f"  ✓ BM25 Hybrid Lexical Memory updated")
+        except ImportError:
+            self.bm25 = None
+            print(f"  ⚠ rank_bm25 non trovato. Hybrid Retrieval disattivato.")
 
         stats = {
             'source': source_name,
@@ -358,51 +377,55 @@ class BASEngine:
             # Selezione fissa: primi k agenti
             return list(self.segment_agents.values())[:k]
 
-        # Selezione dinamica basata su similarità semantica
+        # Selezione dinamica basata su similarità semantica e entity tracking (Bug #3)
         print(f"  🔍 Selecting top {k} agents for query...")
 
         # Cerca segmenti simili in StudSar
-        indices, similarities, segments = self.studsar.search(query, k=min(k * 2, len(self.segment_agents)))
+        # Ora prendiamo max(k*2, 20) per non cercare in tutti, o tutti se sono pochi
+        search_k = min(max(k * 3, 20), len(self.segment_agents))
+        indices, similarities, segments = self.studsar.search(query, k=search_k)
 
-        if not indices:
-            # Fallback: selezione casuale ponderata
-            import random
-            weights = [sa.expertise_score for sa in self.segment_agents.values()]
-            selected_ids = random.choices(
-                list(self.segment_agents.keys()),
-                weights=weights,
-                k=min(k, len(self.segment_agents))
-            )
-            return [self.segment_agents[sid] for sid in selected_ids]
-
-        # Mappa risultati ad agenti
-        selected_agents = []
-        seen_indices = set()
-
-        for idx, sim in zip(indices, similarities):
-            # Trova agente corrispondente a questo segmento
-            for agent in self.segment_agents.values():
-                if agent.marker_id == idx and agent.agent_id not in [a.agent_id for a in selected_agents]:
-                    # Aggiorna expertise score basato sulla similarità
-                    agent.expertise_score = max(agent.expertise_score, sim)
-                    selected_agents.append(agent)
-                    seen_indices.add(idx)
-
-                    if len(selected_agents) >= k:
+        import re
+        entities = re.findall(r'\b[A-ZÀÈÌÒÙ][a-zàèìòùä]+\b|\b\d[\d.,]*\b', query)
+        
+        # Inizializza score per la query corrente e calcola entity boost
+        for agent in self.segment_agents.values():
+            agent.expertise_score = 0.0
+            if entities:
+                for entity in entities:
+                    if entity in agent.segment_text:
+                        agent.expertise_score += 0.08
+                        
+        if indices:
+            # Somma similarity
+            for idx, sim in zip(indices, similarities):
+                for agent in self.segment_agents.values():
+                    if agent.marker_id == idx:
+                        agent.expertise_score += float(sim)
                         break
 
-            if len(selected_agents) >= k:
-                break
+        # Eseguiamo il sort per la componente Semantic + Entity
+        sorted_semantic_agents = sorted(self.segment_agents.values(), key=lambda a: a.expertise_score, reverse=True)
+        semantic_top = sorted_semantic_agents[:k]
 
-        # Se non abbiamo abbastanza agenti, completa con altri
-        if len(selected_agents) < k:
-            remaining = [a for a in self.segment_agents.values()
-                        if a.agent_id not in [sa.agent_id for sa in selected_agents]]
-            # Ordina per expertise score
-            remaining.sort(key=lambda x: x.expertise_score, reverse=True)
-            selected_agents.extend(remaining[:k - len(selected_agents)])
+        bm25_top = []
+        if hasattr(self, 'bm25') and self.bm25 is not None:
+            # Pass 2: BM25 Lexical
+            query_tokens = query.lower().split()
+            bm25_scores = self.bm25.get_scores(query_tokens)
+            # Rimuoviamo punteggi a zero assoluto che non matchano nulla
+            top_bm25_indices = sorted(
+                [i for i, score in enumerate(bm25_scores) if score > 0],
+                key=lambda i: bm25_scores[i], 
+                reverse=True
+            )[:k]
+            bm25_top = [self.bm25_agents_map[i] for i in top_bm25_indices]
 
-        print(f"  ✓ Selected {len(selected_agents)} agents")
+        # Union of Semantic and BM25 agents with deduplication
+        combined = {a.agent_id: a for a in (semantic_top + bm25_top)}
+        selected_agents = list(combined.values())
+
+        print(f"  ✓ Selected {len(selected_agents)} agents (Hybrid Pool: {len(semantic_top)} Semantic, {len(bm25_top)} Lexical)")
 
         return selected_agents
 
@@ -475,7 +498,20 @@ class BASEngine:
         if agents_override:
             selected_agents = agents_override
         else:
-            selected_agents = self._select_agents_for_query(question)
+            import re
+            is_agg, agg_op = self.executor.detect_aggregation_query(question)
+            if is_agg:
+                print(f"  🔍 Aggregation/Superlative intent detected: {agg_op.upper()}. Bypassing top-K semantic retrieval.")
+                # Prendi tutti gli agenti che contengono cifre numeriche (i candidati per estrattori)
+                selected_agents = [
+                    a for a in self.segment_agents.values() 
+                    if re.search(r'\d+', a.segment_text)
+                ]
+                # Fallback se non si trova nulla
+                if not selected_agents:
+                    selected_agents = list(self.segment_agents.values())
+            else:
+                selected_agents = self._select_agents_for_query(question)
 
         if not selected_agents:
             return BASResult(
@@ -510,6 +546,13 @@ class BASEngine:
         # Estrai risposta finale
         if combat_result.champion_response:
             final_answer = combat_result.champion_response.text
+            
+            # P1 Bug #4: Uncertainty Gate
+            champion_confidence = combat_result.champion_response.confidence
+            max_segment_similarity = max(combat_result.champion_response.similarities) if combat_result.champion_response.similarities else 0.0
+            
+            if champion_confidence < 0.30 or max_segment_similarity < 0.25:
+                final_answer = "[BAS] Unknown: le informazioni disponibili non contengono una risposta definita."
         else:
             final_answer = "[BAS] Combat completed but no response generated."
 
