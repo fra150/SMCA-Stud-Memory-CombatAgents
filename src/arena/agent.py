@@ -201,13 +201,37 @@ class CombatAgent:
         total_weight = sum(combined_weights.values())
         if total_weight > 0:
             combined_weights = {k: v / total_weight for k, v in combined_weights.items()}
-        
-        # Weighted score
+            
+        # Bas weights base score calculation
         score = sum(
             combined_weights.get(dim, 0.0) * val
             for dim, val in dimensions.items()
         )
         
+        # Bug #1 Fix: Add agent differentiation based on specialization (continuous)
+        if hasattr(self, 'specialization') and self.specialization:
+            marker_id = self.specialization.get('marker_id')
+            retrieved_ids = response.markers_used or []
+            
+            agent_specialization_bonus = 0.0
+            segment_rank_weight = 0.0
+            
+            if marker_id is not None and retrieved_ids:
+                if marker_id in retrieved_ids:
+                    segment_rank = retrieved_ids.index(marker_id)
+                else:
+                    segment_rank = len(retrieved_ids)
+                
+                # Continuous formulation: 1.0 at index 0, linearly decreasing
+                rank_ratio = segment_rank / len(retrieved_ids)
+                agent_specialization_bonus = max(0.0, 1.0 - rank_ratio)
+                
+                # Rank weight scales differently to create separation between top vs middle
+                segment_rank_weight = max(0.0, 1.0 - (segment_rank * 0.25))
+            
+            # Apply adjusted weights
+            score = (score * 0.4) + (agent_specialization_bonus * 0.35) + (segment_rank_weight * 0.25)
+            
         return min(max(score, 0.0), 1.0)
     
     def record_result(self, won: bool, score: float, round_number: int,

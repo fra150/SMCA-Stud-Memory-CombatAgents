@@ -163,6 +163,7 @@ class StudSarNeural(nn.Module):
         """Updates the reputation score for a given marker ID."""
         if marker_id in self.marker_id_to_index:
             self.id_to_reputation[marker_id] += feedback_score
+            self.id_to_reputation[marker_id] = max(-0.3, float(self.id_to_reputation[marker_id]))
             print(f"  Updated reputation for marker ID {marker_id}. New score: {self.id_to_reputation[marker_id]:.2f}")
             return True
         else:

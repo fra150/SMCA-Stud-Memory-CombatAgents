@@ -124,15 +124,20 @@ class Arena:
 
         if god_intervention and winner_agent and winner_response and hasattr(winner_agent, "studsar"):
             try:
-                for mid in winner_response.markers_used:
+                winner_markers = set(winner_response.markers_used)
+                for mid in winner_markers:
                     winner_agent.studsar.update_marker_reputation(mid, 0.2)
                     # TMDR: Resurrection — grant decay immunity on God resolution
                     winner_agent.studsar.studsar_network.grant_resurrection(mid)
+                
+                penalized_markers = set()
                 for resp in responses:
                     if resp.agent_name == winner_name:
                         continue
                     for mid in resp.markers_used:
-                        winner_agent.studsar.update_marker_reputation(mid, -0.05)
+                        if mid not in winner_markers and mid not in penalized_markers:
+                            winner_agent.studsar.update_marker_reputation(mid, -0.05)
+                            penalized_markers.add(mid)
             except Exception:
                 pass
         

@@ -256,7 +256,7 @@ class LOCOMOBenchmark:
         metadata["answers"] = {
             "progetto_piu_lungo": "Progetto Gamma",
             "durata_media": sum(p["durata_mesi"] for p in projects) / len(projects),
-            "quanti_progetti_hanno_raggiunto_lancio": 1,
+            "quanti_lancio": 1,
         }
         
         for i in range(length):
