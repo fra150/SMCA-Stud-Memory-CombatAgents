@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# StudSar state files
+*.pth
+smca_state/
+bas_demo_state/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Charts output (generated)
+agent11/
+graficagent10/
+TMDRagent/
+smca_charts/

@@ -28,18 +28,26 @@ class Arena:
     
     def __init__(self, agents: List[CombatAgent], judge: Judge,
                  countdown: Optional[Countdown] = None,
-                 god_protocol: Optional[GodProtocol] = None):
+                 god_protocol: Optional[GodProtocol] = None,
+                 red_agent: Optional[CombatAgent] = None,
+                 studsar_manager = None):
         """Initialize the Arena.
         
         Args:
             agents: List of CombatAgents competing
             judge: The Judge who arbitrates standards and scores
             countdown: Optional Countdown for time pressure
+            god_protocol: Optional God protocol
+            red_agent: Optional adversarial agent (Ziora)
+            studsar_manager: Optional StudSar manager
         """
         self.agents = agents
         self.judge = judge
         self.countdown = countdown
         self.god_protocol = god_protocol
+        self.red_agent = red_agent
+        self.studsar_manager = studsar_manager
+        
         self.champion: Optional[CombatAgent] = None
         self.champion_response: Optional[AgentResponse] = None
         self.champion_score: float = 0.0
@@ -80,17 +88,94 @@ class Arena:
         print(f"  Pressure: {pressure:.1%}")
         print(f"  Competitors: {[a.name for a in self.agents]}")
         
-        # All agents generate responses
+        # All agents generate responses using their OWN segment + StudSar supplement
         responses: List[AgentResponse] = []
         for agent in self.agents:
-            response = agent.generate_response(query, standards)
+            # Hybrid: agent's OWN segment is primary, StudSar supplements for multi-hop
+            agent_context = {}
+            if hasattr(agent, 'specialization') and agent.specialization:
+                seg_text = agent.specialization.get('segment_text', '')
+                marker_id = agent.specialization.get('marker_id')
+                if seg_text:
+                    # Get StudSar supplements for cross-references (multi-hop, temporal)
+                    try:
+                        sup_ids, sup_sims, sup_segs = agent.studsar.search_with_reputation(
+                            query, k=5, reputation_weight=1.0
+                        )
+                        sup_segs = [s for s in (sup_segs or []) if s and str(s).strip()]
+                        sup_sims = [float(s) for s in (sup_sims or [])]
+                        sup_ids = list(sup_ids or [])
+                    except Exception:
+                        sup_segs, sup_sims, sup_ids = [], [], []
+                    
+                    # Own segment first (priority=1.0), then StudSar supplements
+                    all_segs = [seg_text] + [s for s in sup_segs if s != seg_text]
+                    all_sims = [1.0] + [s * 0.8 for s in sup_sims if sup_segs][:len(all_segs)-1]
+                    all_ids = ([marker_id] if marker_id is not None else []) + [i for i in sup_ids if i != marker_id]
+                    
+                    agent_context['segments_override'] = all_segs
+                    agent_context['similarities_override'] = all_sims[:len(all_segs)]
+                    agent_context['marker_ids_override'] = all_ids[:len(all_segs)]
+            
+            response = agent.generate_response(query, standards, context=agent_context if agent_context else None)
             responses.append(response)
             print(f"  [{agent.name}] Response generated "
                   f"(confidence: {response.confidence:.3f}, "
                   f"time: {response.generation_time:.3f}s)")
         
-        # Judge evaluates all responses
+        # Judge evaluates all responses semantically
         scores = self.judge.evaluate_responses(responses, standards)
+        
+        # Exhaustive Consensus Search (Phase 2): Ziora scores ALL agents' responses
+        if self.red_agent and self.studsar_manager:
+            alpha = 0.4  # Semantic Weight
+            beta = 0.6   # Resilience Weight (higher: facts over fluency)
+            combined_scores = {}
+            
+            # Retrieve query-relevant evidence ONCE from StudSar (ground truth)
+            try:
+                k_evidence = min(10, max(len(self.agents), 3))
+                _, _, query_evidence = self.studsar_manager.search_with_reputation(
+                    query, k=k_evidence, reputation_weight=1.0
+                )
+                query_evidence = [s for s in (query_evidence or []) if s and str(s).strip()]
+            except Exception:
+                query_evidence = []
+            
+            # If no StudSar evidence, use the query itself as a single evidence segment
+            if not query_evidence:
+                query_evidence = [query]
+            
+            for resp in responses:
+                agent_name = resp.agent_name
+                
+                # Use each agent's UNIQUE segment text for evaluation
+                # This breaks the tie: each agent has different content
+                agent_obj = next((a for a in self.agents if a.name == agent_name), None)
+                if agent_obj and hasattr(agent_obj, 'specialization') and agent_obj.specialization:
+                    agent_text = agent_obj.specialization.get('segment_text', resp.text)
+                else:
+                    agent_text = resp.text
+                
+                red_response = self.red_agent.generate_response(
+                    query=query,
+                    standards=['resilience'],
+                    context={
+                        'champion_text': agent_text,  # Agent's UNIQUE segment
+                        'evidence_segments': query_evidence,  # Common ground truth
+                        'tau': 0.05,
+                    }
+                )
+                red_metrics = (red_response.metadata or {}).get('red_metrics') or {}
+                severity = red_metrics.get('severity', 1.0)
+                resilience = 1.0 - severity
+                
+                # Combine Semantic Score and Resilience Score
+                combined_scores[agent_name] = (scores.get(agent_name, 0.0) * alpha) + (resilience * beta)
+                
+            # Replace raw semantic scores with combined scores
+            scores = combined_scores
+
         winner_name, winner_score = self.judge.determine_winner(scores, responses)
         god_intervention = False
 

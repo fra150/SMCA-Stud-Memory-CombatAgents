@@ -1,0 +1,353 @@
+--- bas_demo_state/bas_query_history_20260412_225020.json (原始)
+
+
++++ bas_demo_state/bas_query_history_20260412_225020.json (修改后)
+[
+  {
+    "query": "What is the relationship between neural networks and the human brain?",
+    "final_answer": "[Agent_0]\nQuery: What is the relationship between neural networks and the human brain?\n\n  [1] (0.51) Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize p\n  [2] (0.26) for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial o",
+    "champion_name": "Agent_0",
+    "combat_result": {
+      "query": "What is the relationship between neural networks and the human brain?",
+      "champion_name": "Agent_0",
+      "champion_response": {
+        "agent_name": "Agent_0",
+        "strategy": "specialist",
+        "text": "[Agent_0]\nQuery: What is the relationship between neural networks and the human brain?\n\n  [1] (0.51) Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize p\n  [2] (0.26) for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial o",
+        "markers_used": [
+          0,
+          1
+        ],
+        "marker_segments": [
+          "Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize patterns in data that humans cannot see. Deep learning has revolutionized computer vision and natural language processing. Neural networks are inspired by the structure of the human brain. The future of AI holds immense promise",
+          "for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial outcomes. Transparency and accountability are essential for trustworthy AI systems. Collaboration between humans and AI will define the next era of innovation."
+        ],
+        "similarities": [
+          0.5114798545837402,
+          0.2592608332633972
+        ],
+        "confidence": 0.5061382288734118,
+        "generation_time": 0.16061782836914062,
+        "metadata": {
+          "retrieval_k": 2,
+          "standards": [
+            "coherence",
+            "depth"
+          ],
+          "strategy_weights": {
+            "similarity": 0.2,
+            "coverage": 0.2,
+            "depth": 0.2,
+            "conciseness": 0.15,
+            "novelty": 0.15,
+            "speed": 0.1
+          }
+        },
+        "timestamp": "2026-04-12T22:50:19.496691"
+      },
+      "final_score": 0.4626072661479314,
+      "rounds": [
+        {
+          "round_number": 1,
+          "standards_used": [
+            "coherence",
+            "depth"
+          ],
+          "winner_name": "Agent_0",
+          "winner_score": 0.4626072661479314,
+          "loser_name": "Agent_1",
+          "loser_score": 0.4626072661479314,
+          "all_scores": {
+            "Agent_0": 0.4626072661479314,
+            "Agent_1": 0.4626072661479314
+          },
+          "all_responses": [
+            {
+              "agent_name": "Agent_0",
+              "strategy": "specialist",
+              "text": "[Agent_0]\nQuery: What is the relationship between neural networks and the human brain?\n\n  [1] (0.51) Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize p\n  [2] (0.26) for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial o",
+              "markers_used": [
+                0,
+                1
+              ],
+              "marker_segments": [
+                "Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize patterns in data that humans cannot see. Deep learning has revolutionized computer vision and natural language processing. Neural networks are inspired by the structure of the human brain. The future of AI holds immense promise",
+                "for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial outcomes. Transparency and accountability are essential for trustworthy AI systems. Collaboration between humans and AI will define the next era of innovation."
+              ],
+              "similarities": [
+                0.5114798545837402,
+                0.2592608332633972
+              ],
+              "confidence": 0.5061382288734118,
+              "generation_time": 0.16061782836914062,
+              "metadata": {
+                "retrieval_k": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.2,
+                  "coverage": 0.2,
+                  "depth": 0.2,
+                  "conciseness": 0.15,
+                  "novelty": 0.15,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-12T22:50:19.496691"
+            },
+            {
+              "agent_name": "Agent_1",
+              "strategy": "specialist",
+              "text": "[Agent_1]\nQuery: What is the relationship between neural networks and the human brain?\n\n  [1] (0.51) Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize p\n  [2] (0.26) for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial o",
+              "markers_used": [
+                0,
+                1
+              ],
+              "marker_segments": [
+                "Artificial Intelligence is transforming the world in unprecedented ways. Machine learning algorithms can now recognize patterns in data that humans cannot see. Deep learning has revolutionized computer vision and natural language processing. Neural networks are inspired by the structure of the human brain. The future of AI holds immense promise",
+                "for healthcare, education, and science. However, ethical considerations must guide AI development to ensure beneficial outcomes. Transparency and accountability are essential for trustworthy AI systems. Collaboration between humans and AI will define the next era of innovation."
+              ],
+              "similarities": [
+                0.5114798545837402,
+                0.2592608332633972
+              ],
+              "confidence": 0.5061382288734118,
+              "generation_time": 0.13841772079467773,
+              "metadata": {
+                "retrieval_k": 2,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "strategy_weights": {
+                  "similarity": 0.2,
+                  "coverage": 0.2,
+                  "depth": 0.2,
+                  "conciseness": 0.15,
+                  "novelty": 0.15,
+                  "speed": 0.1
+                }
+              },
+              "timestamp": "2026-04-12T22:50:19.635175"
+            }
+          ],
+          "pressure_level": 2.6166473290345493e-06,
+          "god_intervention": true,
+          "timestamp": "2026-04-12T22:50:19.831601"
+        }
+      ],
+      "total_rounds": 1,
+      "total_time": 0.7159688472747803,
+      "countdown_expired": true,
+      "god_interventions": 1,
+      "metadata": {
+        "agent_stats": {
+          "Agent_0": {
+            "name": "Agent_0",
+            "strategy": "specialist",
+            "wins": 1,
+            "losses": 0,
+            "win_rate": 1.0,
+            "average_score": 0.4626072661479314,
+            "total_competitions": 1,
+            "history": [
+              {
+                "round": 1,
+                "won": true,
+                "score": 0.4626072661479314,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              }
+            ]
+          },
+          "Agent_1": {
+            "name": "Agent_1",
+            "strategy": "specialist",
+            "wins": 0,
+            "losses": 1,
+            "win_rate": 0.0,
+            "average_score": 0.4626072661479314,
+            "total_competitions": 1,
+            "history": [
+              {
+                "round": 1,
+                "won": false,
+                "score": 0.4626072661479314,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ]
+              }
+            ]
+          }
+        },
+        "judge_stats": {
+          "total_judgments": 1,
+          "escalation_count": 1,
+          "autonomy_level": 0.0,
+          "current_confidence": 0.0,
+          "confidence_threshold": 0.6,
+          "god_decisions_count": 1,
+          "ambiguity_events": 1,
+          "competition_history_length": 1,
+          "standards_evolution": {
+            "history": [
+              {
+                "round": 1,
+                "standards": [
+                  "coherence",
+                  "depth"
+                ],
+                "method": "initial",
+                "context": {
+                  "query": "What is the relationship between neural networks and the human brain?",
+                  "pressure_level": 2.6166473290345493e-06,
+                  "round_number": 1,
+                  "agents_count": 2
+                }
+              }
+            ],
+            "performance": {
+              "precision": [],
+              "speed": [],
+              "creativity": [],
+              "coherence": [
+                0.2775643596887588
+              ],
+              "efficiency": [],
+              "novelty": [],
+              "depth": [
+                0.2775643596887588
+              ],
+              "relevance": [],
+              "conciseness": [],
+              "completeness": []
+            },
+            "rankings": [
+              {
+                "standard": "coherence",
+                "average_score": 0.2775643596887588,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.2775643596887588
+                ]
+              },
+              {
+                "standard": "depth",
+                "average_score": 0.2775643596887588,
+                "times_used": 1,
+                "trend": 0.0,
+                "recent_scores": [
+                  0.2775643596887588
+                ]
+              },
+              {
+                "standard": "precision",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "speed",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "creativity",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "efficiency",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "novelty",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "relevance",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "conciseness",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              },
+              {
+                "standard": "completeness",
+                "average_score": 0.0,
+                "times_used": 0,
+                "trend": 0.0,
+                "recent_scores": []
+              }
+            ],
+            "total_rounds": 1
+          }
+        },
+        "countdown_status": {
+          "total_seconds": 20.0,
+          "remaining": 20.0,
+          "elapsed": 0.0,
+          "fraction_remaining": 1.0,
+          "pressure_level": 0.0,
+          "is_running": false,
+          "is_paused": false,
+          "is_expired": false,
+          "triggered_thresholds": [],
+          "pressure_history_length": 2
+        }
+      },
+      "timestamp": "2026-04-12T22:50:20.051827"
+    },
+    "memory_stats": {
+      "total_markers": 2,
+      "markers_accessed": 4,
+      "total_agents": 2,
+      "active_agents": 2
+    },
+    "judge_confidence": 0.0,
+    "base_judge_confidence": 0.0,
+    "champion_resilience_score": 0.0,
+    "standards_evolution": [
+      [
+        "coherence",
+        "depth"
+      ]
+    ],
+    "god_was_consulted": true,
+    "total_processing_time": 1.2803165912628174,
+    "timestamp": "2026-04-12T22:50:20.454643",
+    "total_segments": 2,
+    "active_agents": 2,
+    "segment_distribution": {
+      "ai_intro": 1.0
+    },
+    "agent_activations": {
+      "ai_intro_seg_0": 1,
+      "ai_intro_seg_1": 1
+    },
+    "memory_coherence_score": 0.36804428696632385
+  }
+]

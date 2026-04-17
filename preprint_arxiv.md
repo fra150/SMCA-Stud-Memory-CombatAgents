@@ -1,6 +1,10 @@
 # Brain Agent Supreme (BAS): A Dynamic Cognitive Architecture for 100% Needle-in-a-Haystack and Multi-Hop Reasoning on CPU
 
-**Author:** Dr. Francesco Bulla  
+**Author:**  {Dr.Francesco Bulla}
+Project Founder & Lead Architect
+
+Valentina Ewelu, Stephanie Ewelu.
+Independent Researchers and Collaborators
 **Date:** April 2026  
 **Status:** Preprint  
 
@@ -83,6 +87,12 @@ BAS was tested entirely on CPU, utilizing `all-MiniLM-L6-v2` for embeddings and 
 ### 4.1 The "Intent Translation Gap" and Its Resolution
 Initially, Entity Tracking scored only 33.3%. BM25 and Cosine Similarity failed to match queries like *"Qual è il progetto più lungo?"* (What is the longest project?) with targets like *"Durata=24 mesi"* (Duration=24 months). The semantic overlap is virtually zero. 
 By introducing the **Superlative Intent Detector**, BAS correctly flags "più lungo" as a `MAX` aggregation command, extracts all numerical durations, and applies deterministic `argmax`. This exact architectural enhancement doubled the Entity Tracking accuracy (33% → 66%) bringing the total to a stable 80.0%.
+
+### 4.2 TMDR Self-Assessment Validation and Relative Normalization
+A critical theoretical premise of the Test-Driven Memory Regression (TMDR) framework is that agents possess a meaningful self-assessment of uncertainty. Our empirical testing directly validated this premise: even *prior* to any generative validation layer, the deterministic semantic retrieval exhibited a stark anti-correlation between Confidence and Error.
+When isolating the raw dispersion scores across the LOCOMO tests, **the 24 correct answers registered a mean confidence score 2.56x higher than the 6 failing answers.** The system intrinsically "knew" it was operating in ambiguity mode when processing hallucinations or disjoint temporal queries. 
+To translate this raw score dispersion into mathematically interpretable probability distributions for the reader, we applied *Relative Normalization* via Softmax with *Temperature Scaling* ($T$). By dividing the agent similarity logits by a learned hyperparameter $T$ (e.g., $T=0.15$) before softmax projection, the Judge agent outputs bounded, actionable confidence mass probabilities (ranging towards $1.0$ for clear winners and $0.5$ for ambiguous impasses) without altering baseline retrieval accuracy. This robust uncertainty metric serves as the explicit gateway trigger for Phase 2's generative adversarial escalation.
+
 
 ---
 

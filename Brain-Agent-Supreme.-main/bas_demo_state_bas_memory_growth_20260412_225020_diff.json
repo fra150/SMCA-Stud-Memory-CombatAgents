@@ -1,0 +1,18 @@
+--- bas_demo_state/bas_memory_growth_20260412_225020.json (原始)
+
+
++++ bas_demo_state/bas_memory_growth_20260412_225020.json (修改后)
+[
+  {
+    "event": "ingestion:ai_intro",
+    "total_markers": 2,
+    "total_agents": 2,
+    "timestamp": "2026-04-12T22:50:19.174177"
+  },
+  {
+    "event": "query:What is the relationship betwe",
+    "total_markers": 2,
+    "total_agents": 2,
+    "timestamp": "2026-04-12T22:50:20.454684"
+  }
+]

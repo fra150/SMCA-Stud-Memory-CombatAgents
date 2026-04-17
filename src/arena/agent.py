@@ -363,14 +363,27 @@ class CombatAgent:
         findings = []
         unsupported = 0
 
+        # Extract all numbers from evidence for factual resilience check
+        evidence_text = " ".join(evidence)
+        evidence_numbers = set(re.findall(r'\b\d[\d.,]*\b', evidence_text))
+
         for sent in sentences[: max(1, min(len(sentences), 10))]:
             stoks = self._tokenize(sent)
             best = 0.0
             for etoks in evidence_tokens:
                 best = max(best, self._jaccard(stoks, etoks))
-            if best < tau:
+            
+            # Factual Resilience Check: numerical assertions
+            sent_numbers = set(re.findall(r'\b\d[\d.,]*\b', sent))
+            unsupported_facts = [num for num in sent_numbers if num not in evidence_numbers]
+            
+            # If there's an unsupported exact number, or low Jaccard
+            if best < tau or unsupported_facts:
                 unsupported += 1
-                findings.append((best, sent))
+                if unsupported_facts:
+                    findings.append((best, f"Numerical Hallucination {unsupported_facts} → {sent}"))
+                else:
+                    findings.append((best, sent))
 
         unsupported_ratio = unsupported / max(len(sentences[: max(1, min(len(sentences), 10))]), 1)
         severity = min(max(unsupported_ratio, 0.0), 1.0)

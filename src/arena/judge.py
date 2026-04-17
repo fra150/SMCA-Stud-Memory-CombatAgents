@@ -138,25 +138,29 @@ class Judge:
             score = self._score_response(response, standards)
             scores[response.agent_name] = score
         
-        # Calculate confidence based on score dispersion
-        if len(scores) >= 2:
+        # Calculate confidence using Relative Normalization (Softmax with Temperature Scaling)
+        if len(scores) >= 1:
             score_values = list(scores.values())
-            score_range = max(score_values) - min(score_values)
-            score_std = float(np.std(score_values))
             
-            # High dispersion = high confidence (clear winner)
-            # Low dispersion = low confidence (ambiguous)
-            self._current_confidence = min(1.0, score_range * 3 + score_std * 2)
+            # Temperature scaling parameter T (fixed hyperparameter)
+            T = 0.15  # T < 1 sharpens, T > 1 flattens
+            
+            # Convert scores to scaled logits for numeric stability
+            scaled_logits = np.array(score_values) / T
+            exp_logits = np.exp(scaled_logits - np.max(scaled_logits)) 
+            
+            # Softmax probabilities
+            softmax_probs = exp_logits / np.sum(exp_logits)
+            
+            # The confidence is the probability mass assigned to the winning agent
+            self._current_confidence = float(np.max(softmax_probs))
         else:
-            self._current_confidence = 0.5
+            self._current_confidence = 0.0
 
         total_markers_used = sum(len(r.markers_used) for r in responses)
         if total_markers_used == 0:
-            self._current_confidence = min(self._current_confidence, 0.05)
-        else:
-            markers_per_agent = total_markers_used / max(len(responses), 1)
-            if markers_per_agent < 1.0:
-                self._current_confidence *= markers_per_agent
+            self._current_confidence *= 0.5  # Penalize if no markers used
+
         
         # Log if ambiguous
         if self._current_confidence < self.confidence_threshold:

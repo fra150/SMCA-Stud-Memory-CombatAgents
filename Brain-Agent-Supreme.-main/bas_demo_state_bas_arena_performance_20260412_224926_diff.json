@@ -1,0 +1,16 @@
+--- bas_demo_state/bas_arena_performance_20260412_224926.json (原始)
+
+
++++ bas_demo_state/bas_arena_performance_20260412_224926.json (修改后)
+[
+  {
+    "query": "What is the relationship between neural networks and the human brain?",
+    "champion": "Agent_0",
+    "confidence": 0.0,
+    "active_agents": 2,
+    "total_agents": 2,
+    "processing_time": 1.2199251651763916,
+    "rounds": 1,
+    "timestamp": "2026-04-12T22:49:26.156022"
+  }
+]

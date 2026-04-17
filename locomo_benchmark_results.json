@@ -1,12 +1,12 @@
 {
   "summary": {
     "total_tests": 30,
-    "correct_tests": 24,
-    "accuracy": 80.0,
-    "avg_confidence": 0.001766077247232784,
-    "avg_latency": 0.4600540002187093,
-    "avg_coherence": 0.6861163447300593,
-    "timestamp": "2026-04-14T23:19:38.908327"
+    "correct_tests": 26,
+    "accuracy": 86.66666666666667,
+    "avg_confidence": 0.10235705824869064,
+    "avg_latency": 0.6784822146097819,
+    "avg_coherence": 0.6914017568031947,
+    "timestamp": "2026-04-17T21:45:24.353223"
   },
   "by_category": {
     "needle": {
@@ -25,8 +25,8 @@
       "total": 6
     },
     "aggregation": {
-      "accuracy": 66.66666666666666,
-      "correct": 4,
+      "accuracy": 100.0,
+      "correct": 6,
       "total": 6
     },
     "entity": {
@@ -42,13 +42,13 @@
       "document_length": 20,
       "question": "Chi è l'informatore menzionato nel documento?",
       "expected_answer": "L'informatore chiave è Giovanni Rossi, contattabile tramite email criptata.",
-      "actual_answer": "[Agent_0]\nQuery: Chi è l'informatore menzionato nel documento?\n\n  [1] (0.59) [SEGMENTO 0] L'informatore chiave è Giovanni Rossi, contattabile tramite ...",
+      "actual_answer": "[Agent_0]\nQuery: Chi è l'informatore menzionato nel documento?\n\n  [1] (1.00) [SEGMENTO 0] L'informatore chiave è Giovanni Rossi, contattabile tramite ...",
       "is_correct": true,
-      "confidence": 2.220446049250313e-16,
-      "latency_seconds": 0.3963139057159424,
+      "confidence": 0.14572630070688936,
+      "latency_seconds": 0.530102014541626,
       "agents_used": 7,
       "memory_coherence": 0.8204299211502075,
-      "timestamp": "2026-04-14T23:18:53.009229"
+      "timestamp": "2026-04-17T21:44:27.803205"
     },
     {
       "test_name": "needle_password",
@@ -56,13 +56,13 @@
       "document_length": 20,
       "question": "Qual è la password master del sistema?",
       "expected_answer": "La password master del sistema è: AlphaBeta1987!GammaDelta",
-      "actual_answer": "[Agent_1]\nQuery: Qual è la password master del sistema?\n\n  [1] (0.67) [SEGMENTO 3] La password master del sistema è: AlphaBeta1987!GammaDelta [SEGMENT...",
+      "actual_answer": "[Agent_1]\nQuery: Qual è la password master del sistema?\n\n  [1] (1.00) [SEGMENTO 3] La password master del sistema è: AlphaBeta1987!GammaDelta [SEGMENT...",
       "is_correct": true,
-      "confidence": 0.0,
-      "latency_seconds": 0.375368595123291,
+      "confidence": 0.14748798643319047,
+      "latency_seconds": 0.5457279682159424,
       "agents_used": 7,
       "memory_coherence": 0.8204299211502075,
-      "timestamp": "2026-04-14T23:18:53.384628"
+      "timestamp": "2026-04-17T21:44:28.348962"
     },
     {
       "test_name": "needle_codice",
@@ -70,13 +70,13 @@
       "document_length": 20,
       "question": "Qual è il codice di accesso al vault?",
       "expected_answer": "Il codice di accesso al vault è: 7394-XKCD-2841-MNPR",
-      "actual_answer": "[Agent_1]\nQuery: Qual è il codice di accesso al vault?\n\n  [1] (0.51) [SEGMENTO 3] La password master del sistema è: AlphaBeta1987!GammaDelta [SEGMENTO...",
+      "actual_answer": "[Agent_1]\nQuery: Qual è il codice di accesso al vault?\n\n  [1] (1.00) [SEGMENTO 3] La password master del sistema è: AlphaBeta1987!GammaDelta [SEGMENTO...",
       "is_correct": true,
-      "confidence": 2.220446049250313e-16,
-      "latency_seconds": 0.3895869255065918,
+      "confidence": 0.14600714337061257,
+      "latency_seconds": 0.570042610168457,
       "agents_used": 7,
       "memory_coherence": 0.8204300403594971,
-      "timestamp": "2026-04-14T23:18:53.774242"
+      "timestamp": "2026-04-17T21:44:28.919031"
     },
     {
       "test_name": "needle_informatore",
@@ -84,13 +84,13 @@
       "document_length": 50,
       "question": "Chi è l'informatore menzionato nel documento?",
       "expected_answer": "L'informatore chiave è Giovanni Rossi, contattabile tramite email criptata.",
-      "actual_answer": "[Agent_21]\nQuery: Chi è l'informatore menzionato nel documento?\n\n  [1] (0.61) [SEGMENTO 0] Documento amministrativo contenente informazioni di routine...",
+      "actual_answer": "[Agent_0]\nQuery: Chi è l'informatore menzionato nel documento?\n\n  [1] (1.00) [SEGMENTO 0] Documento amministrativo contenente informazioni di routine ...",
       "is_correct": true,
-      "confidence": 0.0011999999999998678,
-      "latency_seconds": 0.39237499237060547,
+      "confidence": 0.10273917257468582,
+      "latency_seconds": 0.536431074142456,
       "agents_used": 10,
       "memory_coherence": 0.9371904134750366,
-      "timestamp": "2026-04-14T23:18:58.244300"
+      "timestamp": "2026-04-17T21:44:33.453494"
     },
     {
       "test_name": "needle_password",
@@ -98,13 +98,13 @@
       "document_length": 50,
       "question": "Qual è la password master del sistema?",
       "expected_answer": "La password master del sistema è: AlphaBeta1987!GammaDelta",
-      "actual_answer": "[Agent_18]\nQuery: Qual è la password master del sistema?\n\n  [1] (0.65) [SEGMENTO 5] Documento amministrativo contenente informazioni di routine su pro...",
+      "actual_answer": "[Agent_2]\nQuery: Qual è la password master del sistema?\n\n  [1] (1.00) [SEGMENTO 5] Documento amministrativo contenente informazioni di routine su proc...",
       "is_correct": true,
-      "confidence": 0.0011987577586394932,
-      "latency_seconds": 0.4450979232788086,
+      "confidence": 0.09701165255224745,
+      "latency_seconds": 0.5903670787811279,
       "agents_used": 11,
       "memory_coherence": 0.8568334579467773,
-      "timestamp": "2026-04-14T23:18:58.689423"
+      "timestamp": "2026-04-17T21:44:34.043884"
     },
     {
       "test_name": "needle_codice",
@@ -112,13 +112,13 @@
       "document_length": 50,
       "question": "Qual è il codice di accesso al vault?",
       "expected_answer": "Il codice di accesso al vault è: 7394-XKCD-2841-MNPR",
-      "actual_answer": "[Agent_2]\nQuery: Qual è il codice di accesso al vault?\n\n  [1] (0.66) [SEGMENTO 40] Il codice di accesso al vault è: 7394-XKCD-2841-MNPR\n\n[SEGMENTO 41]...",
+      "actual_answer": "[Agent_2]\nQuery: Qual è il codice di accesso al vault?\n\n  [1] (1.00) [SEGMENTO 5] Documento amministrativo contenente informazioni di routine su proce...",
       "is_correct": true,
-      "confidence": 0.0014046556940721091,
-      "latency_seconds": 0.7132320404052734,
+      "confidence": 0.06635146461605329,
+      "latency_seconds": 0.9598722457885742,
       "agents_used": 16,
       "memory_coherence": 0.8897987008094788,
-      "timestamp": "2026-04-14T23:18:59.402975"
+      "timestamp": "2026-04-17T21:44:35.003779"
     },
     {
       "test_name": "multi_hop_dove_lavora_marco",
@@ -126,13 +126,13 @@
       "document_length": 20,
       "question": "Dove lavora Marco Rossi e in quale città?",
       "expected_answer": "TechCorp Italia a Milano",
-      "actual_answer": "[Agent_3]\nQuery: Dove lavora Marco Rossi e in quale città?\n\n  [1] (0.57) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Tecnico press...",
+      "actual_answer": "[Agent_9]\nQuery: Dove lavora Marco Rossi e in quale città?\n\n  [1] (1.00) Report finanziario: Performance positive across all sectors.\n  [2] (0.46) [SE...",
       "is_correct": true,
-      "confidence": 0.003427193783432662,
-      "latency_seconds": 0.41900038719177246,
+      "confidence": 0.10769276335554101,
+      "latency_seconds": 0.5131645202636719,
       "agents_used": 10,
       "memory_coherence": 0.54141765832901,
-      "timestamp": "2026-04-14T23:19:03.265158"
+      "timestamp": "2026-04-17T21:44:39.095460"
     },
     {
       "test_name": "multi_hop_abitanti_citta_marco",
@@ -140,13 +140,13 @@
       "document_length": 20,
       "question": "Quanti abitanti ha la città dove lavora Marco Rossi?",
       "expected_answer": "1396000",
-      "actual_answer": "[Agent_0]\nQuery: Quanti abitanti ha la città dove lavora Marco Rossi?\n\n  [1] (0.60) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Te...",
+      "actual_answer": "[Agent_0]\nQuery: Quanti abitanti ha la città dove lavora Marco Rossi?\n\n  [1] (1.00) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Te...",
       "is_correct": true,
-      "confidence": 0.0,
-      "latency_seconds": 0.44478869438171387,
+      "confidence": 0.10603461781549522,
+      "latency_seconds": 0.6052250862121582,
       "agents_used": 10,
       "memory_coherence": 0.5414177179336548,
-      "timestamp": "2026-04-14T23:19:03.709967"
+      "timestamp": "2026-04-17T21:44:39.700705"
     },
     {
       "test_name": "multi_hop_anno_fondazione_innovazione",
@@ -154,13 +154,13 @@
       "document_length": 20,
       "question": "Quando è stata fondata Innovazione SpA?",
       "expected_answer": "2015",
-      "actual_answer": "[Agent_7]\nQuery: Quando è stata fondata Innovazione SpA?\n\n  [1] (0.58) [SEGMENTO 6] Azienda: Innovazione SpA opera nel settore Consulenza con sede pri...",
+      "actual_answer": "[Agent_4]\nQuery: Quando è stata fondata Innovazione SpA?\n\n  [1] (1.00) Popolazione: 2873000 abitanti. [SEGMENTO 8] Nota operativa: Procedure standardi...",
       "is_correct": true,
-      "confidence": 0.001399392360517998,
-      "latency_seconds": 0.406949520111084,
+      "confidence": 0.10359393229453806,
+      "latency_seconds": 0.569481372833252,
       "agents_used": 10,
       "memory_coherence": 0.5414177179336548,
-      "timestamp": "2026-04-14T23:19:04.116937"
+      "timestamp": "2026-04-17T21:44:40.270204"
     },
     {
       "test_name": "multi_hop_dove_lavora_marco",
@@ -168,13 +168,13 @@
       "document_length": 50,
       "question": "Dove lavora Marco Rossi e in quale città?",
       "expected_answer": "TechCorp Italia a Milano",
-      "actual_answer": "[Agent_17]\nQuery: Dove lavora Marco Rossi e in quale città?\n\n  [1] (0.57) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Tecnico pres...",
+      "actual_answer": "[Agent_4]\nQuery: Dove lavora Marco Rossi e in quale città?\n\n  [1] (1.00) Popolazione: 2873000 abitanti. [SEGMENTO 8] Nota operativa: Procedure standar...",
       "is_correct": true,
-      "confidence": 0.0011939387691342917,
-      "latency_seconds": 0.427762508392334,
+      "confidence": 0.10547442473039041,
+      "latency_seconds": 0.6014049053192139,
       "agents_used": 10,
       "memory_coherence": 0.6573009490966797,
-      "timestamp": "2026-04-14T23:19:08.319671"
+      "timestamp": "2026-04-17T21:44:47.151817"
     },
     {
       "test_name": "multi_hop_abitanti_citta_marco",
@@ -182,13 +182,13 @@
       "document_length": 50,
       "question": "Quanti abitanti ha la città dove lavora Marco Rossi?",
       "expected_answer": "1396000",
-      "actual_answer": "[Agent_0]\nQuery: Quanti abitanti ha la città dove lavora Marco Rossi?\n\n  [1] (0.60) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Te...",
+      "actual_answer": "[Agent_0]\nQuery: Quanti abitanti ha la città dove lavora Marco Rossi?\n\n  [1] (1.00) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Te...",
       "is_correct": true,
-      "confidence": 0.0012911188029985717,
-      "latency_seconds": 0.47096705436706543,
+      "confidence": 0.1036682047618237,
+      "latency_seconds": 0.6060445308685303,
       "agents_used": 10,
       "memory_coherence": 0.6573008894920349,
-      "timestamp": "2026-04-14T23:19:08.790657"
+      "timestamp": "2026-04-17T21:44:47.757883"
     },
     {
       "test_name": "multi_hop_anno_fondazione_innovazione",
@@ -196,13 +196,13 @@
       "document_length": 50,
       "question": "Quando è stata fondata Innovazione SpA?",
       "expected_answer": "2015",
-      "actual_answer": "[Agent_12]\nQuery: Quando è stata fondata Innovazione SpA?\n\n  [1] (0.58) [SEGMENTO 6] Azienda: Innovazione SpA opera nel settore Consulenza con sede pr...",
+      "actual_answer": "[Agent_0]\nQuery: Quando è stata fondata Innovazione SpA?\n\n  [1] (1.00) [SEGMENTO 0] Profile: Marco Rossi ricopre il ruolo di Direttore Tecnico presso ...",
       "is_correct": true,
-      "confidence": 0.0023499090833953118,
-      "latency_seconds": 0.4455702304840088,
+      "confidence": 0.10434723898693941,
+      "latency_seconds": 0.5895295143127441,
       "agents_used": 10,
       "memory_coherence": 0.6444790959358215,
-      "timestamp": "2026-04-14T23:19:09.236249"
+      "timestamp": "2026-04-17T21:44:48.347430"
     },
     {
       "test_name": "temporal_quando_fondata",
@@ -210,13 +210,13 @@
       "document_length": 20,
       "question": "Quando è stata fondata la startup Alpha?",
       "expected_answer": "2020-01-15",
-      "actual_answer": "[Agent_15]\nQuery: Quando è stata fondata la startup Alpha?\n\n  [1] (0.57) Alpha annuncia espansione. Tipo: business. [SEGMENTO 8]\n  [2] (0.48) [SEGMENT...",
+      "actual_answer": "[Agent_4]\nQuery: Quando è stata fondata la startup Alpha?\n\n  [1] (1.00) Tipo: business. [SEGMENTO 4] Data: 2022-02-28. Evento: Gamma Tech diventa divi...",
       "is_correct": true,
-      "confidence": 0.0022800000000001708,
-      "latency_seconds": 0.3413503170013428,
+      "confidence": 0.10668578969011647,
+      "latency_seconds": 0.5276603698730469,
       "agents_used": 10,
       "memory_coherence": 0.5655943751335144,
-      "timestamp": "2026-04-14T23:19:12.966962"
+      "timestamp": "2026-04-17T21:44:52.420668"
     },
     {
       "test_name": "temporal_primo_investimento",
@@ -224,13 +224,13 @@
       "document_length": 20,
       "question": "Quando Alpha ha ricevuto il primo investimento?",
       "expected_answer": "2020-06-20",
-      "actual_answer": "[Agent_8]\nQuery: Quando Alpha ha ricevuto il primo investimento?\n\n  [1] (0.53) Alpha annuncia espansione. Tipo: business. [SEGMENTO 8]\n  [2] (0.49) Up...",
+      "actual_answer": "[Agent_8]\nQuery: Quando Alpha ha ricevuto il primo investimento?\n\n  [1] (1.00) Alpha annuncia espansione. Tipo: business. [SEGMENTO 8]\n  [2] (0.43) Up...",
       "is_correct": false,
-      "confidence": 2.220446049250313e-16,
-      "latency_seconds": 0.4078187942504883,
+      "confidence": 0.0963315297215026,
+      "latency_seconds": 0.6126515865325928,
       "agents_used": 11,
       "memory_coherence": 0.5470256805419922,
-      "timestamp": "2026-04-14T23:19:13.374798"
+      "timestamp": "2026-04-17T21:44:53.033336"
     },
     {
       "test_name": "temporal_quando_acquisizione",
@@ -238,13 +238,13 @@
       "document_length": 20,
       "question": "Quando Alpha ha acquisito Gamma Tech?",
       "expected_answer": "2021-09-05",
-      "actual_answer": "[Agent_14]\nQuery: Quando Alpha ha acquisito Gamma Tech?\n\n  [1] (0.61) Tipo: product. [SEGMENTO 3] Data: 2021-09-05. Evento: Alpha acquisisce Gamma Tec...",
+      "actual_answer": "[Agent_14]\nQuery: Quando Alpha ha acquisito Gamma Tech?\n\n  [1] (1.00) Update periodico sulle operazioni aziendali in corso. [SEGMENTO 18] Update perio...",
       "is_correct": true,
-      "confidence": 0.0025244813156762623,
-      "latency_seconds": 0.38339853286743164,
+      "confidence": 0.10592113122174761,
+      "latency_seconds": 0.5714466571807861,
       "agents_used": 10,
-      "memory_coherence": 0.5585790276527405,
-      "timestamp": "2026-04-14T23:19:13.758214"
+      "memory_coherence": 0.5585790872573853,
+      "timestamp": "2026-04-17T21:44:53.604799"
     },
     {
       "test_name": "temporal_quando_fondata",
@@ -252,13 +252,13 @@
       "document_length": 50,
       "question": "Quando è stata fondata la startup Alpha?",
       "expected_answer": "2020-01-15",
-      "actual_answer": "[Agent_4]\nQuery: Quando è stata fondata la startup Alpha?\n\n  [1] (0.57) Alpha annuncia espansione. Tipo: business. [SEGMENTO 8]\n  [2] (0.48) [SEGMENTO...",
+      "actual_answer": "[Agent_31]\nQuery: Quando è stata fondata la startup Alpha?\n\n  [1] (1.00) Update periodico sulle operazioni aziendali in corso.\n  [2] (0.46) Alpha annu...",
       "is_correct": true,
-      "confidence": 0.006595975911746599,
-      "latency_seconds": 0.33353662490844727,
+      "confidence": 0.11805416756946613,
+      "latency_seconds": 0.5848870277404785,
       "agents_used": 10,
       "memory_coherence": 0.5655943751335144,
-      "timestamp": "2026-04-14T23:19:17.766017"
+      "timestamp": "2026-04-17T21:44:58.116949"
     },
     {
       "test_name": "temporal_primo_investimento",
@@ -266,13 +266,13 @@
       "document_length": 50,
       "question": "Quando Alpha ha ricevuto il primo investimento?",
       "expected_answer": "2020-06-20",
-      "actual_answer": "[Agent_31]\nQuery: Quando Alpha ha ricevuto il primo investimento?\n\n  [1] (0.53) Alpha annuncia espansione. Tipo: business. [SEGMENTO 8]\n  [2] (0.49) U...",
+      "actual_answer": "[Agent_4]\nQuery: Quando Alpha ha ricevuto il primo investimento?\n\n  [1] (1.00) Tipo: business. [SEGMENTO 4] Data: 2022-02-28. Evento: Gamma Tech diven...",
       "is_correct": false,
-      "confidence": 0.002391607978310141,
-      "latency_seconds": 0.4279642105102539,
+      "confidence": 0.08859233812316757,
+      "latency_seconds": 0.6728084087371826,
       "agents_used": 12,
       "memory_coherence": 0.5625130534172058,
-      "timestamp": "2026-04-14T23:19:18.193998"
+      "timestamp": "2026-04-17T21:44:58.789775"
     },
     {
       "test_name": "temporal_quando_acquisizione",
@@ -280,13 +280,13 @@
       "document_length": 50,
       "question": "Quando Alpha ha acquisito Gamma Tech?",
       "expected_answer": "2021-09-05",
-      "actual_answer": "[Agent_25]\nQuery: Quando Alpha ha acquisito Gamma Tech?\n\n  [1] (0.61) Tipo: product. [SEGMENTO 3] Data: 2021-09-05. Evento: Alpha acquisisce Gamma Tec...",
+      "actual_answer": "[Agent_5]\nQuery: Quando Alpha ha acquisito Gamma Tech?\n\n  [1] (1.00) Tipo: business. [SEGMENTO 5] Data: 2022-11-15. Evento: Alpha supera 1 milione ute...",
       "is_correct": true,
-      "confidence": 0.0051054886226901885,
-      "latency_seconds": 0.40777587890625,
+      "confidence": 0.09550296952868519,
+      "latency_seconds": 0.6518716812133789,
       "agents_used": 11,
       "memory_coherence": 0.547482967376709,
-      "timestamp": "2026-04-14T23:19:18.602108"
+      "timestamp": "2026-04-17T21:44:59.441661"
     },
     {
       "test_name": "aggregation_totale_entrate",
@@ -296,11 +296,11 @@
       "expected_answer": "64500",
       "actual_answer": "64500.0 (Sum of 4 numerical values after filtering: 64500.0)",
       "is_correct": true,
-      "confidence": 0.00882495161447692,
-      "latency_seconds": 0.38453006744384766,
+      "confidence": 0.1173887686019318,
+      "latency_seconds": 0.4897196292877197,
       "agents_used": 9,
       "memory_coherence": 0.4820750653743744,
-      "timestamp": "2026-04-14T23:19:22.494792"
+      "timestamp": "2026-04-17T21:45:03.606725"
     },
     {
       "test_name": "aggregation_totale_uscite",
@@ -310,11 +310,11 @@
       "expected_answer": "28900",
       "actual_answer": "28900.0 (Sum of 4 numerical values after filtering: 28900.0)",
       "is_correct": true,
-      "confidence": 0.0,
-      "latency_seconds": 0.354259729385376,
+      "confidence": 0.11903924065642611,
+      "latency_seconds": 0.5238683223724365,
       "agents_used": 9,
       "memory_coherence": 0.4820750653743744,
-      "timestamp": "2026-04-14T23:19:22.849070"
+      "timestamp": "2026-04-17T21:45:04.130647"
     },
     {
       "test_name": "aggregation_bilancio_netto",
@@ -322,13 +322,13 @@
       "document_length": 20,
       "question": "Qual è il bilancio netto?",
       "expected_answer": "35600",
-      "actual_answer": "[Agent_8]\nQuery: Qual è il bilancio netto?\n\n  [1] (0.43) [SEGMENT 0] Transaction #1: Vendita prodotto A. Amount: €15000.00 (income). [SEGMENT 1] Trans...",
-      "is_correct": false,
-      "confidence": 0.0007007127746524183,
-      "latency_seconds": 0.3527219295501709,
+      "actual_answer": "35600.0 (Net balance: income (64500.0) - expense (28900.0) = 35600.0)",
+      "is_correct": true,
+      "confidence": 0.11782474513883516,
+      "latency_seconds": 0.5022461414337158,
       "agents_used": 9,
       "memory_coherence": 0.4820750653743744,
-      "timestamp": "2026-04-14T23:19:23.201814"
+      "timestamp": "2026-04-17T21:45:04.632910"
     },
     {
       "test_name": "aggregation_totale_entrate",
@@ -338,11 +338,11 @@
       "expected_answer": "64500",
       "actual_answer": "64500.0 (Sum of 4 numerical values after filtering: 64500.0)",
       "is_correct": true,
-      "confidence": 0.00016501792268626628,
-      "latency_seconds": 0.7180893421173096,
+      "confidence": 0.05647317560717371,
+      "latency_seconds": 1.0311098098754883,
       "agents_used": 19,
       "memory_coherence": 0.6563100814819336,
-      "timestamp": "2026-04-14T23:19:27.459691"
+      "timestamp": "2026-04-17T21:45:09.655133"
     },
     {
       "test_name": "aggregation_totale_uscite",
@@ -352,11 +352,11 @@
       "expected_answer": "28900",
       "actual_answer": "28900.0 (Sum of 4 numerical values after filtering: 28900.0)",
       "is_correct": true,
-      "confidence": 0.0016049752616417337,
-      "latency_seconds": 0.7644705772399902,
+      "confidence": 0.05687093941026148,
+      "latency_seconds": 1.0302367210388184,
       "agents_used": 19,
       "memory_coherence": 0.6563100814819336,
-      "timestamp": "2026-04-14T23:19:28.224226"
+      "timestamp": "2026-04-17T21:45:10.685386"
     },
     {
       "test_name": "aggregation_bilancio_netto",
@@ -364,13 +364,13 @@
       "document_length": 50,
       "question": "Qual è il bilancio netto?",
       "expected_answer": "35600",
-      "actual_answer": "[Agent_0]\nQuery: Qual è il bilancio netto?\n\n  [1] (0.43) [SEGMENT 0] Transaction #1: Vendita prodotto A. Amount: €15000.00 (income). [SEGMENT 1] Trans...",
-      "is_correct": false,
-      "confidence": 0.0,
-      "latency_seconds": 0.4458458423614502,
-      "agents_used": 10,
-      "memory_coherence": 0.49774783849716187,
-      "timestamp": "2026-04-14T23:19:28.670095"
+      "actual_answer": "35600.0 (Net balance: income (64500.0) - expense (28900.0) = 35600.0)",
+      "is_correct": true,
+      "confidence": 0.05889024865197105,
+      "latency_seconds": 1.035670280456543,
+      "agents_used": 19,
+      "memory_coherence": 0.6563100814819336,
+      "timestamp": "2026-04-17T21:45:11.721071"
     },
     {
       "test_name": "entity_progetto_piu_lungo",
@@ -378,13 +378,13 @@
       "document_length": 20,
       "question": "Qual è il progetto più lungo?",
       "expected_answer": "Progetto Gamma",
-      "actual_answer": "24.0 (Maximum value: 24.0 (entity: Progetto Alpha))",
+      "actual_answer": "24.0 (Maximum value: 24.0 (entity: Durata))",
       "is_correct": false,
-      "confidence": 0.0004124054596761923,
-      "latency_seconds": 0.2730293273925781,
+      "confidence": 0.14586012297597736,
+      "latency_seconds": 0.44721055030822754,
       "agents_used": 7,
       "memory_coherence": 0.8229600787162781,
-      "timestamp": "2026-04-14T23:19:32.523439"
+      "timestamp": "2026-04-17T21:45:16.199370"
     },
     {
       "test_name": "entity_durata_media",
@@ -394,11 +394,11 @@
       "expected_answer": "18.0",
       "actual_answer": "18.0 (Average of 3 values: 18.0)",
       "is_correct": true,
-      "confidence": 0.0013180296175866375,
-      "latency_seconds": 0.30507779121398926,
+      "confidence": 0.1454071719495772,
+      "latency_seconds": 0.4908473491668701,
       "agents_used": 7,
       "memory_coherence": 0.8229600787162781,
-      "timestamp": "2026-04-14T23:19:32.828535"
+      "timestamp": "2026-04-17T21:45:16.690235"
     },
     {
       "test_name": "entity_quanti_lancio",
@@ -406,13 +406,13 @@
       "document_length": 20,
       "question": "Quanti progetti hanno raggiunto la fase di lancio?",
       "expected_answer": "1",
-      "actual_answer": "[Agent_0]\nQuery: Quanti progetti hanno raggiunto la fase di lancio?\n\n  [1] (0.43) [SEGMENTO 0] Progetto Alpha: Fase iniziale=concept, Fase finale=lanc...",
+      "actual_answer": "[Agent_3]\nQuery: Quanti progetti hanno raggiunto la fase di lancio?\n\n  [1] (1.00) [SEGMENTO 9] Report avanzamento progetti: aggiornamenti periodici su...",
       "is_correct": true,
-      "confidence": 0.0,
-      "latency_seconds": 0.3267333507537842,
+      "confidence": 0.1441078447806676,
+      "latency_seconds": 0.4679074287414551,
       "agents_used": 7,
-      "memory_coherence": 0.8229600191116333,
-      "timestamp": "2026-04-14T23:19:33.155289"
+      "memory_coherence": 0.8229600787162781,
+      "timestamp": "2026-04-17T21:45:17.158161"
     },
     {
       "test_name": "entity_progetto_piu_lungo",
@@ -420,13 +420,13 @@
       "document_length": 50,
       "question": "Qual è il progetto più lungo?",
       "expected_answer": "Progetto Gamma",
-      "actual_answer": "24.0 (Maximum value: 24.0 (entity: Progetto Alpha))",
+      "actual_answer": "24.0 (Maximum value: 24.0 (entity: Durata))",
       "is_correct": false,
-      "confidence": 0.0011999999999998678,
-      "latency_seconds": 0.7485637664794922,
+      "confidence": 0.052872736127472585,
+      "latency_seconds": 1.1072418689727783,
       "agents_used": 20,
       "memory_coherence": 0.928775429725647,
-      "timestamp": "2026-04-14T23:19:37.408117"
+      "timestamp": "2026-04-17T21:45:21.963034"
     },
     {
       "test_name": "entity_durata_media",
@@ -436,11 +436,11 @@
       "expected_answer": "18.0",
       "actual_answer": "18.0 (Average of 3 values: 18.0)",
       "is_correct": true,
-      "confidence": 0.003008971783062088,
-      "latency_seconds": 0.7452988624572754,
+      "confidence": 0.05317226573536143,
+      "latency_seconds": 1.1818251609802246,
       "agents_used": 20,
       "memory_coherence": 0.928775429725647,
-      "timestamp": "2026-04-14T23:19:38.153437"
+      "timestamp": "2026-04-17T21:45:23.144875"
     },
     {
       "test_name": "entity_quanti_lancio",
@@ -448,13 +448,13 @@
       "document_length": 50,
       "question": "Quanti progetti hanno raggiunto la fase di lancio?",
       "expected_answer": "1",
-      "actual_answer": "[Agent_18]\nQuery: Quanti progetti hanno raggiunto la fase di lancio?\n\n  [1] (0.43) [SEGMENTO 0] Progetto Alpha: Fase iniziale=concept, Fase finale=lan...",
+      "actual_answer": "[Agent_11]\nQuery: Quanti progetti hanno raggiunto la fase di lancio?\n\n  [1] (1.00) [SEGMENTO 31] Report avanzamento progetti: aggiornamenti periodici ...",
       "is_correct": true,
-      "confidence": 0.00338473290258706,
-      "latency_seconds": 0.7541422843933105,
+      "confidence": 0.05558165977197129,
+      "latency_seconds": 1.20786452293396,
       "agents_used": 19,
       "memory_coherence": 0.9252301454544067,
-      "timestamp": "2026-04-14T23:19:38.907606"
+      "timestamp": "2026-04-17T21:45:24.352755"
     }
   ]
 }
