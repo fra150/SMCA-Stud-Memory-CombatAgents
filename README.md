@@ -16,13 +16,13 @@
 <br/>
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-BAS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
-[![Phase](https://img.shields.io/badge/Phase-v1.0.0%20Complete-success?style=for-the-badge)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
-[![LOCOMO](https://img.shields.io/badge/LOCOMO-80.0%25%20Accuracy-blue?style=for-the-badge)](locomo_benchmark.py)
+[![Phase](https://img.shields.io/badge/Phase-Ziora%20Protocol%20Ready-success?style=for-the-badge)](https://github.com/fra150/SMCA-Stud-Memory-CombatAgents.git)
+[![LOCOMO](https://img.shields.io/badge/LOCOMO-86.7%25%20Accuracy-blue?style=for-the-badge)](locomo_benchmark.py)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Needle](https://img.shields.io/badge/Needle-100%25-success?style=for-the-badge)](locomo_benchmark.py)
 
-<br/>
+<br>
 
 > *"BAS is the brain to SMCA's organ — where dynamic agent scaling meets post-retrieval numerical reasoning,*
 > *transforming long documents into N specialized agents, each expert on one page,*
@@ -81,12 +81,12 @@ Emergent standards evaluation with confidence scoring. The Judge determines when
 |---|---|---|
 | **BAS Engine** — Dynamic agent scaling (N segments = N agents) | ✅ Complete | 50 segments tested |
 | **Semantic Selection** — Cosine similarity agent ranking | ✅ Complete | 100% Needle accuracy |
-| **Post-Retrieval Executor** — Context filtering & net balance | ✅ Complete | 66.7% Aggregation |
+| **Post-Retrieval Executor** — Context filtering & net balance | ✅ Complete | 100% Aggregation |
 | **Superlative Route Bypass** — Intent routing for comparative query | ✅ Complete | Entity fixed (33% → 66%) |
-| **LOCOMO Benchmark** — Meta AI long-context validation | ✅ Complete | 80.0% overall |
-| **TMDR Integration** — Memory coherence monitoring | ✅ Complete | 0.686 coherence score |
+| **LOCOMO Benchmark** — Meta AI long-context validation | ✅ Complete | 86.7% overall |
+| **TMDR Integration** — Memory coherence monitoring | ✅ Complete | 0.691 coherence score |
 | **Multi-language Support** — Italian/English keyword mapping | ✅ Complete | Revenue/Expense detection |
-| **Ziora Protocol** — Inter-agent generative reasoning wrap | ⏳ Planned | Phase 2 |
+| **Ziora Protocol (Phase 2)** — Exhaustive Consensus Search | ✅ Complete | Enabled by default |
 
 ---
 
@@ -95,13 +95,13 @@ Emergent standards evaluation with confidence scoring. The Judge determines when
 **Final Performance Metrics (Latest Execution):**
 ```
 Total Tests:        30
-Correct:            24
-Accuracy:           80.0%
+Correct:            26
+Accuracy:           86.7%
 
 Needle (50 seg):    100.0% ✅
 Multi-hop:          100.0% ✅
 Temporal:           66.7% ✅
-Aggregation:        66.7% ✅
+Aggregation:        100.0% ✅
 Entity Tracking:    66.7% ✅
 ```
 
@@ -109,7 +109,7 @@ Entity Tracking:    66.7% ✅
 |----------|----------|--------|-------|
 | **Needle** | 100.0% | ✅ Perfect | Semantic selection eliminates position bias |
 | **Multi-hop** | 100.0% | ✅ Perfect | Semantic agent selection enables flawlessly correlating segments |
-| **Aggregation** | 66.7% | ✅ Strong | Income/expense filtering + net balance calc |
+| **Aggregation** | 100.0% | ✅ Perfect | Fixed by advanced Post-Retrieval Executor entity matching |
 | **Temporal** | 66.7% | ✅ Strong | Timeline reasoning functional |
 | **Entity** | 66.7% | ✅ Strong | Fixed by Superlative Detector bridging the "Intent Translation Gap" |
 
@@ -154,8 +154,8 @@ python locomo_benchmark.py
 ## 🔬 Validation & Analysis
 
 Diagnostic metrics from the latest benchmark:
-- **Average latency:** 0.35s
-- **Average memory coherence:** 0.675
+- **Average latency:** 0.68s
+- **Average memory coherence:** 0.691
 
 ---
 
