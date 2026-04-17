@@ -36,3 +36,10 @@ agent11/
 graficagent10/
 TMDRagent/
 smca_charts/
+
+# Ignored from mass Git commit
+Brain-Agent-Supreme.-main/
+*.json
+*.jsonl
+BAS_COMMIT_SUMMARY.md
+tutoquellochgatt.md
