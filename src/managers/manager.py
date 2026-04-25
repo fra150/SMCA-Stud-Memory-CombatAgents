@@ -20,9 +20,11 @@ class StudSarManager:
     Manages interaction with StudSarNeural network and auxiliary operations
     (embedding generation, segmentation, persistence).
     """
-    def __init__(self, model_name='all-MiniLM-L6-v2', initial_capacity=1024, embedding_generator=None, device=None):
+    def __init__(self, model_name='all-MiniLM-L6-v2', initial_capacity=1024, embedding_generator=None, device=None, quiet=False):
+        self.quiet = quiet
         self.device = device if device is not None else torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        print(f"StudSarManager will use device: {self.device}")
+        if not self.quiet:
+            print(f"StudSarManager will use device: {self.device}")
         if embedding_generator is None:
             self.embedding_generator = SentenceTransformer(model_name, device=self.device)
         else:
@@ -40,10 +42,11 @@ class StudSarManager:
         # --- FINE AGGIUNTA V2 ---
 
 
-        print(f"\n--- StudSarManager Initialization ---")
-        print(f"Embedding Generator Model: {model_name} (Dim: {self.embedding_dim})")
-        print(f"StudSarNeural network ready on device: {self.studsar_network.device}")
-        print(f"-----------------------------------\n")
+        if not self.quiet:
+            print(f"\n--- StudSarManager Initialization ---")
+            print(f"Embedding Generator Model: {model_name} (Dim: {self.embedding_dim})")
+            print(f"StudSarNeural network ready on device: {self.studsar_network.device}")
+            print(f"-----------------------------------\n")
         self.shadow_negative_markers = []
 
     def generate_embedding(self, text):
@@ -71,8 +74,9 @@ class StudSarManager:
             use_transformer_segmentation: Whether to use transformer-based semantic segmentation
             transformer_params: Dict of parameters for transformer segmentation
         """
-        print("\n--- Building StudSar Network from Text ---")
-        print("Preparing to build network...")
+        if not self.quiet:
+            print("\n--- Building StudSar Network from Text ---")
+            print("Preparing to build network...")
 
         # V3: Advanced segmentation logic with transformer support
         if use_transformer_segmentation and TRANSFORMER_AVAILABLE:
@@ -110,15 +114,17 @@ class StudSarManager:
                      added_count += 1
             if (i + 1) % 50 == 0: print(f"  Processed {i+1}/{len(segments)} segments...")
 
-        print(f"Added {added_count} markers to StudSar network.")
-        print(f"Network memory now contains: {self.studsar_network.get_total_markers()} markers.")
-        print("--- Network Construction Complete ---\n")
+        if not self.quiet:
+            print(f"Added {added_count} markers to StudSar network.")
+            print(f"Network memory now contains: {self.studsar_network.get_total_markers()} markers.")
+            print("--- Network Construction Complete ---\n")
 
 
     def search(self, query_text, k=1):
         """Performs a search in StudSar network."""
-        print(f"\n--- Query Search ---")
-        print(f"Query: '{query_text}'")
+        if not self.quiet:
+            print(f"\n--- Query Search ---")
+            print(f"Query: '{query_text}'")
         if not query_text or not isinstance(query_text, str):
              print("Invalid query.")
              return [], [], []
@@ -140,15 +146,18 @@ class StudSarManager:
         marker_ids, similarities, segments = self.studsar_network.search_similar_markers(query_embedding, k=k)
 
         if not marker_ids:
-             print("No results found.")
+            if not self.quiet:
+                print("No results found.")
         else:
-            print(f"Found {len(marker_ids)} results:")
+            if not self.quiet:
+                print(f"Found {len(marker_ids)} results:")
             # --- NEWV2: Increment usage count for retrieved markers --- 
             for mid in marker_ids:
                 self.studsar_network.increment_usage(mid) # Chiama il metodo in neural.py
             # --- AN2 ---
 
-        print("--- Search Complete ---\n")
+        if not self.quiet:
+            print("--- Search Complete ---\n")
         return marker_ids, similarities, segments
 
     def search_with_reputation(self, query_text, k=1, reputation_weight=1.0):
@@ -162,8 +171,9 @@ class StudSarManager:
         Returns:
             Tuple of (marker_ids, similarities, segments)
         """
-        print(f"\n--- Reputation-Enhanced Query Search ---")
-        print(f"Query: '{query_text}' (reputation weight: {reputation_weight})")
+        if not self.quiet:
+            print(f"\n--- Reputation-Enhanced Query Search ---")
+            print(f"Query: '{query_text}' (reputation weight: {reputation_weight})")
         if not query_text or not isinstance(query_text, str):
              print("Invalid query.")
              return [], [], []
@@ -197,21 +207,25 @@ class StudSarManager:
             self.studsar_network.id_to_reputation.update(original_reputation_data)
 
         if not marker_ids:
-             print("No results found.")
+            if not self.quiet:
+                print("No results found.")
         else:
-            print(f"Found {len(marker_ids)} results:")
+            if not self.quiet:
+                print(f"Found {len(marker_ids)} results:")
             # Increment usage count for retrieved markers
             for mid in marker_ids:
                 self.studsar_network.increment_usage(mid)
 
-        print("--- Reputation-Enhanced Search Complete ---\n")
+        if not self.quiet:
+            print("--- Reputation-Enhanced Search Complete ---\n")
         return marker_ids, similarities, segments
 
     # EDIT V2: Added emotion parameter
     def update_network(self, new_text_segment, emotion=None):
         """Adds a new segment to existing StudSar network."""
-        print("\n--- Updating StudSar Network ---")
-        print(f"Adding new segment: '{new_text_segment[:100]}...' (Emotion: {emotion})")
+        if not self.quiet:
+            print("\n--- Updating StudSar Network ---")
+            print(f"Adding new segment: '{new_text_segment[:100]}...' (Emotion: {emotion})")
         if not new_text_segment or not isinstance(new_text_segment, str):
              print("Invalid segment for update.")
              return None
@@ -228,14 +242,16 @@ class StudSarManager:
         #  END OF MODIFICATION V2 
 
         if marker_id is not None:
-            print(f"New marker added with ID {marker_id}.")
-            print(f"Network memory now contains: {self.studsar_network.get_total_markers()} markers.")
-            print("--- Update Complete ---\n")
+            if not self.quiet:
+                print(f"New marker added with ID {marker_id}.")
+                print(f"Network memory now contains: {self.studsar_network.get_total_markers()} markers.")
+                print("--- Update Complete ---\n")
             return marker_id
         else:
-             print("Update failed.")
-             print("--- Update Failed ---\n")
-             return None
+            if not self.quiet:
+                print("Update failed.")
+                print("--- Update Failed ---\n")
+            return None
     
     def add_negative_shadow(self, query: str, finding: str, champion: str = "", timestamp: str = None):
         key = (str(query or "").strip(), str(finding or "").strip())
@@ -275,16 +291,19 @@ class StudSarManager:
     # NEW ADDITION V2
     def update_marker_reputation(self, marker_id, feedback_score):
         """Provides feedback to a specific marker to update its reputation."""
-        print(f"\n--- Updating Marker Reputation ---")
+        if not self.quiet:
+            print(f"\n--- Updating Marker Reputation ---")
         if self.studsar_network:
             # Ensure network is on the correct device
             self.studsar_network.to(self.device)
             success = self.studsar_network.update_marker_reputation(marker_id, feedback_score)
-            print(f"--- Reputation Update {'Complete' if success else 'Failed'} ---\n")
+            if not self.quiet:
+                print(f"--- Reputation Update {'Complete' if success else 'Failed'} ---\n")
             return success
         else:
-            print("Error: StudSar network not initialized.")
-            print(f"--- Reputation Update Failed ---\n")
+            if not self.quiet:
+                print("Error: StudSar network not initialized.")
+                print(f"--- Reputation Update Failed ---\n")
             return False
     # END OF ADDITION V2
     def save(self, filepath="studsar_neural_memory.pth"):

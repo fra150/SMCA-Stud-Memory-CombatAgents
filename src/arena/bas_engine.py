@@ -131,7 +131,8 @@ class BASEngine:
                  red_alpha: float = 0.35,
                  red_tau: float = 0.08,
                  dynamic_agent_selection: bool = True,
-                 coherence_weight: float = 0.3):
+                 coherence_weight: float = 0.3,
+                 quiet: bool = False):
         """Inizializza il motore BAS.
 
         Args:
@@ -144,16 +145,20 @@ class BASEngine:
             dynamic_agent_selection: Se True, seleziona agenti in base alla query
             coherence_weight: Peso per coerenza della memoria nella selezione
         """
-        print("\n" + "=" * 70)
-        print("  BAS ENGINE — Brain Agent Supreme")
-        print("  Initializing scalable neural architecture...")
-        print("=" * 70)
+        if not quiet:
+            print("\n" + "=" * 70)
+            print("  BAS ENGINE — Brain Agent Supreme")
+            print("  Initializing scalable neural architecture...")
+            print("=" * 70)
+
+        self.quiet = quiet
 
         # StudSar come SISTEMA NERVOSO CENTRALE
         # Connette tutti gli agenti in un unico cervello coerente
         self.studsar = studsar_manager if studsar_manager else StudSarManager(
             embedding_generator=embedding_generator,
-            device=device
+            device=device,
+            quiet=quiet
         )
 
         self.judge_memory = None
@@ -161,7 +166,8 @@ class BASEngine:
             self.judge_memory = StudSarManager(
                 embedding_generator=self.studsar.embedding_generator,
                 device=self.studsar.device,
-                initial_capacity=256
+                initial_capacity=256,
+                quiet=quiet
             )
 
         # Giudice con standard emergenti dalla storia di tutte le arene
@@ -241,7 +247,10 @@ class BASEngine:
         Returns:
             Statistiche di ingestione
         """
-        print(f"\n📥 BAS: Ingesting document '{source_name}' with auto-scaling agents...")
+        if not self.quiet:
+            if not self.quiet:
+
+                print(f"\n[BAS] Ingesting document \'{source_name}\' with auto-scaling agents...")
 
         # Segmenta il documento usando StudSar
         from ..studsar import segment_text
@@ -257,7 +266,10 @@ class BASEngine:
             print("  ⚠ No segments generated")
             return {'segments_created': 0, 'agents_created': 0}
 
-        print(f"  Document segmented into {len(segments)} blocks")
+        if not self.quiet:
+
+
+            print(f"  Document segmented into {len(segments)} blocks")
 
         # Verifica limite massimo agenti
         current_agent_count = len(self.segment_agents)
@@ -318,7 +330,10 @@ class BASEngine:
         markers_after = self.studsar.studsar_network.get_total_markers()
         self.active_agents_pool = list(self.segment_agents.values())
 
-        print(f"  ✓ Processed '{source_name}': {len(segments)} segments → {len(created_agents)} active agents")
+        if not self.quiet:
+
+
+            print(f"  ✓ Processed \'{source_name}\': {len(segments)} segments → {len(created_agents)} active agents")
         
         # Inizializza/Aggiorna BM25 corpus
         if not hasattr(self, 'bm25_agents_map'):
@@ -327,12 +342,18 @@ class BASEngine:
         try:
             from rank_bm25 import BM25Okapi
             self.bm25_agents_map = list(self.segment_agents.values())
-            corpus_tokens = [agent.segment_text.lower().split() for agent in self.bm25_agents_map]
+            import re
+            corpus_tokens = [
+                re.findall(r"[a-zàèìòù]+|\d+", agent.segment_text.lower())
+                for agent in self.bm25_agents_map
+            ]
             if corpus_tokens:
                 self.bm25 = BM25Okapi(corpus_tokens)
             else:
                 self.bm25 = None
-            print(f"  ✓ BM25 Hybrid Lexical Memory updated")
+            if not self.quiet:
+
+                print(f"  ✓ BM25 Hybrid Lexical Memory updated")
         except ImportError:
             self.bm25 = None
             print(f"  ⚠ rank_bm25 non trovato. Hybrid Retrieval disattivato.")
@@ -349,7 +370,9 @@ class BASEngine:
         }
 
         print(f"  ✓ Created {len(created_agents)} specialized agents")
-        print(f"  ✓ Total agents in system: {len(self.segment_agents)}")
+        if not self.quiet:
+
+            print(f"  ✓ Total agents in system: {len(self.segment_agents)}")
         print(f"  ✓ StudSar markers: {markers_after}")
 
         return stats
@@ -380,13 +403,102 @@ class BASEngine:
         # Selezione dinamica basata su similarità semantica e entity tracking (Bug #3)
         print(f"  🔍 Selecting top {k} agents for query...")
 
-        # Cerca segmenti simili in StudSar
+        # Pass 1: Cerca segmenti simili in StudSar
         # Ora prendiamo max(k*2, 20) per non cercare in tutti, o tutti se sono pochi
         search_k = min(max(k * 3, 20), len(self.segment_agents))
         indices, similarities, segments = self.studsar.search(query, k=search_k)
-
+        
+        # 2-HOP SEQUENTIAL CHAINING LAYER (No LLM)
+        # Bypasses the multi-hop bottleneck by extracting entities from top segments
+        # and doing a second retrieval pass to bridge disconnected facts (e.g., Person -> Company -> City)
         import re
+        if indices and similarities and similarities[0] > 0.25:
+            query_words = set(re.findall(r"\b\w+\b", query.lower()))
+            expanded_query = query
+            used_entities = set()
+
+            for hop_round in range(2):
+                top_segments_text = " ".join(segments[:3])
+                hop_entities = re.findall(
+                    r"\b[A-ZÀÈÌÒÙ][\wàèìòù]+(?:\s+[A-ZÀÈÌÒÙ][\wàèìòù]+){0,2}\b",
+                    top_segments_text,
+                )
+                hop_entities = [e.strip() for e in hop_entities if e.strip()]
+                new_entities = [
+                    e for e in hop_entities
+                    if e.lower() not in query_words and e.lower() not in used_entities
+                ]
+
+                if not new_entities:
+                    break
+
+                from collections import Counter
+
+                top_new_entities = [e for e, _ in Counter(new_entities).most_common(5)]
+                used_entities.update(e.lower() for e in top_new_entities)
+                expanded_query = expanded_query + " " + " ".join(top_new_entities)
+
+                if not self.quiet:
+                    print(f"  [Multi-hop Query Expansion]: hop={hop_round + 1} +{top_new_entities}")
+
+                indices2, similarities2, segments2 = self.studsar.search(expanded_query, k=search_k)
+                indices = list(indices) + list(indices2)
+                similarities = list(similarities) + [float(s) * 0.9 for s in similarities2]
+                segments = list(segments) + list(segments2)
+
         entities = re.findall(r'\b[A-ZÀÈÌÒÙ][a-zàèìòùä]+\b|\b\d[\d.,]*\b', query)
+
+        def _extract_date_patterns(q: str):
+            months = {
+                "gennaio": 1,
+                "febbraio": 2,
+                "marzo": 3,
+                "aprile": 4,
+                "maggio": 5,
+                "giugno": 6,
+                "luglio": 7,
+                "agosto": 8,
+                "settembre": 9,
+                "ottobre": 10,
+                "novembre": 11,
+                "dicembre": 12,
+            }
+
+            candidates: List[Tuple[str, int, int]] = []
+            for ds in re.findall(r"\b\d{4}-\d{2}-\d{2}\b", q):
+                parts = [int(x) for x in ds.split("-")]
+                candidates.append(("YMD", parts[0], parts[1] * 100 + parts[2]))
+
+            for ds in re.findall(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b", q):
+                nums = [int(x) for x in re.findall(r"\d+", ds)]
+                if len(nums) == 3:
+                    d, m, y = nums[0], nums[1], nums[2]
+                    if y < 100:
+                        y += 2000
+                    candidates.append(("DMY", y, m * 100 + d))
+
+            for m in re.finditer(
+                r"\b(?P<d>\d{1,2})\s+(?P<mon>gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre)\s+(?P<y>\d{4})\b",
+                q,
+                flags=re.IGNORECASE,
+            ):
+                d = int(m.group("d"))
+                mon = months.get(m.group("mon").lower())
+                y = int(m.group("y"))
+                if mon:
+                    candidates.append(("DMY", y, mon * 100 + d))
+
+            patterns = []
+            for kind, y, md in candidates:
+                mon = md // 100
+                d = md % 100
+                ymd = rf"{y}\D+{mon:02d}\D+{d:02d}"
+                dmy = rf"{d}\D+{mon}\D+{y}"
+                patterns.append(re.compile(ymd))
+                patterns.append(re.compile(dmy))
+            return patterns
+
+        date_patterns = _extract_date_patterns(query)
         
         # Inizializza score per la query corrente e calcola entity boost
         for agent in self.segment_agents.values():
@@ -395,6 +507,11 @@ class BASEngine:
                 for entity in entities:
                     if entity in agent.segment_text:
                         agent.expertise_score += 0.08
+            if date_patterns:
+                for p in date_patterns:
+                    if p.search(agent.segment_text):
+                        agent.expertise_score += 0.35
+                        break
                         
         if indices:
             # Somma similarity
@@ -411,7 +528,7 @@ class BASEngine:
         bm25_top = []
         if hasattr(self, 'bm25') and self.bm25 is not None:
             # Pass 2: BM25 Lexical
-            query_tokens = query.lower().split()
+            query_tokens = re.findall(r"[a-zàèìòù]+|\d+", query.lower())
             bm25_scores = self.bm25.get_scores(query_tokens)
             # Rimuoviamo punteggi a zero assoluto che non matchano nulla
             top_bm25_indices = sorted(
@@ -451,10 +568,12 @@ class BASEngine:
             self.judge, 
             god_protocol=self.god,
             red_agent=red_agent_to_pass,
-            studsar_manager=self.studsar
+            studsar_manager=self.studsar,
+            quiet=self.quiet
         )
 
-        print(f"  Arena built with {len(combat_agents)} agents")
+        if not self.quiet:
+            print(f"  Arena built with {len(combat_agents)} agents")
 
         return self.arena
 
@@ -487,9 +606,10 @@ class BASEngine:
         start_time = time.time()
         cd_seconds = countdown_seconds or self.countdown_seconds
 
-        print(f"\n{'*' * 70}")
-        print(f"  BAS QUERY: {question}")
-        print(f"{'*' * 70}")
+        if not self.quiet:
+            print(f"\n{'*' * 70}")
+            print(f"  BAS QUERY: {question}")
+            print(f"{'*' * 70}")
 
         # Verifica memoria
         total_markers = self.studsar.studsar_network.get_total_markers()
@@ -580,6 +700,117 @@ class BASEngine:
             final_answer = f"{exec_result['result']}"
             if explanation:
                 final_answer += f" ({explanation})"
+        else:
+            temporal_segments_data = segments_data
+            anchor_date = ""
+            handled = False
+            if self.executor.detect_multi_hop_query(question):
+                all_segments_data = [
+                    {"text": a.segment_text, "index": a.segment_index}
+                    for a in self.segment_agents.values()
+                ]
+                multihop_result = self.executor.execute_multi_hop(question, all_segments_data)
+                if multihop_result.get("result") is not None and float(multihop_result.get("confidence") or 0.0) > 0.6:
+                    final_answer = f"{multihop_result['result']}"
+                    handled = True
+
+            if not handled and self.executor.detect_temporal_query(question):
+                import re
+                ql = question.lower()
+                event_keys = []
+                if "seed funding" in ql:
+                    event_keys = ["seed funding", "seed", "funding"]
+                elif "partner strategico" in ql:
+                    event_keys = ["partner strategico", "partner", "strategico"]
+                elif "fondata" in ql or "fondazione" in ql:
+                    event_keys = ["fondazione", "fondata"]
+                elif "series a" in ql or "serie a" in ql:
+                    event_keys = ["series a", "serie a"]
+                elif "series b" in ql or "serie b" in ql:
+                    event_keys = ["series b", "serie b"]
+
+                entity_candidates = re.findall(
+                    r"\b[A-ZÀÈÌÒÙ][\wàèìòù]+(?:\s+[A-ZÀÈÌÒÙ][\wàèìòù]+){0,2}\b",
+                    question,
+                )
+                entity_candidates = [e.strip() for e in entity_candidates if e.strip()]
+                bad_leads = {"quando", "che", "quale", "quanti", "quanto", "dove", "come"}
+                cleaned = []
+                for e in entity_candidates:
+                    parts = e.split()
+                    if parts and parts[0].lower() in bad_leads:
+                        rest = " ".join(parts[1:]).strip()
+                        if rest:
+                            cleaned.append(rest)
+                        continue
+                    cleaned.append(e)
+                cleaned = sorted(set(cleaned), key=len, reverse=True)
+                primary_entity = cleaned[0] if cleaned else ""
+
+                all_segments = [
+                    {"text": a.segment_text, "index": a.segment_index}
+                    for a in self.segment_agents.values()
+                ]
+                by_idx = {int(s.get("index", 0) or 0): s for s in all_segments}
+                hit_idxs = set()
+                if event_keys:
+                    for s in all_segments:
+                        tl = (s.get("text") or "").lower()
+                        if any(k in tl for k in event_keys):
+                            hit_idxs.add(int(s.get("index", 0) or 0))
+                    if not hit_idxs and primary_entity:
+                        for s in all_segments:
+                            tl = (s.get("text") or "").lower()
+                            if primary_entity.lower() in tl:
+                                hit_idxs.add(int(s.get("index", 0) or 0))
+                else:
+                    for s in all_segments:
+                        tl = (s.get("text") or "").lower()
+                        if primary_entity and primary_entity.lower() in tl:
+                            hit_idxs.add(int(s.get("index", 0) or 0))
+
+                if event_keys and hit_idxs:
+                    date_pat = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
+                    inline_pat = re.compile(r"(?:Data|date)\s*:\s*(\d{4}-\d{2}-\d{2})[^\n]{0,180}?(?:Evento|event)\s*:", re.IGNORECASE)
+                    for idx in sorted(hit_idxs):
+                        seg_txt = (by_idx.get(idx) or {}).get("text") or ""
+                        m = inline_pat.search(seg_txt)
+                        if m:
+                            anchor_date = m.group(1)
+                            break
+                        for n in (idx - 1, idx, idx + 1, idx - 2, idx + 2):
+                            seg = by_idx.get(n)
+                            if not seg:
+                                continue
+                            dates = date_pat.findall(seg.get("text") or "")
+                            if not dates:
+                                continue
+                            anchor_date = dates[-1] if n < idx else dates[0]
+                            break
+                        if anchor_date:
+                            break
+
+                expanded_idxs = set(hit_idxs)
+                for idx in list(hit_idxs):
+                    expanded_idxs.add(idx - 1)
+                    expanded_idxs.add(idx + 1)
+                    expanded_idxs.add(idx - 2)
+                    expanded_idxs.add(idx + 2)
+
+                filtered = [by_idx[i] for i in sorted(expanded_idxs) if i in by_idx]
+                if filtered:
+                    temporal_segments_data = filtered
+                else:
+                    temporal_segments_data = [
+                        s for s in all_segments if re.search(r"\b\d{4}-\d{2}-\d{2}\b", s.get("text") or "")
+                    ]
+
+            if anchor_date:
+                final_answer = anchor_date
+            else:
+                temporal_result = self.executor.execute_temporal(question, temporal_segments_data)
+                if temporal_result.get("result") is not None and float(temporal_result.get("confidence") or 0.0) > 0.45:
+                    final_answer = f"{temporal_result['result']}"
 
         # Calcola punteggio di coerenza della memoria
         coherence_score = self._compute_memory_coherence(selected_agents, question)
@@ -628,18 +859,19 @@ class BASEngine:
         self._log_memory_state(f"query:{question[:30]}")
 
         # Stampa summary
-        print(f"\n{'=' * 70}")
-        print(f"  BAS ANSWER — RISPOSTA SUPREMA")
-        print(f"  Champion: {result.champion_name}")
-        print(f"  Active agents: {result.active_agents}/{result.total_segments}")
-        print(f"  Confidence: {result.judge_confidence:.3f}")
-        print(f"  Memory coherence: {result.memory_coherence_score:.3f}")
-        if self.enable_red_agent:
-            print(f"  Resilience (CRS): {result.champion_resilience_score:.3f} (alpha={self.red_alpha:.2f})")
-        print(f"  Rounds: {combat_result.total_rounds}")
-        print(f"  Time: {total_time:.2f}s")
-        print(f"{'=' * 70}")
-        print(f"\n{final_answer}\n")
+        if not self.quiet:
+            print(f"\n{'=' * 70}")
+            print(f"  BAS ANSWER — RISPOSTA SUPREMA")
+            print(f"  Champion: {result.champion_name}")
+            print(f"  Active agents: {result.active_agents}/{result.total_segments}")
+            print(f"  Confidence: {result.judge_confidence:.3f}")
+            print(f"  Memory coherence: {result.memory_coherence_score:.3f}")
+            if self.enable_red_agent:
+                print(f"  Resilience (CRS): {result.champion_resilience_score:.3f} (alpha={self.red_alpha:.2f})")
+            print(f"  Rounds: {combat_result.total_rounds}")
+            print(f"  Time: {total_time:.2f}s")
+            print(f"{'=' * 70}")
+            print(f"\n{final_answer}\n")
 
         return result
 

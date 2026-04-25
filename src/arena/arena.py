@@ -30,7 +30,8 @@ class Arena:
                  countdown: Optional[Countdown] = None,
                  god_protocol: Optional[GodProtocol] = None,
                  red_agent: Optional[CombatAgent] = None,
-                 studsar_manager = None):
+                 studsar_manager = None,
+                 quiet: bool = False):
         """Initialize the Arena.
         
         Args:
@@ -40,6 +41,7 @@ class Arena:
             god_protocol: Optional God protocol
             red_agent: Optional adversarial agent (Ziora)
             studsar_manager: Optional StudSar manager
+            quiet: If True, suppress verbose arena combat output
         """
         self.agents = agents
         self.judge = judge
@@ -47,6 +49,7 @@ class Arena:
         self.god_protocol = god_protocol
         self.red_agent = red_agent
         self.studsar_manager = studsar_manager
+        self.quiet = quiet
         
         self.champion: Optional[CombatAgent] = None
         self.champion_response: Optional[AgentResponse] = None
@@ -83,10 +86,11 @@ class Arena:
             }
             standards = self.judge.generate_standards(round_number, context=context)
         
-        print(f"\n  ═══ ARENA ROUND {round_number} ═══")
-        print(f"  Standards: {standards}")
-        print(f"  Pressure: {pressure:.1%}")
-        print(f"  Competitors: {[a.name for a in self.agents]}")
+        if not self.quiet:
+            print(f"\n  ═══ ARENA ROUND {round_number} ═══")
+            print(f"  Standards: {standards}")
+            print(f"  Pressure: {pressure:.1%}")
+            print(f"  Competitors: {[a.name for a in self.agents]}")
         
         # All agents generate responses using their OWN segment + StudSar supplement
         responses: List[AgentResponse] = []
@@ -119,9 +123,10 @@ class Arena:
             
             response = agent.generate_response(query, standards, context=agent_context if agent_context else None)
             responses.append(response)
-            print(f"  [{agent.name}] Response generated "
-                  f"(confidence: {response.confidence:.3f}, "
-                  f"time: {response.generation_time:.3f}s)")
+            if not self.quiet:
+                print(f"  [{agent.name}] Response generated "
+                      f"(confidence: {response.confidence:.3f}, "
+                      f"time: {response.generation_time:.3f}s)")
         
         # Judge evaluates all responses semantically
         scores = self.judge.evaluate_responses(responses, standards)
@@ -255,10 +260,11 @@ class Arena:
         
         self.round_history.append(round_result)
         
-        print(f"\n  ★ WINNER: {winner_name} ({winner_score:.3f})")
-        print(f"  All scores: {', '.join(f'{n}: {s:.3f}' for n, s in scores.items())}")
-        print(f"  Judge confidence: {self.judge.get_confidence():.3f}")
-        print(f"  ═══════════════════════")
+        if not self.quiet:
+            print(f"\n  ★ WINNER: {winner_name} ({winner_score:.3f})")
+            print(f"  All scores: {', '.join(f'{n}: {s:.3f}' for n, s in scores.items())}")
+            print(f"  Judge confidence: {self.judge.get_confidence():.3f}")
+            print(f"  ═══════════════════════")
         
         return round_result
     
@@ -290,20 +296,22 @@ class Arena:
         if self.countdown:
             self.countdown.start()
             # Register pressure callbacks
-            self.countdown.on_threshold(0.5, lambda t, f, p: 
-                print(f"\n  ⚠️  COUNTDOWN: 50% time remaining — pressure rising!"))
-            self.countdown.on_threshold(0.25, lambda t, f, p: 
-                print(f"\n  🔥 COUNTDOWN: 25% time remaining — accelerating!"))
-            self.countdown.on_threshold(0.1, lambda t, f, p: 
-                print(f"\n  💀 COUNTDOWN: 10% time remaining — FINAL MOMENTS!"))
+            if not self.quiet:
+                self.countdown.on_threshold(0.5, lambda t, f, p: 
+                    print(f"\n  ⚠️  COUNTDOWN: 50% time remaining — pressure rising!"))
+                self.countdown.on_threshold(0.25, lambda t, f, p: 
+                    print(f"\n  🔥 COUNTDOWN: 25% time remaining — accelerating!"))
+                self.countdown.on_threshold(0.1, lambda t, f, p: 
+                    print(f"\n  💀 COUNTDOWN: 10% time remaining — FINAL MOMENTS!"))
         
-        print(f"\n╔══════════════════════════════════════════╗")
-        print(f"║         SMCA ARENA COMBAT                ║")
-        print(f"║  Query: {query[:35]:35s}  ║")
-        print(f"║  Agents: {len(self.agents)}, Max Rounds: {max_rounds:3d}         ║")
-        if self.countdown:
-            print(f"║  Countdown: {self.countdown.total_seconds:.0f}s                         ║")
-        print(f"╚══════════════════════════════════════════╝")
+        if not self.quiet:
+            print(f"\n╔══════════════════════════════════════════╗")
+            print(f"║         SMCA ARENA COMBAT                ║")
+            print(f"║  Query: {query[:35]:35s}  ║")
+            print(f"║  Agents: {len(self.agents)}, Max Rounds: {max_rounds:3d}         ║")
+            if self.countdown:
+                print(f"║  Countdown: {self.countdown.total_seconds:.0f}s                         ║")
+            print(f"╚══════════════════════════════════════════╝")
         
         # Reset champion for this combat
         self.champion = None
@@ -318,14 +326,16 @@ class Arena:
             # Check countdown
             if self.countdown:
                 if self.countdown.is_expired():
-                    print(f"\n  ⏰ COUNTDOWN EXPIRED — Champion {self.champion.name if self.champion else 'N/A'} wins!")
+                    if not self.quiet:
+                        print(f"\n  ⏰ COUNTDOWN EXPIRED — Champion {self.champion.name if self.champion else 'N/A'} wins!")
                     countdown_expired = True
                     break
                 
                 # Adjust available rounds based on pressure
                 adjusted_max = self.countdown.get_max_rounds(max_rounds)
                 if round_num > adjusted_max:
-                    print(f"\n  ⏰ Pressure limit reached — no more rounds allowed")
+                    if not self.quiet:
+                        print(f"\n  ⏰ Pressure limit reached — no more rounds allowed")
                     countdown_expired = True
                     break
             
@@ -381,14 +391,15 @@ class Arena:
             }
         )
         
-        print(f"\n╔══════════════════════════════════════════╗")
-        print(f"║         COMBAT COMPLETE                  ║")
-        print(f"║  Champion: {result.champion_name:30s} ║")
-        print(f"║  Score: {result.final_score:.4f}                          ║")
-        print(f"║  Rounds: {result.total_rounds}                              ║")
-        print(f"║  Time: {result.total_time:.2f}s                           ║")
-        print(f"║  Countdown expired: {str(result.countdown_expired):20s}  ║")
-        print(f"╚══════════════════════════════════════════╝")
+        if not self.quiet:
+            print(f"\n╔══════════════════════════════════════════╗")
+            print(f"║         COMBAT COMPLETE                  ║")
+            print(f"║  Champion: {result.champion_name:30s} ║")
+            print(f"║  Score: {result.final_score:.4f}                          ║")
+            print(f"║  Rounds: {result.total_rounds}                              ║")
+            print(f"║  Time: {result.total_time:.2f}s                           ║")
+            print(f"║  Countdown expired: {str(result.countdown_expired):20s}  ║")
+            print(f"╚══════════════════════════════════════════╝")
         
         return result
     
